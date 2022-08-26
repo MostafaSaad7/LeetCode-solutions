@@ -1,4 +1,3 @@
-//from discuss
 class Solution {
 public:
     int missingNumber(vector<int>& nums) {
