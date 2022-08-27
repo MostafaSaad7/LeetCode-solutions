@@ -1,23 +1,23 @@
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
-        int maxPriceIndex =1;
+        int maxPriceIndex =0;
         int leastPriceIndex=0;
         int maxDiff =0;
-        while(maxPriceIndex<prices.size())
+        for(int i =1 ; i< prices.size();i++ )
         {
-            if(prices[leastPriceIndex]<prices[maxPriceIndex])
+            int  diff = prices[i]-prices[leastPriceIndex];
+            if(diff>0 && diff > maxDiff)
             {
-                maxDiff=max(maxDiff,prices[maxPriceIndex]-prices[leastPriceIndex]);
-                
+            maxDiff= diff;
+            maxPriceIndex=i;
+            
             }
-            else
-                leastPriceIndex=maxPriceIndex;
-            
-            maxPriceIndex++;
-            
+            else if (diff < 0 )
+            {
+                leastPriceIndex=i;
+            }
         }
-        
         
     return maxDiff;
         
