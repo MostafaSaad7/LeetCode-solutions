@@ -18,31 +18,20 @@ public:
         bool allow = true;
         while (!q.empty())
         {
-            int sz = q.size();
-            while (sz)
-            {
+          
                 TreeNode *current = q.front();
                 q.pop();
-                if (current->left)
-                {
-                    if(!allow)
-                        return false;
-                    q.push(current->left);
-                }
-                else 
-                    allow = false;
-                if(current->right)
-                {
-                    if(!allow)
-                        return false;
-                    q.push(current->right);
-
-                }
+                if(current==nullptr)
+                    allow=false;
                 else
-                    allow = false;
+                {
+                if(!allow)
+                        return false;
+                q.push(current->left);
+                q.push(current->right);
+                }
                 
-                sz--;
-            }
+        
         }
         return true;
             
