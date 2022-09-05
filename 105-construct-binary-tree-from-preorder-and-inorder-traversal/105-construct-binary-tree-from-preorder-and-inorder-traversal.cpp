@@ -29,13 +29,12 @@ public:
             if (inorder[i] == root->val)
             {
             idx=i;
-                root->left = treeBuilder(preorder, inorder, inStart, idx - 1, preIt + 1);
-root->right = treeBuilder(preorder, inorder, idx + 1, inEnd, preIt + idx - inStart + 1);
-
             }
 
         }
         
+root->left = treeBuilder(preorder, inorder, inStart, idx - 1, preIt + 1);
+root->right = treeBuilder(preorder, inorder, idx + 1, inEnd, preIt + idx - inStart + 1);
 
         return root;
     }
