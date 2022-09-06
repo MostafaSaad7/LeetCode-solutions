@@ -12,34 +12,16 @@
 class Solution {
 public:
     bool flipEquiv(TreeNode* root1, TreeNode* root2) {
+        if(!root1 || !root2) 
+            return !root1 && !root2;
         
-return parenthesize_canonical (root1)==parenthesize_canonical(root2);
+        if( root1->val != root2->val)
+            return false;
+        
+       return flipEquiv(root1->left , root2->right) && flipEquiv(root1->right , root2->left)
+           ||flipEquiv(root1->left, root2->left) && flipEquiv(root1->right , root2->right) ;
+        
+            
         
     }
-    
-    string parenthesize_canonical(TreeNode * root) {
-        if(root==nullptr)
-            return "";
-        string representation = "("+to_string(root->val);
-        		vector<string> v;
-
-        if(root->left)
-           v.push_back( parenthesize_canonical(root->left));
-        else
-            v.push_back("()");
-          if(root->right)
-           v.push_back( parenthesize_canonical(root->right));
-        else
-            v.push_back("()");
-            
-        representation +=")";
-        	sort(v.begin(), v.end());
-		for (int i = 0; i < (int) v.size(); ++i)
-			representation += v[i];
-
-		representation += ")";
-
-		return representation;
-
-}
 };
