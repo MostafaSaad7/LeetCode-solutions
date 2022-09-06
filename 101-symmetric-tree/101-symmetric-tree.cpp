@@ -18,13 +18,9 @@ public:
     }
     
     bool symmetricSubtree(TreeNode* left , TreeNode* right){
-        if(left!=nullptr && right != nullptr){
-
-        if(left->val == right->val)
+        if(left && right && left->val == right->val)
             return (symmetricSubtree(left->left ,right->right) && symmetricSubtree(left->right ,right->left));
-        else
-            return false;
-        }
+        
         else if(left == nullptr && right == nullptr)
             return true;
         else
