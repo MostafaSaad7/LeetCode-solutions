@@ -9,7 +9,7 @@ public:
             
         }
         int temp =1 ;
-        for(int i =nums.size()-1 ; i >=0 ; i-- )
+        for(int i =nums.size()-1 ; i >-1 ; i-- )
         {
             
            res[i]=res[i]*temp;
