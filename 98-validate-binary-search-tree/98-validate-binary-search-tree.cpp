@@ -21,10 +21,10 @@ public:
     bool validation (TreeNode * root , long max ,long min){
         if(root == nullptr) return true;
         
-        if(!(root->val > min && root->val < max ))
-            return false;
+        if(root->val > min && root->val < max )
             return validation(root->right , max , root->val) && validation(root->left,root->val , min); 
     
+        return false ;
             
         
         
