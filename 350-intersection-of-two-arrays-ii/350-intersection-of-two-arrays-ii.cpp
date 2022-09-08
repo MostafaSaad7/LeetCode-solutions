@@ -2,7 +2,7 @@ class Solution {
 public:
     vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {
         // int arr[2001]={0};//try map 
-        unordered_map <int ,int> mp;
+        unordered_map <int ,int> mp(1001);
         vector <int> v;
         for(int i =0 ; i < nums1.size();i++)
         {
