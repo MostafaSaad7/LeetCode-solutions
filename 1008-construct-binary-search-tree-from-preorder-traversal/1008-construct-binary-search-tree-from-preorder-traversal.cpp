@@ -32,7 +32,6 @@ public:
             else if(i == right)
             {
                 root->left = dfs(preorder , left +1, right);
-                break;
 
             }
         }
