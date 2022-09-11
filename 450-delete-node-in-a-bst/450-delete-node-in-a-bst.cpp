@@ -34,10 +34,20 @@ public:
             }
                 else
             {
-                TreeNode * successor = maxNode (root->left);
-                root->val = successor->val;
-                root->left = deleteNode(root->left,successor->val);
-                cur= nullptr;
+TreeNode* parent = root;
+				TreeNode* child = root->right;
+				while (child->left)
+					parent = child, child = child->left;
+
+				root->val = child->val;
+
+				if (parent->right == child) {
+					parent->right = child->right;
+				}
+				else
+					parent->left = child->right;
+				delete child;
+                    cur = nullptr;
             }
             if(cur!=nullptr)
                 delete cur;
