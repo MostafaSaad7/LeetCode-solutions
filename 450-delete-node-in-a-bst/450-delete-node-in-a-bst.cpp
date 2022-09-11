@@ -13,8 +13,9 @@ class Solution {
 public:
     TreeNode* deleteNode(TreeNode* root, int key) 
     {
-        if(root != nullptr)
-        {       
+        if(!root)
+            return root;
+                
         if(root->val < key)
             root->right = deleteNode(root->right , key);
         else if (root->val > key )
@@ -36,7 +37,7 @@ public:
             if(cur!=nullptr)
                 delete cur;
         }
-        }
+        
         return root;
     }
 
@@ -46,6 +47,5 @@ public:
             root = root->left;
         return root;
     }
-        
         
 };
