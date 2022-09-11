@@ -24,10 +24,15 @@ public:
         {
             TreeNode* cur = root;
             if(!root->left)
-                return root->right;
+            {               
+
+                root = root->right;
+            }
             else if (!root->right)
-                return root->left;
-            else
+            {
+                root = root->left;
+            }
+                else
             {
                 TreeNode * successor = maxNode (root->left);
                 root->val = successor->val;
