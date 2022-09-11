@@ -13,7 +13,7 @@ class Solution {
 public:
     TreeNode* deleteNode(TreeNode* root, int key) 
     {
-        if(!root)
+        if(root==nullptr)
             return root;
                 
         if(root->val < key)
@@ -29,9 +29,9 @@ public:
                 return root->left;
             else
             {
-                TreeNode * successor = minNode (root->right);
+                TreeNode * successor = maxNode (root->left);
                 root->val = successor->val;
-                root->right = deleteNode(root->right,successor->val);
+                root->left = deleteNode(root->left,successor->val);
                 cur= nullptr;
             }
             if(cur!=nullptr)
@@ -41,10 +41,10 @@ public:
         return root;
     }
 
-    TreeNode *minNode(TreeNode *root )
+    TreeNode *maxNode(TreeNode *root )
     {
-        while(root->left!=nullptr)
-            root = root->left;
+        while(root->right!=nullptr)
+            root = root->right;
         return root;
     }
         
