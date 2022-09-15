@@ -15,11 +15,10 @@ public:
             return nullptr;
        ListNode* prev = head;
        ListNode* current = head->next;
-       ListNode* temp = nullptr;
        prev->next=nullptr;
        while(current)
        {
-           temp = current->next;
+           ListNode* temp = current->next;
            current->next = prev;
            prev=current;
            current = temp;
