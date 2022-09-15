@@ -16,7 +16,7 @@ public:
             return head;
         ListNode * curr= head;
         ListNode * it=curr->next;
-        while(curr->next)
+        while(curr&&curr->next)
         {
          if(it &&curr->val == it->val)
          {
@@ -26,10 +26,11 @@ public:
             {
                 deleteNodes(curr->next ,it);
                 curr->next=it;
-                    if(it){   
+                 if(it)
+                 {
                 curr=it;
                 it=curr->next;}
-            }
+             }
         }
 
         return head;
