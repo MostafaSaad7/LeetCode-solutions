@@ -16,19 +16,15 @@ public:
             return head;
         ListNode * curr= head;
         ListNode * it=curr->next;
-        bool dup =false;
         while(curr->next)
         {
          if(it &&curr->val == it->val)
          {
              it = it->next;
-            dup =true;
          }
              else
             {
-                 if(dup)
                 deleteNodes(curr->next ,it);
-                 dup =false;
                 curr->next=it;
                     if(it){   
                 curr=it;
