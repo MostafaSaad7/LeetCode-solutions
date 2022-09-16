@@ -41,7 +41,7 @@ public:
         curr->next= list2;
     curr=head;
     head=head->next;
-    delete curr;
+    // delete curr;
     return head;
             
         
