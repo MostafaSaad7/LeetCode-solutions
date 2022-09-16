@@ -16,20 +16,19 @@ public:
             return head;
         
         ListNode * curr= head;
-        ListNode * prev= head;
+        ListNode * prev= new ListNode (-1,head);
+        head=prev;
         
  
         while(curr)
         {
             if(curr->val == val)
             {
-                if(head==curr)
-                    head= head->next,prev=head,curr=prev; 
-                else{
+            
                 prev->next=curr->next;
                 delete curr;
                 curr=prev->next;
-            }
+            
             }
             else
             {
@@ -39,6 +38,6 @@ public:
             
         }
 
-        return head;
+        return head->next;
     }
 };
