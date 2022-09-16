@@ -16,7 +16,7 @@ public:
             return head;
         ListNode * curr= head;
         ListNode * it=curr->next;
-        while(curr&&curr->next)
+        while(curr->next)
         {
          if(it &&curr->val == it->val)
          {
