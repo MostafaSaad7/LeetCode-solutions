@@ -39,8 +39,10 @@ public:
         curr->next=list1;
     else if(list2)
         curr->next= list2;
-    
-    return head->next;
+    curr=head;
+    head=head->next;
+    delete curr;
+    return head;
             
         
         
