@@ -7,7 +7,7 @@ public:
         for(int i = 0 ; i <nums.size(); i++)
         {
             int diff= target - nums [i];
-            if(m.count(diff)!=0)
+            if(m.find(diff)!=m.end())
             {
                 res.push_back(i);
                 res.push_back(m[diff]);
