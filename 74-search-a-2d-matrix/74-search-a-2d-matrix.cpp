@@ -4,6 +4,7 @@ public:
         
         const int cols= matrix[0].size();
         const int rows = matrix.size();
+        //binary search for row
         int top=0, bottom = rows-1,row=-1;
         while(top<=bottom)
         {
@@ -22,7 +23,7 @@ public:
             return false;
         
         
-        
+        //binary search for target 
         int left = 0 , right = cols -1 ;
         while(left <=right)
         {
