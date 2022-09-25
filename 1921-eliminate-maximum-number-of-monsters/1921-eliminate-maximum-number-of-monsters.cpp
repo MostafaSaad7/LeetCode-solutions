@@ -2,7 +2,6 @@ class Solution {
 public:
     int eliminateMaximum(vector<int>& dist, vector<int>& speed)     {
         vector<double> reqMin(dist.size());
-        int min = 0;
         int killed =0;
         for(int i = 0 ; i < speed.size(); i++)
         {
@@ -10,14 +9,9 @@ public:
         }
         
         sort(reqMin.begin(),reqMin.end());
-        for(int i = 0 ; i < speed.size(); i++)
+        for(int i = 0 ; i < speed.size() && i<reqMin[i]; i++)
         {
-            if(reqMin[i]-min<=0.0)
-            {
-                break;
-            }
-                killed++;
-            min++;
+            killed++;
         }
       
         return killed;
