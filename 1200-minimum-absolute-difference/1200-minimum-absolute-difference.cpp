@@ -7,7 +7,7 @@ public:
             
         for(int i =1 ; i< arr.size();i++)
         {
-            minDiff = min (abs(arr[i]-arr[i-1]),minDiff);
+            minDiff = min (arr[i]-arr[i-1],minDiff);
 
             
         }
