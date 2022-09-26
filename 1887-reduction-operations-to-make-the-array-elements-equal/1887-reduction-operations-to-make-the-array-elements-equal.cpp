@@ -1,13 +1,19 @@
 class Solution {
 public:
-	int reductionOperations(vector<int> &nums) {
-		sort(nums.rbegin(), nums.rend());	
-
-		int operations = 0;
-		for (int i = 1; i < (int)nums.size(); ++i)
-			if (nums[i] != nums[i - 1])
-				operations += i;
-
-		return operations;
-	}
+    int reductionOperations(vector<int>& nums) {
+        int n = nums.size();
+        
+        map<int, int> mp;
+        for(int i = 0; i < n; i ++) {
+            mp[nums[i]] ++;             // storing the frequency
+        }
+        
+        int ans = 0;
+        int pre = 0;
+        for (auto i = mp.end(); i != mp.begin(); i--) {
+            ans += i -> second + pre;   // total operations
+            pre += i -> second;         // maintaing the previous frequency count
+        }
+        return ans;
+    }
 };
