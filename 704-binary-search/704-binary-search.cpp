@@ -1,8 +1,6 @@
 class Solution {
 public:
     int search(vector<int>& nums, int target) {
-       if(target < nums[0] || target > nums[nums.size()-1])
-            return -1;
         int left = 0 ; 
         int right = nums.size()-1;
         while(left<=right)
