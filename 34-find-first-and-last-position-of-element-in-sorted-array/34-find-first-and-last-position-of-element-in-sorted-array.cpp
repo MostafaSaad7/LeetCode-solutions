@@ -5,7 +5,7 @@ public:
         auto p = equal_range(nums.begin(),nums.end(),target);
         if(p.first ==nums.end())
             return v;
-        if(nums[p.first - nums.begin()] == target )
+        else if(nums[p.first - nums.begin()] == target )
         {
             v[0]=p.first - nums.begin();
             v[1]=p.second-nums.begin()-1;
