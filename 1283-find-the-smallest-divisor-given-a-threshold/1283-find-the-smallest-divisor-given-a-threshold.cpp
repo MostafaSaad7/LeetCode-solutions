@@ -1,15 +1,16 @@
 class Solution
 {
 public:
-	bool fun(vector<int> &nums, int divisor, int threshold)
+	bool fun(vector<int> &nums, int divisor, int thershold)
 	{
 		long long sum = 0;
 		for (int &num : nums)
 		{
 			sum += (num + divisor - 1) / divisor;
-	
+			if (sum > thershold)
+				return false;
 		}
-		return sum <=threshold;
+		return true;
 	}
 	int smallestDivisor(vector<int> &nums, int threshold)
 	{
