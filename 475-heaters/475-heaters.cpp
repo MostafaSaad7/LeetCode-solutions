@@ -2,12 +2,11 @@ class Solution {
 public:
    bool possible(vector<int> &houses, vector<int> heaters, int ridus) {
 		int j = 0;
-		for (int i = 0; i < (int) heaters.size(); ++i) {
-			// Covered range [left, right] by the ith heater
+		for (int i = 0; i < (int) heaters.size(); ++i) {// O(N+M)
 			int leftC = heaters[i] - ridus, rightC = heaters[i] + ridus;
 
 			while (j < (int) houses.size() && leftC <= houses[j] && houses[j] <= rightC)
-				++j;	// cover more houses with ith heater
+				++j;	
 		}
 		return j == (int) houses.size();	// all is covered?
 	}
