@@ -1,27 +1,22 @@
+
 class Solution {
 public:
-   bool possible(vector<int> &houses, vector<int> heaters, int ridus) {
-		int j = 0;
-		for (int i = 0; i < (int) heaters.size(); ++i) {// O(N+M)
-			int leftC = heaters[i] - ridus, rightC = heaters[i] + ridus;
-
-			while (j < (int) houses.size() && leftC <= houses[j] && houses[j] <= rightC)
-				++j;	
-		}
-		return j == (int) houses.size();	// all is covered?
-	}
-    int findRadius(vector<int>& houses, vector<int>& heaters) {
-        sort(houses.begin(), houses.end());
+	int findRadius(vector<int> &houses, vector<int> &heaters) {
 		sort(heaters.begin(), heaters.end());
+		int radius = INT_MIN;
 
-		int start = 0, end = 1e9, radius = -1;
-		while (start <= end) {
-			int mid = start + (end - start) / 2;
-			if (possible(houses, heaters, mid))	// find smallest
-				end = mid - 1, radius = mid;
-			else
-				start = mid + 1;
+		for (int i = 0; i < (int)houses.size(); i++) {
+			int idx = lower_bound(heaters.begin(), heaters.end(), houses[i]) - heaters.begin();
+
+			if(idx == (int)heaters.size())	// after heaters
+				radius = max(radius, abs(heaters[idx - 1] - houses[i]));
+			else if (idx == 0)				// before heaters
+				radius = max(radius, abs(heaters[idx] - houses[i]));
+			else {							// surrounded by heaters: comapr idx and idx-1
+				int besti_r = min(abs(heaters[idx] - houses[i]), abs(heaters[idx - 1] - houses[i]));
+				radius = max(radius, besti_r);
+			}
 		}
 		return radius;
-    }
+	}
 };
