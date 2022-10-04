@@ -18,6 +18,6 @@ public:
                 left = mid;
         }
 
-        return (int)(mid + 1e-9);
+        return (int)(mid);
     }
 };
