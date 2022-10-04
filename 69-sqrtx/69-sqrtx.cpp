@@ -8,9 +8,9 @@ public:
     int mySqrt(int x)
     {
         double left = 0, right = x, mid = 0;
-        while (fabs(left - right) > 1e-9)
+        for (int i = 0; i < 100 ; i++)
         {
-            mid =( left + right  ) / 2;
+            mid = left + (right - left) / 2;
 
             if (fun(mid) > x)
                 right = mid;
