@@ -11,7 +11,7 @@ public:
 class Solution
 {
 private:
-    unordered_map<int, Employee *> mp; // id >> emp ----> to reduce search time in emp  vector
+    unordered_map<int, Employee *> mp; // id >> emp ----> to reduce search time in //emp  vector
 
 public:
     int getImportance(vector<Employee *> & employees, int id)
