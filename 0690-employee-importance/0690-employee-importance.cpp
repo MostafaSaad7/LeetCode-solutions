@@ -10,22 +10,28 @@ public:
 
 class Solution
 {
+private:
+    unordered_map<int, Employee *> mp; // id >> emp ----> to reduce search time in emp  vector
+
 public:
-    int sum = 0;
     int getImportance(vector<Employee *> employees, int id)
     {
-        for (int i = 0; i < employees.size(); i++)
-        {
-            if (employees[i]->id == id)
-            {
-                sum += employees[i]->importance;
-                for (int x : employees[i]->subordinates)
-                {
-                    getImportance(employees, x);
-                }
-            }
-        }
+        mapVec(employees);
+        Employee *emp = mp[id];
 
+        int sum = emp->importance;
+        for (auto subordinate : emp->subordinates)
+        {
+            sum += getImportance(employees, subordinate);
+        }
         return sum;
+    }
+
+    void mapVec(vector<Employee *> &employees)
+    {
+        for (auto &i : employees)
+        {
+            mp[i->id] = i;
+        }
     }
 };
