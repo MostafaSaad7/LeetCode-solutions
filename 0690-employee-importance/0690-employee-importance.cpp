@@ -14,13 +14,13 @@ private:
     unordered_map<int, Employee *> mp; // id >> emp ----> to reduce search time in emp  vector
 
 public:
-    int getImportance(vector<Employee *> employees, int id)
+    int getImportance(vector<Employee *> & employees, int id)
     {
         mapVec(employees);
         Employee *emp = mp[id];
 
         int sum = emp->importance;
-        for (auto subordinate : emp->subordinates)
+        for (auto &subordinate : emp->subordinates)
         {
             sum += getImportance(employees, subordinate);
         }
