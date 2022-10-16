@@ -22,30 +22,28 @@ public:
 		return false;
 	}
 
-	void dfs(int r, int c, vector<vector<int>> &grid) {
+	bool dfs(int r, int c, vector<vector<int>> &grid) {
 		if (!isvalid(r, c, grid) || grid[r][c]==-1 || grid[r][c] == 1)
-			return;		// invalid, visited or non-CC
+			return true;		// invalid, visited or non-CC
 
 		if (isGridBoundry(r, c, grid))
         {
-			is_touched_boundry = true;
-            return;
+            return false;
         }
         grid[r][c]=-1; // mark as visited
+        bool res = true;
 		for (int d = 0; d < 4; ++d)
-			dfs(r + dr[d], c + dc[d], grid);
+			res = dfs(r + dr[d], c + dc[d], grid) && res;
+        return res;
 	}
 
 	int closedIsland(vector<vector<int>> &grid) {
-		vector<vector<int>> ccIDs(grid.size(), vector<int>(grid[0].size()));
 		int rows = grid.size(), cols = grid[0].size(), count = 0;
-
 		for (int r = 0; r < rows; ++r) {
 			for (int c = 0; c < cols; ++c) {
 				if (!grid[r][c]) {	// New CC component of ZEROs
-					is_touched_boundry = false;
-					dfs(r, c, grid);
-					count += !is_touched_boundry;
+					bool res = dfs(r, c, grid);
+					count += res;
 				}
 			}
 		}
