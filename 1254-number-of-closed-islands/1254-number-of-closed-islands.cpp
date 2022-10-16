@@ -22,8 +22,8 @@ public:
 		return false;
 	}
 
-	void dfs(int r, int c, vector<vector<int>> &grid, vector<vector<int>> &ccIDs, int ccid) {
-		if (!isvalid(r, c, grid) || ccIDs[r][c] || grid[r][c] == 1)
+	void dfs(int r, int c, vector<vector<int>> &grid,int ccid) {
+		if (!isvalid(r, c, grid) || grid[r][c]==-1 || grid[r][c] == 1)
 			return;		// invalid, visited or non-CC
 
 		if (isGridBoundry(r, c, grid))
@@ -31,9 +31,9 @@ public:
 			is_touched_boundry = true;
             return;
         }
-		ccIDs[r][c] = ccid;	// assign this ID to this CC
+        grid[r][c]=-1;
 		for (int d = 0; d < 4; ++d)
-			dfs(r + dr[d], c + dc[d], grid, ccIDs, ccid);
+			dfs(r + dr[d], c + dc[d], grid, ccid);
 	}
 
 	int closedIsland(vector<vector<int>> &grid) {
@@ -42,9 +42,9 @@ public:
 
 		for (int r = 0; r < rows; ++r) {
 			for (int c = 0; c < cols; ++c) {
-				if (!grid[r][c] && !ccIDs[r][c]) {	// New CC component of ZEROs
+				if (!grid[r][c]) {	// New CC component of ZEROs
 					is_touched_boundry = false;
-					dfs(r, c, grid, ccIDs, ++ccid);
+					dfs(r, c, grid, ++ccid);
 					count += !is_touched_boundry;
 				}
 			}
