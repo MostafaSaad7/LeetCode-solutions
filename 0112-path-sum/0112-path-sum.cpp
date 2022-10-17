@@ -11,12 +11,18 @@
  */
 class Solution {
 public:
+    bool isLeaf(TreeNode* root){
+        
+        if(!root->left && !root->right )
+                return true;
+        return false;
+    }
     bool hasPathSum(TreeNode* root, int targetSum) {
         if(!root)
             return false;
         
         targetSum= targetSum - root->val;
-         if (targetSum==0 && !root->left && !root->right)
+         if (targetSum==0 && isLeaf(root))
             return true;
         
         return hasPathSum(root->left,targetSum)||hasPathSum(root->right,targetSum);
