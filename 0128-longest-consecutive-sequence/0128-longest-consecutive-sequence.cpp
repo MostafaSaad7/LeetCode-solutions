@@ -4,10 +4,9 @@ class Solution
 public:
     int longestConsecutive(vector<int> &nums)
     {
-        if(nums.size()==0)
-            return 0;
+
         unordered_set<int> s(nums.begin(), nums.end());
-        int longestSofar = 1;
+        int longestSofar = 0;
         for (auto num : s)
         {
             if (s.count(num - 1) == 0)
