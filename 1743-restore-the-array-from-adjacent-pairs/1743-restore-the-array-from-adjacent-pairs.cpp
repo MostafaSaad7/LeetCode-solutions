@@ -1,11 +1,14 @@
 class Solution
 {
     vector<int> res;
+    int i ;
 
 public:
     vector<int> restoreArray(vector<vector<int>> &adjacentPairs)
     {
         unordered_map<int, vector<int>> graph;
+        res.resize(adjacentPairs.size()+1);
+        i=0;
         for (auto pair : adjacentPairs)
         {
             graph[pair[0]].push_back(pair[1]);
@@ -28,7 +31,7 @@ public:
     void DFS(unordered_map<int, vector<int>> &graph, unordered_set<int> &visited, int currentNode)
     {
         visited.insert(currentNode);
-        res.push_back(currentNode);
+        res[i++]=currentNode;
 
         for (auto &neighbour : graph[currentNode])
         {
