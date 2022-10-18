@@ -29,12 +29,12 @@ public:
 
     bool DFS(vector<vector<char>> &grid, int row, int col, int prevRow, int prevCol, char trackedChar)
     {
-        if (!isValid(grid, row, col) || (row == prevRow && col == prevCol) || (grid[row][col] != trackedChar && grid[row][col] != trackedChar + 100))
+        if (!isValid(grid, row, col) || (row == prevRow && col == prevCol) || (grid[row][col] != trackedChar && grid[row][col] != trackedChar + 26))
             return false;
 
-        if (grid[row][col] == trackedChar + 100)
+        if (grid[row][col] == trackedChar + 26)
             return true;
-        grid[row][col] += 100; // visited
+        grid[row][col] += 26; // visited
         bool res = false;
         if (!(row + 1 == prevRow && col == prevCol))
             res = DFS(grid, row + 1, col, row, col, trackedChar) || res;
