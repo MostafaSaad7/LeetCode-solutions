@@ -25,8 +25,7 @@ public:
 
     void DFS(GRAPH &graph, int cityToReach, vector<bool> &visited, int &result)
     {
-        if (visited[cityToReach])
-            return;
+    
         visited[cityToReach] = true;
         for (auto neighbours : graph[cityToReach])
         {
