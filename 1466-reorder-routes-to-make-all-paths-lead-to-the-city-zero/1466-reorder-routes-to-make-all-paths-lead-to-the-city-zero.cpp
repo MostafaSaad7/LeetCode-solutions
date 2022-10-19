@@ -1,40 +1,39 @@
-typedef vector<vector<int>> GRAPH;
-class Solution
-{
+//DR Mostafa saad code 
+struct edge {
+	int to;
+	bool built;
+};
+
+typedef vector<vector<edge>> GRAPH;
+
+void add_undirected_edge(GRAPH &graph, int from, int to) {
+	// Add the given edge and marked as built already.
+	graph[from].push_back( { to, true });
+	graph[to].push_back( { from, false });	// NOT built
+}
+
+void dfs(GRAPH &graph, int node, vector<bool> &visited, int &reorient_cnt) {
+	visited[node] = true;
+
+	for (edge &e : graph[node]) {
+		if (!visited[e.to]) {
+			reorient_cnt += e.built;	//
+			dfs(graph, e.to, visited, reorient_cnt);
+		}
+	}
+}
+
+class Solution {
 public:
-    void addUndirectedEdge(GRAPH &graph, int from, int to)
-    {
-        graph[from].push_back(to);
-        graph[to].push_back(-from);
-    }
-    int minReorder(int n, vector<vector<int>> &connections)
-    {
-        int result = 0;
-        GRAPH graph(n);
-        vector<bool> visited(n, 0);
-        for (auto edge : connections)
-        {
-            addUndirectedEdge(graph, edge[0], edge[1]);
-        }
+	int minReorder(int nodes, vector<vector<int>> &connections) {
+		int reorient_cnt = 0;
+		GRAPH graph(nodes);
+		vector<bool> visited(nodes);
 
-        // from >> to 0
-        DFS(graph, 0, visited, result);
+		for (auto &edge : connections)
+			add_undirected_edge(graph, edge[0], edge[1]);
 
-        return result;
-    }
-
-    void DFS(GRAPH &graph, int cityToReach, vector<bool> &visited, int &result)
-    {
-    
-        visited[cityToReach] = true;
-        for (auto neighbours : graph[cityToReach])
-        {
-            if (!visited[abs(neighbours)])
-            {
-                if (neighbours > 0)
-                    result++;
-                DFS(graph, abs(neighbours), visited, result);
-            }
-        }
-    }
+		dfs(graph, 0, visited, reorient_cnt);
+		return reorient_cnt;
+	}
 };
