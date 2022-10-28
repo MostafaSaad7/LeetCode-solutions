@@ -4,6 +4,8 @@ public:
         int left =0;
         int right =letters.size()-1;
         char res = letters[0];
+        if(letters[0] > target)
+            return res;
         while(left <= right)
         {
             int mid =(left+right)/2;
