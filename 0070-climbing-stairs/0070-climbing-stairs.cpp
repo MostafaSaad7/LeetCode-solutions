@@ -1,14 +1,16 @@
 class Solution {
-    int arr [46];
 public:
     int climbStairs(int n) {
-        arr[0]=1;
-        arr[1]=1;
+        int p1 = 1 ;
+        int p2 =1 ;
         for(int i = 2 ; i <= n ; i++)
         {
-            arr[i]=arr[i-1]+arr[i-2];
+            int temp = p2 ;
+            
+            p2 = p1 + p2 ;
+            p1 = temp ;
         }
         
-        return arr[n];
+        return p2;
     }
 };
