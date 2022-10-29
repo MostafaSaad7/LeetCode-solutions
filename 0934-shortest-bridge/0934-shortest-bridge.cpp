@@ -27,12 +27,14 @@ public:
 
     int shortestBridge(vector<vector<int>> &grid)
     {
+        bool done = 0;
         queue<vector<int>> q;
-        for (int r = 0; r < (int)grid.size() && q.empty(); r++) // run to get CC
+        for (int r = 0; r < (int)grid.size() && !done; r++) // run to get CC
             for (int c = 0; c < (int)grid[0].size(); c++)
                 if (grid[r][c] == 1)
                 {
                     DFS(q, grid, r, c);
+                    done = 1;
                     break;
                 }
 
