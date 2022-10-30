@@ -1,14 +1,19 @@
-class NumArray { // 12 ms, faster than 99.87%
+class NumArray
+{
+    vector<int> prefix;
+
 public:
-    vector<int>& preSum; // `preSum` will reference to `nums` array, no copy at all!
-    
-    NumArray(vector<int>& nums) : preSum(nums) {
-        for (int i = 1; i < preSum.size(); ++i)
-            preSum[i] += preSum[i-1]; 
+    NumArray(vector<int> &nums):  prefix(nums.size() + 1, 0)
+    {
+        for (int i = 0; i < nums.size(); i++)
+        {
+            prefix[i + 1] = prefix[i] + nums[i];
+        }
+        
     }
-    
-    int sumRange(int left, int right) {
-        if (left == 0) return preSum[right];
-        return preSum[right] - preSum[left-1];
+
+    int sumRange(int left, int right)
+    {
+        return prefix[right+1] - prefix[left];
     }
 };
