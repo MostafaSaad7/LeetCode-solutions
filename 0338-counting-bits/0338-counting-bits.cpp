@@ -1,23 +1,13 @@
 class Solution {
 public:
     vector<int> countBits(int n) {
-        vector <int >DP (n+1);
-        DP[0]=0;
- 
-        
-        for(int i =1 ; i <n+1; i++)
-        {
-            if(i%2==0)
-            {
-                int even = i/2;
-                DP[i]=DP[even];
-        
+        vector<int> ans(n+1,0);
+        for(int i=1 ; i<=n ; i++){
+           if(i%2 == 0){
+               ans[i] = ans[i/2];
+           }else
+               ans[i]=ans[i-1]+1;
             }
-            else 
-                DP[i]=1+DP[i-1];
-        }
-        
-        return DP;
-        
+            return ans;
     }
 };
