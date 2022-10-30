@@ -1,20 +1,23 @@
-class Solution
-{
+class Solution {
 public:
-    vector<int> countBits(int n)
-    {
-        vector<int> res;
-        for (int i = 0; i <= n; i++)
+    vector<int> countBits(int n) {
+        vector <int >DP (n+1);
+        DP[0]=0;
+ 
+        
+        for(int i =1 ; i <n+1; i++)
         {
-            int ones = 0;
-            int num = i;
-            while (num > 0)
+            if(i%2==0)
             {
-                ones += num % 2;
-                num = num / 2;
+                int even = i/2;
+                DP[i]=DP[even];
+        
             }
-            res.push_back(ones);
+            else 
+                DP[i]=1+DP[i-1];
         }
-        return res;
+        
+        return DP;
+        
     }
 };
