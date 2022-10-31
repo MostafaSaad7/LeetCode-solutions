@@ -13,6 +13,7 @@ public:
             slow = slow->next;
         }
 
+        //reverse starting from middle
         ListNode *prev = nullptr;
         while (slow)
         {
