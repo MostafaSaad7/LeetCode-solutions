@@ -6,11 +6,11 @@ public:
     int DFS(TreeNode *root)
     {
         if (root == nullptr)
-            return -1;
+            return 0;
 
         int leftH = DFS(root->left);
         int rightH = DFS(root->right);
-        maxD = max(maxD,2+leftH + rightH);
+        maxD = max(maxD,leftH + rightH);
         return 1 + max(leftH, rightH);
     }
     int diameterOfBinaryTree(TreeNode *root)
