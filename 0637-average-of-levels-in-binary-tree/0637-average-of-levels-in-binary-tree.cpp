@@ -19,7 +19,7 @@ public:
         q.push(root);
         for (int level = 0, sz = q.size(); !q.empty(); level++, sz = q.size())
         {
-            double size = sz;
+            int size = sz;
             double sum = 0;
             while (sz--)
             {
