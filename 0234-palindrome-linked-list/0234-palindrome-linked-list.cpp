@@ -3,31 +3,37 @@ class Solution
 public:
     bool isPalindrome(ListNode *head)
     {
-        deque<ListNode *> d;
-        ListNode *temp = head;
-        while (temp)
+        ListNode *fast = head;
+        ListNode *slow = head;
+
+        // middle
+        while (fast && fast->next)
         {
-            d.push_back(temp);
-            temp = temp->next;
+            fast = fast->next->next;
+            slow = slow->next;
         }
 
-        while (!d.empty())
+        ListNode *prev = nullptr;
+        while (slow)
         {
-
-            if (d.front()->val == d.back()->val)
+            ListNode *temp = slow->next;
+            slow->next = prev;
+            prev = slow;
+            slow = temp;
+        }
+        ListNode *left = head;
+        ListNode *right = prev;
+        while (right)
+        {
+            if (left->val == right->val)
             {
-                if (d.size() > 1)
-                {
-                    d.pop_back();
-                    d.pop_front();
-                }
-                else
-                    d.pop_back();
+                left = left->next;
+                right = right->next;
             }
-
             else
                 return false;
         }
+
         return true;
     }
 };
