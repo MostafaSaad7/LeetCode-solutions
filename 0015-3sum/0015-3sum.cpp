@@ -20,7 +20,7 @@ public:
                 {
                     res.push_back({{nums[i], nums[left], nums[right]}});
                     left++;
-                     while (left < nums.size() && nums[left]==nums[left-1]) left++;
+                     while (left < right && nums[left]==nums[left-1]) left++;
                 }
                 else if (sum > 0)
                     right--;
