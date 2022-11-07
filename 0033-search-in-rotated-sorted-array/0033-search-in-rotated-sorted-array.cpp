@@ -17,7 +17,7 @@ public:
         // The usual binary search and accounting for rotation.
         while(lo<=hi){
             int mid=(lo+hi)/2;
-            int realmid=(mid+rot)%n;
+            int realmid=(mid+rot)%n; // so smart 
             if(A[realmid]==target)return realmid;
             if(A[realmid]<target)lo=mid+1;
             else hi=mid-1;
