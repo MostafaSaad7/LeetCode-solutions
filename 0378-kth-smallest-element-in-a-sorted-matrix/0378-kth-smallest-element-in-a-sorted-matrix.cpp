@@ -1,18 +1,46 @@
+#include <bits/stdc++.h>
+using namespace std;
+
 class Solution
 {
 public:
+    int countNlessEqual(vector<vector<int>> &matrix, int mid)
+    {
+        int count = 0;
+        int col = matrix.size() - 1;
+        int row = 0;
+        while (col >= 0 && row < matrix.size())
+        {
+            if (matrix[row][col] <= mid)
+            {
+                count += col + 1;
+                row++;
+            }
+            else
+                col--;
+        }
+
+        return count;
+    }
     int kthSmallest(vector<vector<int>> &matrix, int k)
     {
-        priority_queue<int> maxHeap;
-        for (int i = 0; i < matrix.size(); i++)
+        int n = matrix.size();
+        int min = matrix[0][0];
+        int max = matrix[n - 1][n - 1];
+        int ans = -1;
+        while (min <= max)
         {
-            for (int j = 0; j < matrix[0].size(); j++)
+            int mid = min + (max - min) / 2;
+            int counter = countNlessEqual(matrix, mid);
+            if (counter >= k)
             {
-                maxHeap.push(matrix[i][j]);
-                if (maxHeap.size() > k)
-                    maxHeap.pop();
+                ans = mid;
+                max = mid - 1;
             }
+            else
+                min = mid + 1;
         }
-        return maxHeap.top();
+
+        return ans;
     }
 };
