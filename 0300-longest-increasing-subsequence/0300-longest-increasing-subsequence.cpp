@@ -1,30 +1,30 @@
 const int MAX = 2500 + 1;
-int memory[MAX][MAX];
+int memory[MAX];
 class Solution
 {
 public:
-    int dp(vector<int> &nums, int idx, int prevIdx)
+    int dp(vector<int> &nums, int idx)
     {
         if (idx == nums.size())
             return 0;
 
-        auto &ret = memory[idx][prevIdx];
+        auto &ret = memory[idx];
         if (ret != -1)
             return ret;
+        ret = 0;
+        for (int i = idx + 1; i < nums.size(); i++)
+        {
+            if (nums[i] > nums[idx])
+                ret = max(ret, dp(nums, i));
+        }
 
-        int taken = 0;
-        int left = 0;
-
-        left = dp(nums, idx + 1, prevIdx);
-
-        if (prevIdx == nums.size() || nums[idx] > nums[prevIdx])
-            taken = 1 + dp(nums, idx + 1, idx);
-
-        return ret = max(taken, left);
+        ret += 1;
+        return ret;
     }
     int lengthOfLIS(vector<int> &nums)
     {
         memset(memory, -1, sizeof(memory));
-        return dp(nums, 0, nums.size());
+        nums.insert(nums.begin(), INT_MIN);
+        return dp(nums, 0) - 1;
     }
 };
