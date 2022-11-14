@@ -8,26 +8,23 @@ public:
         if (idx == nums.size())
             return 0;
 
-        if (prevIdx != -1 && memory[idx][prevIdx] != -1)
-            return memory[idx][prevIdx];
+        auto &ret = memory[idx][prevIdx];
+        if (ret != -1)
+            return ret;
 
         int taken = 0;
         int left = 0;
 
         left = dp(nums, idx + 1, prevIdx);
 
-        if (prevIdx == -1 || nums[idx] > nums[prevIdx])
+        if (prevIdx == nums.size() || nums[idx] > nums[prevIdx])
             taken = 1 + dp(nums, idx + 1, idx);
-        int res = 1;
-        if (prevIdx != -1)
-            res = memory[idx][prevIdx] = max(taken, left);
-        else
-            res = max(taken, left);
-        return res;
+
+        return ret = max(taken, left);
     }
     int lengthOfLIS(vector<int> &nums)
     {
         memset(memory, -1, sizeof(memory));
-        return dp(nums, 0, -1);
+        return dp(nums, 0, nums.size());
     }
 };
