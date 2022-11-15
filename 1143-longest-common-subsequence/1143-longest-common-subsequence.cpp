@@ -17,11 +17,11 @@ public:
         int c1 = 0;
         int c2 = 0;
         if (s1[idx1] == s2[idx2])
-            c1 = 1 + dp(idx1 + 1, idx2 + 1);
-        else
-        {
-            c2 = max(dp(idx1 + 1, idx2), dp(idx1, idx2 + 1));
-        }
+            return ref = 1 + dp(idx1 + 1, idx2 + 1);
+        
+            c1 = dp(idx1 + 1, idx2);
+            c2=dp(idx1, idx2 + 1);
+        
 
         return ref = max(c1, c2);
     }
