@@ -8,19 +8,17 @@ public:
     {
         int left = 0;
         int right = n;
-        int res = -1;
-        while (left <= right)
+        while (left < right)
         {
             int mid = left + (right - left) / 2;
             if (isBadVersion(mid) == true)
             {
-                res = mid;
-                right = mid - 1;
+                right = mid;
             }
             else
                 left = mid + 1;
         }
 
-        return res;
+        return right;
     }
 };
