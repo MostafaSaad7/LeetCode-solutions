@@ -11,7 +11,7 @@ public:
         while (left < right)
         {
             int mid = left + (right - left) / 2;
-            if (isBadVersion(mid) == true)
+            if (isBadVersion(mid))
             {
                 right = mid;
             }
