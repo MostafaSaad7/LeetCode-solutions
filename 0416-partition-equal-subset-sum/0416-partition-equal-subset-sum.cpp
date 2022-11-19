@@ -22,16 +22,15 @@ class Solution
 public:
     bool canPartition(vector<int> &nums)
     {
-                g = nums;
-        memset(memory, -1, sizeof(memory));
         int sum = 0;
+        g = nums;
+        memset(memory, -1, sizeof(memory));
         for (int i : nums)
         {
             sum += i;
         }
         if (sum % 2 != 0)
             return false;
-
         return dp(0, sum / 2);
     }
 };
