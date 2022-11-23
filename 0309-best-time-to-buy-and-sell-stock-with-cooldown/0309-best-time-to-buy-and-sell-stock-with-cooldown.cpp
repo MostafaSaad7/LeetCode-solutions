@@ -1,31 +1,26 @@
 vector<int> g;
 const int MAX = 5000 + 1;
-int memory[MAX][2][3];
-const int BUY = 0;
-const int SELL = 1;
-const int NOTHING = 2;
-
+int memory[MAX][2];
 class Solution
 {
 public:
-    int dp(int index, int canBuy = 1, int prevState = 2)
+    int dp(int index, int canBuy = 1)
     {
         if (index >= g.size())
             return 0;
-        int &ret = memory[index][canBuy][prevState];
+        int &ret = memory[index][canBuy];
         if (ret != -1)
             return ret;
         // buy
         int buy = 0;
-        if (canBuy && prevState != SELL)
-            buy = -g[index] + dp(index + 1, 0, BUY);
-
+        if(canBuy)
+        buy = -g[index] + dp(index + 1, 0);
         int doN = 0;
-        doN = dp(index + 1, canBuy, NOTHING);
+        doN = 0 + dp(index + 1, canBuy);
         // sell
         int sell = 0;
         if (!canBuy)
-            sell = g[index] + dp(index + 1, 1, SELL);
+            sell = g[index] + dp(index + 2, 1);
 
         return ret = max({buy, sell, doN});
     }
