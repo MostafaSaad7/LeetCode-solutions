@@ -11,6 +11,6 @@ public:
             dp[i] = min(c1, c2);
         }
 
-        return dp[dp.size()-1];
+        return dp[cost.size()];
     }
 };
