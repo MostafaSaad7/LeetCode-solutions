@@ -15,7 +15,7 @@ class Solution
         if (ret != -1)
             return ret;
         ret = 0;
-        for (int i = 0; i < index; i++)
+        for (int i = index-1; i>=0; i--)
         {
             if (g[i] < g[index])
                 ret = max(ret, dpInc(i));
