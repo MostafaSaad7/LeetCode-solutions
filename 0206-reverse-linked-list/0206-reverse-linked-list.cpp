@@ -16,7 +16,7 @@ public:
        ListNode* prev = head;
        ListNode* current = head->next;
        prev->next=nullptr;
-       while(current && current->next)
+       while(current)
        {
            ListNode* temp = current->next;
            current->next = prev;
@@ -25,12 +25,9 @@ public:
            
        }
         
-        if(current)
-        current->next = prev;
-        else 
-            current = prev ;
+
         
-        return current;
+        return prev;
    
         
     }
