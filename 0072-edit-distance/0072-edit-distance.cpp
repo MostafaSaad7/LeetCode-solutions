@@ -22,6 +22,7 @@ public:
         if (w1[index1] == w2[index2])
             return ret = dp(index1 + 1, index2 + 1);
         int del = 1 + dp(index1 + 1, index2);
+        del=min(del,1+dp(index1,index2+1));
         int change = 1 + dp(index1 + 1, index2 + 1);
         int insert = 1 + dp(index1, index2 + 1);
 
