@@ -25,6 +25,7 @@ public:
         del=min(del,1+dp(index1,index2+1));
         int change = 1 + dp(index1 + 1, index2 + 1);
         int insert = 1 + dp(index1, index2 + 1);
+        insert=min(insert,1+dp(index1+1,index2));
 
         return ret = min({del, change, insert});
     }
