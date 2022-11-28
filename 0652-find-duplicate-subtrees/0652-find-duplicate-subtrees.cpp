@@ -15,10 +15,11 @@ class Solution
     string
     serializeTree(TreeNode *root, vector<TreeNode *> &nodes)
     {
+        string ser = "";
         if (root == nullptr)
             return "#";
 
-        string ser = to_string(root->val) + "," + serializeTree(root->left, nodes) + "," + serializeTree(root->right, nodes);
+         ser += to_string(root->val) + "," + serializeTree(root->left, nodes) + "," + serializeTree(root->right, nodes);
         mp[ser] += 1;
         if (mp[ser] ==2 ) // just push one element
             nodes.push_back(root);
