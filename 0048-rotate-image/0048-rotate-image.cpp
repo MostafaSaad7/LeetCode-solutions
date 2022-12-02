@@ -3,25 +3,22 @@ class Solution
 public:
     void rotate(vector<vector<int>> &matrix)
     {
-        int size = matrix.size();
-        for (int i = 0; i < size; i++)
+        int left = 0, right = matrix.size() - 1;
+        while (left < right)
         {
-            for (int j = i; j < size; j++) // starts from diagonal
+            for (int i = 0; i < (right - left); i++)
             {
-                int temp = matrix[i][j];
-                matrix[i][j] = matrix[j][i];
-                matrix[j][i] = temp;
+                int top = left, bottom = right;
+                int temp = matrix[top][left + i];
+                matrix[top][left + i] = matrix[bottom - i][left];
+                matrix[bottom - i][left] = matrix[bottom][right - i];
+                matrix[bottom][right - i] = matrix[top + i][right];
+                matrix[top + i][right] = temp;
             }
+        left++;
+        right--;
         }
-        // swap each col till middle 
-        for (int i = 0; i < size; i++)
-        {
-            for (int j = 0; j < size/2; j++) // starts from diagonal
-            {
-                int temp = matrix[i][j];
-                matrix[i][j] = matrix[i][size-1-j];
-                matrix[i][size-1-j] = temp;
-            }
-        }
+
+
     }
 };
