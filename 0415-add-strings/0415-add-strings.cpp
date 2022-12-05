@@ -9,14 +9,14 @@ public:
         string result = "";
         while (p1 < num1.size() || p2 < num2.size())
         {
-            int n1 = 0;
-            int n2 = 0;
-            if (p1 < (int)num1.size())
-                n1 = num1[num1.size() - 1 - p1] - '0';
-            if (p2 < (int)num2.size())
-                n2 = num2[num2.size() - 1 - p2] - '0';
 
-            int sum = n1 + n2 + carry;
+            int sum=carry;
+            if (p1 < (int)num1.size())
+                sum+=num1[num1.size() - 1 - p1] - '0';
+            if (p2 < (int)num2.size())
+                sum+=num2[num2.size() - 1 - p2] - '0';
+
+    
             carry = sum / 10;
             int resNum = sum % 10;
             result += '0' + resNum;
