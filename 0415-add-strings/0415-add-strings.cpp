@@ -7,7 +7,7 @@ public:
         int p1 = 0;
         int p2 = 0;
         string result = "";
-        while (p1 < num1.size() || p2 < num2.size())
+        while (p1 < num1.size() || p2 < num2.size() || carry)
         {
 
             int sum=carry;
@@ -23,10 +23,6 @@ public:
             p1++;
             p2++;
         }
-
-        if (carry)
-            result += to_string( carry);
-
         reverse(result.begin(), result.end());
         return result;
     }
