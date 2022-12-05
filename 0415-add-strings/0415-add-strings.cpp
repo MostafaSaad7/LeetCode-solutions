@@ -19,10 +19,14 @@ public:
     
             carry = sum / 10;
             int resNum = sum % 10;
-            result += to_string( resNum);
+            result += '0' + resNum;
             p1++;
             p2++;
         }
+
+        if (carry)
+            result += '0' + carry;
+
         reverse(result.begin(), result.end());
         return result;
     }
