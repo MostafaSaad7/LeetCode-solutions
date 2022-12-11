@@ -3,17 +3,17 @@ class Solution
 public:
     int lengthOfLongestSubstring(string s)
     {
-        unordered_map<char, int> mp;
+        unordered_set<char> st;
         int subLen = 0;
         int start = 0;
         for (int i = 0; i < s.size(); i++)
         {
-            while (mp[s[i]] && start < s.size())
+            while (st.count(s[i]) != 0 && start < s.size())
             {
-                mp[s[start]]--;
+                st.erase(s[start]);
                 start++;
             }
-            mp[s[i]]++;
+            st.insert(s[i]);
             subLen = max(subLen, i - start + 1);
         }
 
