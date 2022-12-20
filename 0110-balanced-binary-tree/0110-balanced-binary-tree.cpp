@@ -1,29 +1,21 @@
 class Solution
 {
 public:
-    int getHeight(TreeNode *root)
+    pair<bool, int> dfs(TreeNode *root)
     {
         if (root == nullptr)
-            return -1;
-        return max(getHeight(root->left), getHeight(root->right)) + 1;
+            return {true, 0};
+        auto left = dfs(root->left);
+        auto right = dfs(root->right);
+
+        bool balanced = left.first & right.first & (abs(left.second - right.second) <= 1);
+        int height = max(left.second, right.second) + 1;
+        return {balanced, height};
     }
 
     bool isBalanced(TreeNode *root)
     {
-        if (root == nullptr)
-            return true;
 
-        int leftH = getHeight(root->left) + 1;
-        int rightH = getHeight(root->right) + 1;
-        bool leftRes = true;
-        bool rightRes = true;
-        if (abs(leftH - rightH) <= 1 && abs(leftH - rightH) >= 0)
-        {
-            leftRes = isBalanced(root->left);
-            rightRes = isBalanced(root->right);
-        }
-        else
-            return false;
-        return leftRes && rightRes;
+        return dfs(root).first;
     }
 };
