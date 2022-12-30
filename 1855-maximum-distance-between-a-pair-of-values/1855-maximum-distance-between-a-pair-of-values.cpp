@@ -1,36 +1,21 @@
-int last_greater(vector<int> &v, int x)
-{
-    int l = 0, r = v.size() - 1;
-    int ans = -1;
-    while (l <= r)
-    {
-        int mid = (l + r) / 2;
-        if (v[mid] >= x)
-        {
-            ans = mid;
-            l = mid + 1;
-        }
-        else
-        {
-            r = mid - 1;
-        }
-    }
-    return ans;
-}
 class Solution
 {
 public:
     int maxDistance(vector<int> &nums1, vector<int> &nums2)
     {
-
+        int p1 = 0;
+        int p2 = 0;
         int ans = 0;
-        for (int i = 0; i < nums1.size(); i++)
+        while (p1 < nums1.size() && p2 < nums2.size())
         {
-            int x = nums1[i];
-            int idx = last_greater(nums2, x);
-            if (idx != -1)
+            if (nums1[p1] <= nums2[p2])
             {
-                ans = max(ans, idx - i);
+                ans = max(ans, p2 - p1);
+                p2++;
+            }
+            else
+            {
+                p1++;
             }
         }
         return ans;
