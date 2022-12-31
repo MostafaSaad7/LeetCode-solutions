@@ -12,7 +12,8 @@ public:
                 res[st.top()] = nums[i % nums.size()];
                 st.pop();
             }
-            st.push(i % nums.size());
+            if(i<nums.size())
+            st.push(i);
         }
 
         return res;
