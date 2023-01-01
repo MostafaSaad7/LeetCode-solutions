@@ -29,9 +29,6 @@ public:
     void reorderList(ListNode *head)
     {
         ListNode *middle = middleNode(head);
-        ListNode *tail = middle;
-        middle = middle->next;
-        tail->next = nullptr;
         ListNode *secondHead = reverseList(middle);
         ListNode *firstHead = head;
         while (secondHead && firstHead)
