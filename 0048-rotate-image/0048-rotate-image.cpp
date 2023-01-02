@@ -4,9 +4,9 @@ public:
     void rotate(vector<vector<int>> &matrix)
     {
         int left = 0, right = matrix.size() - 1;
+        int top = 0, bottom =matrix.size() - 1 ;
         while (left < right)
         {   
-            int top = left, bottom = right;
             for (int i = 0; i < (right - left); i++)
             {
                 int temp = matrix[top][left + i];
@@ -16,7 +16,9 @@ public:
                 matrix[top + i][right] = temp;
             }
         left++;
+        top++;
         right--;
+        bottom--;
         }
 
 
