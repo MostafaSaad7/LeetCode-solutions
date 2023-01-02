@@ -1,24 +1,47 @@
 class Solution
 {
 public:
+    void printMatrix(vector<vector<int>> &matrix)
+    {
+        int size = matrix.size();
+        for (int i = 0; i < size; i++)
+        {
+            for (int j = 0; j < size; j++)
+            {
+                cout << matrix[i][j] << " ";
+            }
+            cout << endl;
+        }
+    }
+    void transpose(vector<vector<int>> &matrix)
+    {
+        int size = matrix.size();
+
+        for (int i = 0; i < size; i++)
+        {
+            for (int j = i + 1; j < size; j++)
+            {
+                int temp = matrix[i][j];
+                matrix[i][j] = matrix[j][i];
+                matrix[j][i] = temp;
+            }
+        }
+    }
+
+    void reverse(vector<vector<int>> &matrix)
+    {
+        int size = matrix.size();
+        for (int i = 0; i < size; i++)
+        {
+            for (int j = 0; j < size / 2; j++)
+            {
+                swap(matrix[i][j], matrix[i][size - j - 1]);
+            }
+        }
+    }
     void rotate(vector<vector<int>> &matrix)
     {
-        int left = 0, right = matrix.size() - 1;
-        while (left < right)
-        {
-            for (int i = 0; i < (right - left); i++)
-            {
-                int top = left, bottom = right;
-                int temp = matrix[top][left + i];
-                matrix[top][left + i] = matrix[bottom - i][left];
-                matrix[bottom - i][left] = matrix[bottom][right - i];
-                matrix[bottom][right - i] = matrix[top + i][right];
-                matrix[top + i][right] = temp;
-            }
-        left++;
-        right--;
-        }
-
-
+        transpose(matrix);
+        reverse(matrix);
     }
 };
