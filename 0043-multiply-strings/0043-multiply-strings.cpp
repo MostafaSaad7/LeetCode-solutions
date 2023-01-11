@@ -16,7 +16,7 @@ public:
                 int mulRes = mul % 10;
                 result[i + j + 1] = mulRes+'0';
             }
-            result[i] += carry;
+            result[i] += carry; // result[i] already has a value
         }
 
         for(int i = 0 ; i < result.size();i++)
