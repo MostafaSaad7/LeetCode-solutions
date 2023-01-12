@@ -142,4 +142,18 @@ public:
         }
         cout << endl;
     }
+
+    ~MyLinkedList()
+    {
+        Node *pointer = head;
+        while (pointer)
+        {
+            Node *temp = pointer;
+            pointer = pointer->next;
+            delete temp;
+        }
+
+        head = nullptr;
+        tail = nullptr;
+    }
 };
