@@ -13,10 +13,9 @@ class Solution
         int &ret = memory[idx][remaining];
         if (ret != -1)
             return ret;
-        if (dp(idx + 1, remaining - g[idx]))
-            return ret = true;
+      
 
-        return ret = dp(idx + 1, remaining);
+        return ret = dp(idx + 1, remaining) ||   dp(idx + 1, remaining - g[idx]);
     }
 
 public:
