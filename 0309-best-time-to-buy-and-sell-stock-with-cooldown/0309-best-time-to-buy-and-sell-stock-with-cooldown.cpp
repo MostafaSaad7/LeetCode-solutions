@@ -16,7 +16,7 @@ public:
         if(canBuy)
         buy = -g[index] + dp(index + 1, 0);
         int doN = 0;
-        doN = 0 + dp(index + 1, canBuy);
+        doN = dp(index + 1, canBuy);
         // sell
         int sell = 0;
         if (!canBuy)
