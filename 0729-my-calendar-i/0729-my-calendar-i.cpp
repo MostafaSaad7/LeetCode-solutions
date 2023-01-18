@@ -9,11 +9,7 @@ public:
 
     bool book(int start, int end)
     {
-        if (m.empty())
-        {
-            m[start] = end;
-            return true;
-        }
+        
 
         auto it = m.lower_bound(start);
 
