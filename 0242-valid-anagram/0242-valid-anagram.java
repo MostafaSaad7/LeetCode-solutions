@@ -7,11 +7,15 @@ class Solution {
         for(int i =0 ;i < t.length();i++)
         {
             alpha[t.charAt(i)-'a']++;
+            alpha[s.charAt(i)-'a']--;
         }
 
-        for(int i = 0; i < s.length(); i++)
-            if(--alpha[s.charAt(i)-'a'] <0 )
+        for (int counter : alpha) {
+            if (counter != 0)
                 return false;
+        }
         return true;
     }
+
+ 
 }
