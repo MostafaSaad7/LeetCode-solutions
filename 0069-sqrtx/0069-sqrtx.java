@@ -2,24 +2,22 @@
     The purpose is to find the greatest number where it's multiplication by itself id lesser than or equal x
  */
 class Solution {
+       double fun(double val)
+    {
+        return val * val;
+    }
     public int mySqrt(int x) {
-        long left = 0;
-        long right = x ;
-        long result = left;
-        while (left <= right) {
-         long  middle = left + (right - left) / 2;
+       double left = 0, right = x, mid = 0;
+        for (int i = 0; i < 100 ; i++)
+        {
+            mid = left + (right - left) / 2;
 
-            if ((middle * middle) == x) {
-                return (int)middle;
-            } else if ((middle * middle) > x) {
-                right = middle - 1;
-            } else {
-                result = middle;
-                left = middle + 1;
-            }
+            if (fun(mid) > x)
+                right = mid;
+            else
+                left = mid;
         }
 
-
-        return (int)result;
+        return (int)(mid);
     }
 }
