@@ -32,13 +32,7 @@ class Solution {
                     stack.push(currNode.left);
                 }
 
-            } else if (currNode.left == null && currNode.right == null) {
-                list.add(currNode.val);
-                hashSet.add(stack.pop());
-
-            }
-            else
-            {
+            } else if ((currNode.left == null || hashSet.contains(currNode.left)) && (currNode.right == null|| hashSet.contains(currNode.right))) {
                 list.add(currNode.val);
                 hashSet.add(stack.pop());
 
