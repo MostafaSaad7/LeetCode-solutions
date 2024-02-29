@@ -5,13 +5,14 @@ class Solution {
         int[] idices = new int[2];
 
         while (leftPointer < rightPointer) {
-            if (numbers[leftPointer] + numbers[rightPointer] == target) {
+            int sum = numbers[leftPointer] + numbers[rightPointer];
+            if (sum == target) {
                 idices[0] = leftPointer + 1;
                 idices[1] = rightPointer + 1;
                 break;
-            } else if (numbers[leftPointer] + numbers[rightPointer] > target) {
+            } else if (sum > target) {
                 rightPointer--;
-            } else if (numbers[leftPointer] + numbers[rightPointer] < target) {
+            } else {
                 leftPointer++;
             }
 
