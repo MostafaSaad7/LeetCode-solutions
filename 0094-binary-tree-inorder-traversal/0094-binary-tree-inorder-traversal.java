@@ -10,17 +10,15 @@ class Solution {
         while (curr !=null || !stack.empty())
         {
 
-            if (curr !=null)
+            while (curr!=null)
             {
                 stack.push(curr);
                 curr=curr.left;
             }
-            else
-            {
-                curr=stack.pop();
-                res.add(curr.val);
-                curr = curr.right;
-            }
+            
+            curr=stack.pop();
+            res.add(curr.val);
+            curr=curr.right;
 
         }
 
@@ -32,4 +30,3 @@ class Solution {
 
 
 }
-
