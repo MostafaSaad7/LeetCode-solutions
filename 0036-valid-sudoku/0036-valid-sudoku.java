@@ -1,79 +1,73 @@
 class Solution {
+
     public boolean isValidSudoku(char[][] board) {
+        //neetcode solution, slightly modified
 
-        Boolean validCol = isValidCol(board);
-
-        if (!validCol) return false;
-        Boolean validRow = isValidRow(board);
-        if (!validRow) return false;
-        Boolean checkinnerSquares = checkinnerSquares(board);
-        if (!checkinnerSquares) return false;
-
-        return true;
-    }
+        //a set of the characters that we have already come across (excluding '.' which denotes an empty space)
+        Set<Character> rowSet = null;
+        Set<Character> colSet = null;
 
 
-    boolean isDigit(char c) {
-        return Character.isDigit(c);
-    }
-
-    private Boolean isValidCol(char[][] board) {
-        for (int j = 0; j < 9; j++) {
-            HashSet<Integer> hashSet = new HashSet<>();
-            for (int i = 0; i < 9; i++) {
-                char c = board[i][j];
-                if (isDigit(c) && hashSet.contains(Integer.parseInt(String.valueOf(c)))) {
-                    return false;
-                } else if (isDigit(c)) {
-                    hashSet.add(Integer.parseInt(String.valueOf(c)));
-                }
-            }
-
-
-        }
-        return true;
-
-    }
-
-
-    boolean isValidRow(char[][] board) {
-        for (int j = 0; j < 9; j++) {
-            HashSet<Integer> hashSet = new HashSet<>();
-            for (int i = 0; i < 9; i++) {
+        for (int i = 0; i < 9; i++) {
+            //reinitialize the sets so we don't carry over found characters from the previous run
+            rowSet = new HashSet<>();
+            colSet = new HashSet<>();
+            for (int j = 0; j < 9; j++) {
+                char r = board[i][j];
                 char c = board[j][i];
-                if (isDigit(c) && hashSet.contains(Integer.parseInt(String.valueOf(c)))) {
-                    return false;
-                } else if (isDigit(c)) {
-                    hashSet.add(Integer.parseInt(String.valueOf(c)));
-                }
-            }
-
-
-        }
-        return true;
-    }
-
-    boolean checkinnerSquares(char[][] board) {
-        for (int boxes = 0; boxes < 9; boxes++) {
-            HashSet<Integer> hashSet = new HashSet<>();
-            for (int i = (boxes / 3) * 3; i <= (2 + (boxes / 3) * 3); i++) {
-                for (int j = (boxes % 3) * 3; j <= 2 + ((boxes % 3) * 3); j++) {
-                    char c = board[i][j];
-                    if (isDigit(c) && hashSet.contains(Integer.parseInt(String.valueOf(c)))) {
+                if (r != '.'){
+                    if (rowSet.contains(r)){
                         return false;
-                    } else if (isDigit(c)) {
-                        hashSet.add(Integer.parseInt(String.valueOf(c)));
+                    } else {
+                        rowSet.add(r);
                     }
                 }
-
-
+                if (c != '.'){
+                    if (colSet.contains(c)){
+                        return false;
+                    } else {
+                        colSet.add(c);
+                    }
+                }
             }
+        }
 
+        //block
+        //loop controls advance by 3 each time to jump through the boxes
+        for (int i = 0; i < 9; i = i + 3) {
+            for (int j = 0; j < 9; j = j + 3) {
+                //checkBlock will return true if valid
+                if (!checkBlock(i, j, board)) {
+                    return false;
+                }
+            }
+        }
+        //passed all tests, therefore valid board
+        return true;
+    }
 
+    public boolean checkBlock(int idxI, int idxJ, char[][] board) {
+        Set<Character> blockSet = new HashSet<>();
+        //if idxI = 3 and indJ = 0
+        //rows = 6 and cols = 3
+        int rows = idxI + 3;
+        int cols = idxJ + 3;
+        //and because i initializes to idxI but only goes to rows, we loop 3 times (once for each row)
+        for (int i = idxI; i < rows; i++) {
+            //same for columns
+            for (int j = idxJ; j < cols; j++) {
+                if (board[i][j] == '.') {
+                    continue;
+                }
+                
+                if (blockSet.contains(board[i][j])) {
+                    return false;
+                }
+
+                blockSet.add(board[i][j]);
+            }
         }
 
         return true;
     }
-
-
 }
