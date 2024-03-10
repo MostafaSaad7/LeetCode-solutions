@@ -1,15 +1,22 @@
 class Solution {
     public int maximumDifference(int[] nums) {
         int maxDef = -1;
-
-        for (int times = 1; times < nums.length; times++) {
-            for (int idx = times - 1; idx >= 0; idx--) {
-                if (nums[times] > nums[idx]) {
-                    int diff = nums[times] - nums[idx];
-                    maxDef = Math.max(diff, maxDef);
-                }
+        int maxElem=nums[nums.length-1];
+        for (int i = nums.length-2 ;i>=0 ; i--)
+        {
+            int substraction = maxElem-nums[i];
+            if (substraction>0)
+            {
+                maxDef=Math.max(maxDef,substraction);
             }
+            else
+            {
+                maxElem=nums[i];
+            }
+            
+            
         }
+
 
         return maxDef;
     }
