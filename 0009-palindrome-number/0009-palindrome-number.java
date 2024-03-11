@@ -2,7 +2,7 @@ class Solution {
     public static boolean isPalindrome(int x) {
         if (x < 0)
             return false;
-        long dividend = 1;
+        long dividend = 1; // long here to avoid overflow 
         //x > dividend*10 the mean of this condition is do we need any other zero to be added to dividend
         while (x >= dividend * 10) {
             dividend *= 10;
