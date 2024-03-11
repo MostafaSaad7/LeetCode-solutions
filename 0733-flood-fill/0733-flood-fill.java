@@ -1,30 +1,27 @@
 class Solution {
 
-    int intialColor;
+    int initialColor;
 
     public int[][] floodFill(int[][] image, int sr, int sc, int color) {
-        intialColor = image[sr][sc];
+        initialColor = image[sr][sc];
         dfs(image, sr, sc, color);
         return image;
     }
 
-
     void dfs(int[][] image, int sr, int sc, int color) {
-        if (!isValidIndx(image, sr, sc) || image[sr][sc] != intialColor || image[sr][sc] == color) return;
-
+        if (!isValidIndex(image, sr, sc) || image[sr][sc] != initialColor || image[sr][sc] == color) return;
 
         image[sr][sc] = color;
-        dfs(image, sr + 1, sc, color);
-        dfs(image, sr - 1, sc, color);
-        dfs(image, sr, sc + 1, color);
-        dfs(image, sr, sc - 1, color);
-
+        int[] dx = {0, 1, 0, -1}; 
+        int[] dy = {1, 0, -1, 0}; 
+        for (int i = 0; i < 4; i++) {
+            int x = sr + dx[i];
+            int y = sc + dy[i];
+            dfs(image, x, y, color);
+        }
     }
 
-
-    boolean isValidIndx(int[][] image, int sr, int sc) {
-        if (sr >= image.length || sr < 0 || sc >= image[0].length || sc < 0) return false;
-        return true;
-
+    boolean isValidIndex(int[][] image, int sr, int sc) {
+        return sr >= 0 && sr < image.length && sc >= 0 && sc < image[0].length;
     }
 }
