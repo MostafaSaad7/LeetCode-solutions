@@ -5,16 +5,16 @@
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
-<pre style="position: relative;"><strong>Input:</strong> nums = [100,4,200,1,3,2]
+<pre><strong>Input:</strong> nums = [100,4,200,1,3,2]
 <strong>Output:</strong> 4
 <strong>Explanation:</strong> The longest consecutive elements sequence is <code>[1, 2, 3, 4]</code>. Therefore its length is 4.
-<div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+</pre>
 
 <p><strong class="example">Example 2:</strong></p>
 
-<pre style="position: relative;"><strong>Input:</strong> nums = [0,3,7,2,5,8,4,6,0,1]
+<pre><strong>Input:</strong> nums = [0,3,7,2,5,8,4,6,0,1]
 <strong>Output:</strong> 9
-<div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+</pre>
 
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
