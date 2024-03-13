@@ -20,7 +20,7 @@ class Solution {
     }
 
     void dfs(int[][] grid, int i, int j) {
-        if (!isValidIndecies(grid, i, j)) {
+        if (!isValidIndecies(grid, i, j) ) {
             isClosedIsland = false;
             return;
         } else if (grid[i][j] == 1 || grid[i][j] == -1) {
