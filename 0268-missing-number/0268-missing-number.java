@@ -5,15 +5,28 @@ class Solution {
     public static int missingNumber(int[] nums) {
 
 
+
+
+        int sum = nums.length;
+        for (int i = 0; i < nums.length; i++) {
+            sum += (i - nums[i]);
+        }
+        return sum;
+
+    }
+
+    public static int missingNumberSol2(int[] nums) {
+
+
         /*
          *
-         * Xor two similar number return 0 
-         * Xor 0 with any number return this number 
+         * Xor two similar number return 0
+         * Xor 0 with any number return this number
          * */
 
         int res = nums.length;
         for (int i = 0; i < nums.length; i++) {
-            res =res^ i ^ nums[i];
+            res = res ^ i ^ nums[i];
         }
         return res;
 
@@ -32,7 +45,7 @@ class Solution {
          *
          * */
         int n = nums.length;
-        int sum = ((n + 1) * (0 + n)) / 2;
+        int sum = ((n + 1) * (n)) / 2;
         for (int i = 0; i < n; i++) {
             sum -= nums[i];
         }
