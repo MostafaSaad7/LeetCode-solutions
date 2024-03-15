@@ -6,6 +6,23 @@ class Solution {
 
 
         /*
+         *
+         * Xor two similar number return 0 
+         * Xor 0 with any number return this number 
+         * */
+
+        int res = nums.length;
+        for (int i = 0; i < nums.length; i++) {
+            res =res^ i ^ nums[i];
+        }
+        return res;
+
+    }
+
+    public static int missingNumberSol1(int[] nums) {
+
+
+        /*
          * eg :
          * nums [0,2,3,4,5] -- nums sum =14
          * elements for 0--->5
@@ -15,7 +32,7 @@ class Solution {
          *
          * */
         int n = nums.length;
-        int sum = ((n+1) * (0 + n)) / 2;
+        int sum = ((n + 1) * (0 + n)) / 2;
         for (int i = 0; i < n; i++) {
             sum -= nums[i];
         }
