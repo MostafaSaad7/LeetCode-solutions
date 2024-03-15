@@ -21,10 +21,11 @@ class Solution {
             if (!hashSet.contains(s.charAt(right))) {
                 hashSet.add(s.charAt(right++));
             } else {
-                res = Math.max(res, hashSet.size());
                 hashSet.remove(s.charAt(left));
                 left++;
             }
+            res = Math.max(res, hashSet.size());
+
 
         }
         res = Math.max(res, hashSet.size());
