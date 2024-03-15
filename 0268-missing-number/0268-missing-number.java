@@ -1,22 +1,26 @@
 import java.util.Arrays;
-import java.util.HashSet;
-import java.util.stream.Collectors;
+import java.util.List;
 
 class Solution {
-    public int missingNumber(int[] nums) {
+    public static int missingNumber(int[] nums) {
 
-        HashSet<Integer> numSet = (HashSet<Integer>) Arrays.stream(nums)
-                .boxed()  // Convert int to Integer to use Collectors.toSet()
-                .collect(Collectors.toSet());
 
-        for (int i = 0 ; i<=nums.length;i++)
-        {
-            if (!numSet.contains(i))
-                return i;
+        /*
+         * eg :
+         * nums [0,2,3,4,5] -- nums sum =14
+         * elements for 0--->5
+         * sum=15
+         * res = sum- nums sum = 15-14=1
+         *
+         *
+         * */
+        int n = nums.length;
+        int sum = ((n+1) * (0 + n)) / 2;
+        for (int i = 0; i < n; i++) {
+            sum -= nums[i];
         }
-        
-        
-        return 0;
-
+        return sum;
     }
+
+
 }
