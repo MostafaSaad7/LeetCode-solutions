@@ -20,11 +20,11 @@ class Solution {
         while (left < s.length() && right < s.length()) {
             if (!hashSet.contains(s.charAt(right))) {
                 hashSet.add(s.charAt(right++));
+                            res = Math.max(res, hashSet.size());
             } else {
                 hashSet.remove(s.charAt(left));
                 left++;
             }
-            res = Math.max(res, hashSet.size());
 
 
         }
