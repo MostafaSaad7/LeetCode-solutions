@@ -6,16 +6,14 @@ class Solution {
         for (int end = start; end < nums.length; end++) {
             if (nums[end] == 0)
                 numberOfZeros++;
-            if (numberOfZeros <= k)
-                longestOnesCount = Math.max(longestOnesCount, end - start + 1);
-            else {
-                while (numberOfZeros > k) {
-                    if (nums[start] == 0)
-                        numberOfZeros--;
-                    start++;
+            while (numberOfZeros > k) {
+                if (nums[start] == 0)
+                    numberOfZeros--;
+                start++;
 
-                }
             }
+
+            longestOnesCount = Math.max(longestOnesCount, end - start + 1);
         }
         return longestOnesCount;
     }
