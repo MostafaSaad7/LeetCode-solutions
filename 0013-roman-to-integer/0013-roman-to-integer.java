@@ -1,30 +1,35 @@
-import java.util.HashMap;
-
 class Solution {
     public int romanToInt(String s) {
-        // Create a HashMap to store the mapping of Roman numerals to values
-        HashMap<Character, Integer> romanMap = new HashMap<>();
+        // Store the mapping of Roman numerals to their corresponding values in an array
+        int[] values = new int[26];
+        values['I' - 'A'] = 1;
+        values['V' - 'A'] = 5;
+        values['X' - 'A'] = 10;
+        values['L' - 'A'] = 50;
+        values['C' - 'A'] = 100;
+        values['D' - 'A'] = 500;
+        values['M' - 'A'] = 1000;
+
         int result = 0;
-
-        // Populate the HashMap with the Roman numerals and their corresponding values
-        romanMap.put('I', 1);
-        romanMap.put('V', 5);
-        romanMap.put('X', 10);
-        romanMap.put('L', 50);
-        romanMap.put('C', 100);
-        romanMap.put('D', 500);
-        romanMap.put('M', 1000);
-
-        for (int i = 0; i < s.length() - 1; i++) {
-            int currentNumberVal = romanMap.get(s.charAt(i));
-            int nextNumberValue = romanMap.get(s.charAt(i + 1));
-            if (currentNumberVal < nextNumberValue) {
-                result -= currentNumberVal;
+        int prevValue = values[s.charAt(0) - 'A']; // Initialize prevValue with the value of the first character
+        
+        for (int i = 1; i < s.length(); i++) {
+            int currentValue = values[s.charAt(i) - 'A'];
+            
+            // If the current numeral is part of a subtractive pair, subtract its value
+            if (prevValue < currentValue) {
+                result -= prevValue;
             } else {
-                result += currentNumberVal;
+                result += prevValue;
             }
+            
+            // Update prevValue for the next iteration
+            prevValue = currentValue;
         }
-        result += romanMap.get(s.charAt(s.length()-1));
+        
+        // Add the value of the last numeral
+        result += prevValue;
+        
         return result;
     }
 }
