@@ -6,11 +6,9 @@ class Solution {
         while (fast < nums.length) {
             int slowNumber = nums[slow];
             int fastNumber = nums[fast];
-            if (slowNumber != 0) {
-                slow = fast;
-            } else if (fastNumber != 0) {
+               if (fastNumber != 0) {
                 nums[slow]=fastNumber;
-                nums[fast]=0;
+                nums[fast]=slowNumber;
                 slow++;
             }
 
@@ -27,10 +25,10 @@ class Solution {
 if not eq zero replace it with f
 
 s and f
-    1- s at non zero then s =f
-    2- f at zero and s at non zero so s = f
-    3- f at zero and s at zero then do nothing
-    4- f at non zero and s at zero then swap and increase s by 1
+1- s at non zero then s =f
+2- f at zero and s at non zero so s = f
+3- f at zero and s at zero then do nothing
+4- f at non zero and s at zero then swap and increase s by 1
 
     Output: [1,3,12,0,0]
 *
