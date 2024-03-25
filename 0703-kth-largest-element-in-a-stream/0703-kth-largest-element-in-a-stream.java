@@ -4,33 +4,31 @@ import java.util.PriorityQueue;
 
 class KthLargest {
 
-    PriorityQueue<Integer> priorityQueue;
     PriorityQueue<Integer> priorityQueueMax;
     int times = 0;
 
     public KthLargest(int k, int[] nums) {
-        priorityQueue = new PriorityQueue<>(Collections.reverseOrder());
         priorityQueueMax = new PriorityQueue<>();
         times = k;
-        for (int num : nums) {
-            priorityQueue.add(num);
-        }
-        for (int i = 0; i < times && !priorityQueue.isEmpty(); i++) {
-            priorityQueueMax.add(priorityQueue.remove());
+        for (int i = 0; i < nums.length; i++) {
+            priorityQueueMax.add(nums[i]);
+            if (priorityQueueMax.size() > times)
+                priorityQueueMax.remove();
+
         }
     }
 
     public int add(int val) {
-        if (priorityQueueMax.size() < times) {
+        if (priorityQueueMax.size() < times)
             priorityQueueMax.add(val);
-        } else if (val > priorityQueueMax.peek()) {
-            priorityQueue.add(priorityQueueMax.remove());
+        else if (priorityQueueMax.peek() < val) {
+            priorityQueueMax.remove();
             priorityQueueMax.add(val);
-        } else {
-            priorityQueue.add(val);
         }
+
         return priorityQueueMax.peek();
     }
+
 }
 
 /**
