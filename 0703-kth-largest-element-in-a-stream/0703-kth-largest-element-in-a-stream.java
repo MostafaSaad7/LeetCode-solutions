@@ -19,11 +19,10 @@ class KthLargest {
     }
 
     public int add(int val) {
-        if (priorityQueueMax.size() < times)
-            priorityQueueMax.add(val);
-        else if (priorityQueueMax.peek() < val) {
+        priorityQueueMax.add(val);
+         if (priorityQueueMax.size() > times) {
             priorityQueueMax.remove();
-            priorityQueueMax.add(val);
+            
         }
 
         return priorityQueueMax.peek();
