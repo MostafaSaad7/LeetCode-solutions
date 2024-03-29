@@ -7,10 +7,9 @@ class Solution {
         while (sPointer < s.length() && tPointer < t.length()) {
             if (s.charAt(sPointer) == t.charAt(tPointer)) {
                 sPointer++;
-                tPointer++;
-            } else {
-                tPointer++;
+                
             }
+            tPointer++;
         }
 
         return sPointer == s.length();
