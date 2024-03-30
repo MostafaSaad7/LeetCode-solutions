@@ -7,19 +7,15 @@ class Solution {
         int left = 0;
         for (int i = 0; i < nums.length; i++) {
             int number = nums[i];
-            if (hashMap.containsKey(number)) {
-                int count = hashMap.get(number) + 1;
-                hashMap.put(number,count);
-                    while (hashMap.get(number) > k && left < nums.length) {
-                        int startingNumCount = hashMap.get(nums[left]);
-                        startingNumCount--;
-                        hashMap.put(nums[left], startingNumCount);
-                        left++;
-                    }
-                
-            } else {
-                hashMap.put(number, 1);
+            int count = hashMap.getOrDefault(number, 0) + 1;
+            hashMap.put(number, count);
+            while (hashMap.get(number) > k) {
+                int startingNumCount = hashMap.get(nums[left]);
+                startingNumCount--;
+                hashMap.put(nums[left], startingNumCount);
+                left++;
             }
+
 
             res = Math.max(res, (i - left + 1));
         }
