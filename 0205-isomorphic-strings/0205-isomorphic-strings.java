@@ -4,18 +4,18 @@ import java.util.HashSet;
 class Solution {
     public boolean isIsomorphic(String s, String t) {
         if (s.length() != t.length()) return false;
-        HashMap<Character, Character> characterHashMap = new HashMap<>();
-        HashSet<Character> mappedToItBefore = new HashSet<>();
+        HashMap<Character, Character> characterHashMapS = new HashMap<>();
+        HashMap<Character, Character> characterHashMapT = new HashMap<>();
+
 
         for (int i = 0; i < s.length(); i++) {
             char cS = s.charAt(i);
             char cT = t.charAt(i);
-            if (characterHashMap.containsKey(cS) && characterHashMap.get(cS) != cT)
+            if ((characterHashMapS.containsKey(cS) && characterHashMapS.get(cS) != cT) || (characterHashMapT.containsKey(cT) && characterHashMapT.get(cT) != cS))
                 return false;
-            if (!characterHashMap.containsKey(cS) && mappedToItBefore.contains(cT)) 
-                return false;
-            characterHashMap.put(cS, cT);
-            mappedToItBefore.add(cT);
+
+            characterHashMapS.put(cS, cT);
+            characterHashMapT.put(cT, cS);
         }
 
         return true;
