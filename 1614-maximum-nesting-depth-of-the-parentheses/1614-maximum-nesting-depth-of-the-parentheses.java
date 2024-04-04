@@ -4,16 +4,16 @@ import java.util.Stack;
 class Solution {
     public int maxDepth(String s) {
 
-        Stack<Character> stack = new Stack<>();
+        int paranthesesCounter = 0;
         int maxDepth = 0;
 
         for (Character c : s.toCharArray()) {
             if ('(' == c)
-                stack.push(c);
-            else if (')' == c && !stack.empty()) {
-                stack.pop();
+                paranthesesCounter++;
+            else if (')' == c) {
+                paranthesesCounter--;
             }
-            maxDepth = Math.max(maxDepth, stack.size());
+            maxDepth = Math.max(maxDepth, paranthesesCounter);
         }
 
         return maxDepth;
