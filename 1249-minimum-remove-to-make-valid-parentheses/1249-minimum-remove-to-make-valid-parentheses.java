@@ -2,28 +2,32 @@ import java.util.Stack;
 
 class Solution {
     public String minRemoveToMakeValid(String s) {
-
-        Stack<Integer> stack = new Stack<>();
-        StringBuilder res = new StringBuilder(s);
+        StringBuilder stringWithOpen = new StringBuilder();
+        int openParenthesis = 0;
         for (int i = 0; i < s.length(); i++) {
 
             if (s.charAt(i) == '(') {
-                stack.push(i);
-
+                openParenthesis++;
             } else if (s.charAt(i) == ')') {
-                if (!stack.empty()) stack.pop();
-                else
-                    res.setCharAt(i, '*');
+                if (openParenthesis == 0) continue; // to matching open Parenthesis
+                openParenthesis--;
             }
+
+            stringWithOpen.append(s.charAt(i));
+        }
+        
+        StringBuilder result = new StringBuilder();
+
+        for (int i = stringWithOpen.length() - 1; i >= 0; i--) {
+
+            if (stringWithOpen.charAt(i) == '(' && openParenthesis > 0) {
+                openParenthesis--;
+                continue;
+            }
+            result.append(stringWithOpen.charAt(i));
         }
 
-        while (!stack.empty())
-        {
-            res.setCharAt(stack.pop(), '*');
-        }
-
-
-       return res.toString().replace("*","");
+        return result.reverse().toString();
 
     }
 }
