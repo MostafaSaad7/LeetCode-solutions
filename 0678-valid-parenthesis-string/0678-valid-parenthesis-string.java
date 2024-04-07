@@ -1,30 +1,26 @@
-import java.util.Stack;
-
 class Solution {
     public boolean checkValidString(String s) {
-        Stack<Integer> openParantStack = new Stack<>();
-        Stack<Integer> starStack = new Stack<>();
-        for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == '(') openParantStack.push(i);
-            else if (s.charAt(i) == '*') {
-                starStack.push(i);
+        int openParantMax = 0; // maximum parenthesis that i can have
+        int openParantMin = 0; // minimum parenthesis that i can have
+        for (char c : s.toCharArray()) {
+
+            if (c == '(') {
+                openParantMax++;
+                openParantMin++;
+            } else if (c == ')') {
+                openParantMax--;
+                openParantMin--;
             } else {
-                if (!openParantStack.empty()) openParantStack.pop();
-                else if (!starStack.empty()) {
-                    starStack.pop();
-
-                } else
-                    return false;
-
-
+                openParantMax++; // assume '*' will be open parenthesis 
+                openParantMin--; // assume '*' will be close parenthesis 
             }
-        }
-        while (!openParantStack.empty() && !starStack.empty()) {
-            if (starStack.pop() < openParantStack.pop()) return false;
-            
+
+            if (openParantMax < 0) return false; // eg ))))))(((((****
+
+            openParantMin = Math.max(0, openParantMin);
         }
 
 
-        return openParantStack.empty();
+        return openParantMin == 0; // ()()(*)
     }
 }
