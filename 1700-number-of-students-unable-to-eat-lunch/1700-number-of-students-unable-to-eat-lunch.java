@@ -4,26 +4,29 @@ import java.util.Deque;
 class Solution {
     public int countStudents(int[] students, int[] sandwiches) {
         int sandwichPointer = 0;
-        int studentsThatAte = 0;
-        int sawBefore = 0;
-        Deque<Integer> studentDeque = new ArrayDeque<>();
-        for (int i = 0; i < students.length; i++) {
-            studentDeque.addLast(i);
-        }
-        while (!studentDeque.isEmpty() && sandwichPointer < sandwiches.length && sawBefore<=studentDeque.size()) {
+        int studentsThatAte1 = 0;
+        int studentsThatAte0 = 0;
 
-            if (sandwiches[sandwichPointer] == students[studentDeque.getFirst()]) {
-                sandwichPointer++;
-                studentsThatAte++;
-                sawBefore=0;
-                studentDeque.removeFirst();
+        for (int student : students) {
+            if (student == 1)
+                studentsThatAte1++;
+            else
+                studentsThatAte0++;
+
+        }
+        while (sandwichPointer < sandwiches.length) {
+
+            if (sandwiches[sandwichPointer] == 1 && studentsThatAte1 > 0) {
+                studentsThatAte1--;
+            } else if ((sandwiches[sandwichPointer] == 0 && studentsThatAte0 > 0)) {
+                studentsThatAte0--;
             } else {
-                studentDeque.addLast(studentDeque.removeFirst());
-                sawBefore++;
+                return studentsThatAte0 + studentsThatAte1;
             }
 
+            sandwichPointer++;
         }
 
-        return students.length - studentsThatAte;
+        return 0;
     }
 }
