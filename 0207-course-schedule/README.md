@@ -9,19 +9,19 @@
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
-<pre><strong>Input:</strong> numCourses = 2, prerequisites = [[1,0]]
+<pre style="position: relative;"><strong>Input:</strong> numCourses = 2, prerequisites = [[1,0]]
 <strong>Output:</strong> true
 <strong>Explanation:</strong> There are a total of 2 courses to take. 
 To take course 1 you should have finished course 0. So it is possible.
-</pre>
+<div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
 
 <p><strong class="example">Example 2:</strong></p>
 
-<pre><strong>Input:</strong> numCourses = 2, prerequisites = [[1,0],[0,1]]
+<pre style="position: relative;"><strong>Input:</strong> numCourses = 2, prerequisites = [[1,0],[0,1]]
 <strong>Output:</strong> false
 <strong>Explanation:</strong> There are a total of 2 courses to take. 
 To take course 1 you should have finished course 0, and to take course 0 you should also have finished course 1. So it is impossible.
-</pre>
+<div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
 
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
