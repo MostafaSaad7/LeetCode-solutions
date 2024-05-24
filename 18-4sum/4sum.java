@@ -20,11 +20,11 @@ class Solution {
                 } else if (total > target) {
                     r--;
                 } else {
-                    currentElements.add(nums[l]); // Add the left number to the combination.
-                    currentElements.add(nums[r]); // Add the right number to the combination.
-                    res.add(new ArrayList<>(currentElements)); // Store the valid quadruplet in the result list.
-                    currentElements.remove(currentElements.size() - 1); // Remove the right number to backtrack.
-                    currentElements.remove(currentElements.size() - 1); // Remove the left number to backtrack.
+                    List<Integer> temp =  new ArrayList<>();
+                    temp.add(nums[l]); // Add the left number to the combination.
+                    temp.add(nums[r]); // Add the right number to the combination.
+                    temp.addAll(currentElements);
+                    res.add(new ArrayList<>(temp)); // Store the valid quadruplet in the result list.
                     l++;
                     r--;
                     while (l < r && nums[l] == nums[l - 1]) {
