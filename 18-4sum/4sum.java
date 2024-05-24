@@ -1,0 +1,51 @@
+import java.util.*;
+
+class Solution {
+    List<List<Integer>> res = new ArrayList<>();
+
+    public List<List<Integer>> fourSum(int[] nums, int target) {
+        Arrays.sort(nums); // Sort the array to handle duplicates and use two-pointer approach
+        kSum(4, 0, (long)target, nums, new ArrayList<>());
+        return res;
+    }
+
+    void kSum(int k, int start, long target, int[] nums, List<Integer> currentElements) {
+        if (k == 2) {
+            int l = start;
+            int r = nums.length - 1;
+            while (l < r) {
+                long total = (long) nums[l] + nums[r];
+                if (total < target) {
+                    l++;
+                } else if (total > target) {
+                    r--;
+                } else {
+                    currentElements.add(nums[l]); // Add the left number to the combination.
+                    currentElements.add(nums[r]); // Add the right number to the combination.
+                    res.add(new ArrayList<>(currentElements)); // Store the valid quadruplet in the result list.
+                    currentElements.remove(currentElements.size() - 1); // Remove the right number to backtrack.
+                    currentElements.remove(currentElements.size() - 1); // Remove the left number to backtrack.
+                    l++;
+                    r--;
+                    while (l < r && nums[l] == nums[l - 1]) {
+                        l++; // Skip duplicates on the left.
+                    }
+                }
+            }
+        } else {
+            for (int i = start; i < nums.length - (k - 1); i++) {
+                if (i > start && nums[i] == nums[i - 1]) continue; // Skip duplicates
+                currentElements.add(nums[i]);
+                kSum(k - 1, i + 1, target - nums[i], nums, currentElements);
+                currentElements.remove(currentElements.size() - 1); // Remove last element
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        int[] nums = {1000000000, 1000000000, 1000000000, 1000000000};
+        int target = -294967296;
+        System.out.println(solution.fourSum(nums, target)); // Expected output: []
+    }
+}
