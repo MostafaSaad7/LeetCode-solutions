@@ -41,11 +41,4 @@ class Solution {
             }
         }
     }
-
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        int[] nums = {1000000000, 1000000000, 1000000000, 1000000000};
-        int target = -294967296;
-        System.out.println(solution.fourSum(nums, target)); // Expected output: []
-    }
 }
