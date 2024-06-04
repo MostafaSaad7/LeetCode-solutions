@@ -18,9 +18,4 @@ class Solution {
 
         return Arrays.stream(dp).max().getAsInt();
     }
-
-    public static void main(String[] args) {
-        Solution s = new Solution();
-        s.lengthOfLIS(new int[]{10, 9, 2, 5, 3, 7, 101, 18});
-    }
 }
