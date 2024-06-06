@@ -1,30 +1,34 @@
-import java.util.Collections;
-import java.util.PriorityQueue;
-
 class Solution {
     public int maximumProduct(int[] nums) {
-        PriorityQueue<Integer> mnPq = new PriorityQueue<>();
-        PriorityQueue<Integer> mxPq = new PriorityQueue<>(Collections.reverseOrder());
+        int mx1 = Integer.MIN_VALUE, mx2 = Integer.MIN_VALUE, mx3 = Integer.MIN_VALUE;
+        int mn1 = Integer.MAX_VALUE, mn2 = Integer.MAX_VALUE;
+
         for (int num : nums) {
-            mnPq.add(num);
-            mxPq.add(num);
-            if (mnPq.size() > 3) {
-                mnPq.poll();
+
+            if (num < mn1) {
+                mn2 = mn1;
+                mn1 = num;
+            } else if (num < mn2) {
+                mn2 = num;
             }
 
-            if (mxPq.size() > 2) {
-                mxPq.poll();
+
+            if (num > mx1) {
+                mx3 = mx2;
+                mx2 = mx1;
+                mx1 = num;
+            } else if (num > mx2) {
+                mx3 = mx2;
+                mx2 = num;
+            } else if (num > mx3) {
+                mx3 = num;
             }
+
         }
 
-        int mx1 = mnPq.poll();
-        int mx2 = mnPq.poll();
-        int mx3 = mnPq.poll();
 
-        int mn1 = mxPq.poll();
-        int mn2 = mxPq.poll();
+        return Math.max(mx1 * mx2 * mx3, mn1 * mn2 * mx1);
 
-        return Math.max(mn1 * mn2 * mx3, mx1 * mx2 * mx3);
 
     }
 }
