@@ -14,3 +14,11 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0628-maximum-product-of-three-numbers](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0628-maximum-product-of-three-numbers) |
+# String
+|  |
+| ------- |
+| [1250-longest-common-subsequence](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1250-longest-common-subsequence) |
+# Dynamic Programming
+|  |
+| ------- |
+| [1250-longest-common-subsequence](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1250-longest-common-subsequence) |
