@@ -5,6 +5,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 # Array
 |  |
 | ------- |
+| [0416-partition-equal-subset-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0416-partition-equal-subset-sum) |
 | [0628-maximum-product-of-three-numbers](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0628-maximum-product-of-three-numbers) |
 # Math
 |  |
@@ -21,4 +22,5 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 # Dynamic Programming
 |  |
 | ------- |
+| [0416-partition-equal-subset-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0416-partition-equal-subset-sum) |
 | [1250-longest-common-subsequence](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1250-longest-common-subsequence) |
