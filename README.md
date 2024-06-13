@@ -30,3 +30,19 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [2148-minimum-number-of-moves-to-seat-everyone](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2148-minimum-number-of-moves-to-seat-everyone) |
+# Linked List
+|  |
+| ------- |
+| [0143-reorder-list](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0143-reorder-list) |
+# Two Pointers
+|  |
+| ------- |
+| [0143-reorder-list](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0143-reorder-list) |
+# Stack
+|  |
+| ------- |
+| [0143-reorder-list](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0143-reorder-list) |
+# Recursion
+|  |
+| ------- |
+| [0143-reorder-list](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0143-reorder-list) |
