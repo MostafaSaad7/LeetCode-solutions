@@ -4,21 +4,15 @@ class Solution {
 
     public int rob(int[] nums) {
 
-        int memory[] = new int[nums.length];
-        Arrays.fill(memory, -1);
+        int rob1 = 0, rob2 = 0;
 
         for (int i = 0; i < nums.length; i++) {
-            int robThisHouseChoice = nums[i];
-            if (i - 2 >= 0 && memory[i - 2] != -1)
-                robThisHouseChoice += memory[i - 2];
-
-            int donRob = 0;
-            if (i - 1 >= 0 && memory[i - 1] != -1)
-                donRob = memory[i - 1];
-            memory[i] = Math.max(robThisHouseChoice, donRob);
+            int maxChoice = Math.max(nums[i] + rob1, rob2);
+            rob1 = rob2;
+            rob2 = maxChoice;
         }
 
 
-        return memory[nums.length - 1];
+        return rob2;
     }
 }
