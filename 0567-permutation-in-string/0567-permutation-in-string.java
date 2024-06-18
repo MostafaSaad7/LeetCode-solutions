@@ -6,20 +6,27 @@ class Solution {
         int len2 = s2.length();
         if (len1 > len2) return false;
 
-        int[] count1 = new int[26];
-        int[] count2 = new int[26];
+        int[] count = new int[26];
+
         for (int i = 0; i < len1; i++) {
-            count1[s1.charAt(i) - 'a']++;
+            count[s1.charAt(i) - 'a']++;
         }
 
         for (int i = 0; i < len2; i++) {
-            count2[s2.charAt(i) - 'a']++;
+            count[s2.charAt(i) - 'a']--;
             if (i - len1 >= 0) {
-                count2[s2.charAt(i - len1) - 'a']--;
+                count[s2.charAt(i - len1) - 'a']++;
             }
-            if (Arrays.equals(count1, count2)) return true;
+            if (allZero(count)) return true;
         }
 
         return false;
+    }
+
+    private boolean allZero(int[] count) {
+        for (int i = 0; i < 26; i++) {
+            if (count[i] != 0) return false;
+        }
+        return true;
     }
 }
