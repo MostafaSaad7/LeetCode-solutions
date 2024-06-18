@@ -63,3 +63,23 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0424-longest-repeating-character-replacement](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0567-permutation-in-string) |
+# Tree
+|  |
+| ------- |
+| [0530-minimum-absolute-difference-in-bst](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0530-minimum-absolute-difference-in-bst) |
+# Depth-First Search
+|  |
+| ------- |
+| [0530-minimum-absolute-difference-in-bst](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0530-minimum-absolute-difference-in-bst) |
+# Breadth-First Search
+|  |
+| ------- |
+| [0530-minimum-absolute-difference-in-bst](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0530-minimum-absolute-difference-in-bst) |
+# Binary Search Tree
+|  |
+| ------- |
+| [0530-minimum-absolute-difference-in-bst](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0530-minimum-absolute-difference-in-bst) |
+# Binary Tree
+|  |
+| ------- |
+| [0530-minimum-absolute-difference-in-bst](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0530-minimum-absolute-difference-in-bst) |
