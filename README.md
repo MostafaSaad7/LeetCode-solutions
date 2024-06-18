@@ -23,6 +23,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0424-longest-repeating-character-replacement](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0424-longest-repeating-character-replacement) |
+| [0567-permutation-in-string](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0567-permutation-in-string) |
 | [1250-longest-common-subsequence](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1250-longest-common-subsequence) |
 # Dynamic Programming
 |  |
@@ -43,6 +44,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0143-reorder-list](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0143-reorder-list) |
+| [0567-permutation-in-string](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0567-permutation-in-string) |
 # Stack
 |  |
 | ------- |
@@ -55,7 +57,9 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0424-longest-repeating-character-replacement](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0424-longest-repeating-character-replacement) |
+| [0567-permutation-in-string](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0567-permutation-in-string) |
 # Sliding Window
 |  |
 | ------- |
 | [0424-longest-repeating-character-replacement](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0424-longest-repeating-character-replacement) |
+| [0567-permutation-in-string](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0567-permutation-in-string) |
