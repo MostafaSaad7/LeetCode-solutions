@@ -9,6 +9,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
 | [0416-partition-equal-subset-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0416-partition-equal-subset-sum) |
 | [0628-maximum-product-of-three-numbers](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0628-maximum-product-of-three-numbers) |
+| [0883-car-fleet](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0883-car-fleet) |
 | [2148-minimum-number-of-moves-to-seat-everyone](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2148-minimum-number-of-moves-to-seat-everyone) |
 # Math
 |  |
@@ -18,6 +19,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0628-maximum-product-of-three-numbers](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0628-maximum-product-of-three-numbers) |
+| [0883-car-fleet](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0883-car-fleet) |
 | [2148-minimum-number-of-moves-to-seat-everyone](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2148-minimum-number-of-moves-to-seat-everyone) |
 # String
 |  |
@@ -49,6 +51,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0143-reorder-list](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0143-reorder-list) |
+| [0883-car-fleet](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0883-car-fleet) |
 # Recursion
 |  |
 | ------- |
@@ -83,3 +86,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0530-minimum-absolute-difference-in-bst) |
+# Monotonic Stack
+|  |
+| ------- |
+| [0883-car-fleet](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0883-car-fleet) |
