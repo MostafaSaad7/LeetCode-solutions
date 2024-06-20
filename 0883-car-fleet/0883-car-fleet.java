@@ -2,22 +2,25 @@ import java.util.*;
 
 class Solution {
     public int carFleet(int target, int[] position, int[] speed) {
-        Map<Integer, Integer> posSpeedMat = new TreeMap<>((o1, o2) -> Integer.compare(o2,o1));
-        Stack<Double> stack = new Stack<>();
+        List<int[]> cars = new ArrayList<>();
         for (int i = 0; i < position.length; i++) {
-            posSpeedMat.put(position[i], speed[i]);
+            cars.add(new int[]{position[i], speed[i]});
         }
 
-        for (var entry : posSpeedMat.entrySet()) {
-            double time = (double)(target -  entry.getKey()) / entry.getValue();
-            if (!stack.isEmpty() && time <= stack.peek())
-                continue;
-            stack.push(time);
+        // Sort cars based on position in descending order
+        cars.sort((a, b) -> Integer.compare(b[0], a[0]));
 
+        // Stack to keep track of fleets
+        Stack<Double> stack = new Stack<>();
+
+        for (int[] car : cars) {
+            double time = (double) (target - car[0]) / car[1];
+            if (!stack.isEmpty() && time <= stack.peek()) {
+                continue; // This car joins the current fleet
+            }
+            stack.push(time); // This car forms a new fleet
         }
 
         return stack.size();
-
     }
 }
-
