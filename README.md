@@ -47,10 +47,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 # Linked List
 |  |
 | ------- |
+| [0142-linked-list-cycle-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0142-linked-list-cycle-ii) |
 | [0143-reorder-list](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0143-reorder-list) |
 # Two Pointers
 |  |
 | ------- |
+| [0142-linked-list-cycle-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0142-linked-list-cycle-ii) |
 | [0143-reorder-list](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0143-reorder-list) |
 | [0567-permutation-in-string](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0567-permutation-in-string) |
 # Stack
@@ -65,6 +67,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 # Hash Table
 |  |
 | ------- |
+| [0142-linked-list-cycle-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0142-linked-list-cycle-ii) |
 | [0424-longest-repeating-character-replacement](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0567-permutation-in-string) |
 # Sliding Window
