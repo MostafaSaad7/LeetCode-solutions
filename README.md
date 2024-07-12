@@ -125,4 +125,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0133-clone-graph](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0133-clone-graph) |
+## Array
+|  |
+| ------- |
+| [1121-partition-array-for-maximum-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1121-partition-array-for-maximum-sum) |
+## Dynamic Programming
+|  |
+| ------- |
+| [1121-partition-array-for-maximum-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1121-partition-array-for-maximum-sum) |
 <!---LeetCode Topics End-->
