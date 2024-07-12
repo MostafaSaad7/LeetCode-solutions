@@ -1,30 +1,18 @@
 import java.util.Arrays;
 
 class Solution {
-
-    int[] cache;
-
     public int maxSumAfterPartitioning(int[] arr, int k) {
-
-        cache = new int[arr.length];
-        Arrays.fill(cache, -1);
-        return dfs(arr, 0, k);
-    }
-
-    int dfs(int[] arr, int startIndex, int k) {
-        if (startIndex >= arr.length) return 0;
-        if (cache[startIndex] != -1) return cache[startIndex]; // Corrected to return cache value
-
-        int currentMax = 0;
-        int maxSum = 0; // Added to track the maximum sum
-        for (int splitIndex = startIndex; splitIndex < Math.min(arr.length, startIndex + k); splitIndex++) {
-            currentMax = Math.max(currentMax, arr[splitIndex]);
-            int winSize = splitIndex - startIndex + 1;
-            int currentSum = currentMax * winSize;
-            maxSum = Math.max(maxSum, currentSum + dfs(arr, splitIndex + 1, k)); // Updated to track the maximum sum
+        int len = arr.length;
+        int[] dp = new int[len + 1];
+        Arrays.fill(dp, 0);
+        for (int start = len - 1; start >= 0; start--) {
+            int currMax = 0;
+            int end = Math.min(start + k, len);
+            for (int endIndex = start; endIndex < end; endIndex++) {
+                currMax = Math.max(currMax, arr[endIndex]);
+                dp[start] = Math.max(dp[start], currMax * (endIndex - start + 1) + dp[endIndex + 1]);
+            }
         }
-
-        cache[startIndex] = maxSum; // store the max sum at the startIndex
-        return maxSum; // return the max sum
+        return dp[0];
     }
 }
