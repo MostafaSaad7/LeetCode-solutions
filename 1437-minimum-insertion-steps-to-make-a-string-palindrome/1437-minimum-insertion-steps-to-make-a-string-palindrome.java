@@ -1,26 +1,29 @@
 class Solution {
     public int minInsertions(String s) {
 
-        return dfs(s,new Integer[s.length()][s.length()],0,s.length()-1);
+        return s.length() - longestPalindromeSubseq(s);
+    }
+
+    public int longestPalindromeSubseq(String s) {
+        return dfs(s, 0, s.length() - 1, new Integer[s.length()][s.length()]);
     }
 
 
-    int dfs(String s, Integer[][] memo, int i, int j) {
-        if (i > j)
+    int dfs(String s, int start, int end, Integer[][] memory) {
+        if (start > end) {
             return 0;
-        if (memo[i][j] != null)
-            return memo[i][j];
-        int res= 0;
-        if (s.charAt(i)==s.charAt(j))
-            res=dfs(s,memo,i+1,j-1);
-        else
-        {
-            
-            res=Math.min(1+dfs(s,memo,i+1,j),1+dfs(s,memo,i,j-1));
         }
-        
-        memo[i][j]=res;
-        
-        return res;
+        if (memory[start][end] != null) {
+            return memory[start][end];
+        }
+        int longestPalSubSeq = 0;
+        if (s.charAt(start) == s.charAt(end)) {
+            int length = start == end ? 1 : 2;
+            longestPalSubSeq = length + dfs(s, start + 1, end - 1, memory);
+        } else {
+            longestPalSubSeq = Math.max(dfs(s, start + 1, end, memory), dfs(s, start, end - 1, memory));
+        }
+        memory[start][end] = longestPalSubSeq;
+        return memory[start][end];
     }
 }
