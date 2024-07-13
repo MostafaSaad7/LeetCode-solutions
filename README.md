@@ -134,8 +134,10 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0516-longest-palindromic-subsequence](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0516-longest-palindromic-subsequence) |
 | [1121-partition-array-for-maximum-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1121-partition-array-for-maximum-sum) |
+| [1437-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1437-minimum-insertion-steps-to-make-a-string-palindrome) |
 ## String
 |  |
 | ------- |
 | [0516-longest-palindromic-subsequence](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0516-longest-palindromic-subsequence) |
+| [1437-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1437-minimum-insertion-steps-to-make-a-string-palindrome) |
 <!---LeetCode Topics End-->
