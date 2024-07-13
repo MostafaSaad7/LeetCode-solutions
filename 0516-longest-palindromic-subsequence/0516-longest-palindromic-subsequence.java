@@ -13,7 +13,7 @@ class Solution {
         }
         int longestPalSubSeq = 0;
         if (s.charAt(start) == s.charAt(end)) {
-            int length = start == end ? 1 : 2;
+            int length = start == end ? 1 : 2; // same character 
             longestPalSubSeq = length + dfs(s, start + 1, end - 1, memory);
         } else {
             longestPalSubSeq = Math.max(dfs(s, start + 1, end, memory), dfs(s, start, end - 1, memory));
