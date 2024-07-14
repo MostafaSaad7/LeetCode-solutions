@@ -1,30 +1,33 @@
 class Solution {
-    int[][] dp;
-    
-    int solve(int start_stick, int end_stick, int[] cuts, int left, int right) {
-        if (left > right) return 0;
-
-        if (dp[left][right] != -1) return dp[left][right];
-
-        int cost = Integer.MAX_VALUE;
-
-        for (int i = left; i <= right; i++) {
-            int left_cost = solve(start_stick, cuts[i], cuts, left, i - 1);
-            int right_cost = solve(cuts[i], end_stick, cuts, i + 1, right);
-            int curr_cost = (end_stick - start_stick) + left_cost + right_cost;
-            cost = Math.min(cost, curr_cost);
+    int[][] memo;
+    int newCuts[];
+    private int cost(int left, int right) {
+        if (memo[left][right] != -1) {
+            return memo[left][right];
         }
-
-        return dp[left][right] = cost;
+        if (right - left == 1) {
+            return 0;
+        }
+        int ans = Integer.MAX_VALUE;
+        for (int mid = left + 1; mid < right; mid++) {
+            int cost = cost(left, mid) + cost(mid, right) + newCuts[right] - newCuts[left];
+            ans = Math.min(ans, cost);
+        }
+        memo[left][right] = ans;
+        return ans;
     }
-    
-    int minCost(int n, int[] cuts) {
-        dp = new int[cuts.length][cuts.length];
-        for (int[] row : dp) {
-            Arrays.fill(row, -1);
+    public int minCost(int n, int[] cuts) {
+        int m = cuts.length;
+        newCuts = new int[m + 2];
+        System.arraycopy(cuts, 0, newCuts, 1, m);
+        newCuts[m + 1] = n;
+        Arrays.sort(newCuts);
+        
+        memo = new int[m + 2][m + 2];
+        for (int r = 0; r < m + 2; ++r) {
+            Arrays.fill(memo[r], -1);
         }
         
-        Arrays.sort(cuts);
-        return solve(0, n, cuts, 0, cuts.length - 1);
-    }
+        return cost(0, newCuts.length - 1);
+    }    
 }
