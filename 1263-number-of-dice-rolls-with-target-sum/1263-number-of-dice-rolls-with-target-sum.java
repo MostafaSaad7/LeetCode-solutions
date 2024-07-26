@@ -1,27 +1,30 @@
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
 class Solution {
     private final int MOD = 1_000_000_007;
-    private Map<String, Integer> memo = new HashMap<>();
 
     public int numRollsToTarget(int n, int k, int target) {
-        return dfs(n, k, target);
-    }
 
-    private int dfs(int n, int k, int target) {
-        if (n == 0 && target == 0) return 1;
-        if (n == 0 || target <= 0) return 0;
+        int[] dp = new int[target + 1]; // number of way to get the target value
+        dp[0] = 1; // if target is zero so we have only one way (base case )
 
-        String key = n + "," + target;
-        if (memo.containsKey(key)) return memo.get(key);
+        for (int dice = 0; dice < n; dice++) {
+            int[] nextDPRow = new int[target + 1];
+            Arrays.fill(nextDPRow, 0);
+            for (int face = 1; face < k + 1; face++) {
+                for (int total = face; total < target + 1; total++) {
+                    nextDPRow[total] = (nextDPRow[total] + dp[total - face]) % MOD;
 
-        int ways = 0;
-        for (int face = 1; face <= k; face++) {
-            ways = (ways + dfs(n - 1, k, target - face)) % MOD;
+                }
+
+            }
+
+            dp = nextDPRow;
         }
 
-        memo.put(key, ways);
-        return ways;
+        return dp[target];
     }
+
 }
