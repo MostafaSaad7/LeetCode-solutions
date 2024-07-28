@@ -132,6 +132,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 |  |
 | ------- |
+| [0063-unique-paths-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0063-unique-paths-ii) |
 | [0377-combination-sum-iv](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0377-combination-sum-iv) |
 | [0518-coin-change-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0518-coin-change-ii) |
 | [0843-binary-trees-with-factors](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0843-binary-trees-with-factors) |
@@ -140,6 +141,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Dynamic Programming
 |  |
 | ------- |
+| [0063-unique-paths-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0063-unique-paths-ii) |
 | [0091-decode-ways](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0091-decode-ways) |
 | [0377-combination-sum-iv](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0377-combination-sum-iv) |
 | [0516-longest-palindromic-subsequence](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0516-longest-palindromic-subsequence) |
@@ -170,4 +172,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0102-binary-tree-level-order-traversal](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0102-binary-tree-level-order-traversal) |
 | [0199-binary-tree-right-side-view](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0199-binary-tree-right-side-view) |
+## Matrix
+|  |
+| ------- |
+| [0063-unique-paths-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0063-unique-paths-ii) |
 <!---LeetCode Topics End-->
