@@ -1,40 +1,37 @@
 class Solution {
-    char[][] matrixRef;
-    int rows, cols;
-
     public int maximalSquare(char[][] matrix) {
-        matrixRef = matrix;
-        rows = matrix.length;
-        cols = matrix[0].length;
-        Integer[][] cache = new Integer[rows][cols];
-
-        // considered as topleft corner of the square
-        dfs(0, 0, cache);
-
-
-        int sideLen = 0;
-        for (Integer[] row : cache) {
-            for (int val : row)
-                sideLen = Math.max(sideLen, val);
+        if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
+            return 0;
         }
 
-        return sideLen * sideLen;
+        int rows = matrix.length;
+        int cols = matrix[0].length;
+        int maxSide = 0;
 
+        // DP array to store the side length of the largest square ending at (r, c)
+        int[][] dp = new int[rows + 1][cols + 1];
+
+        // Iterate through each cell in the matrix
+        for (int r = 1; r <= rows; ++r) {
+            for (int c = 1; c <= cols; ++c) {
+                if (matrix[r - 1][c - 1] == '1') {
+                    // DP transition: 1 + minimum of the three neighboring cells (up, left, and diagonal)
+                    dp[r][c] = Math.min(Math.min(dp[r - 1][c], dp[r][c - 1]), dp[r - 1][c - 1]) + 1;
+                    // Update the maximum side length found
+                    maxSide = Math.max(maxSide, dp[r][c]);
+                }
+            }
+        }
+
+        // Return the area of the largest square
+        return maxSide * maxSide;
     }
 
-    private int dfs(int row, int col, Integer[][] cache) {
-
-        if (row == rows || col == cols)
-            return 0;
-        if (cache[row][col] != null)
-            return cache[row][col];
-
-        int right = dfs(row, col + 1, cache);
-        int down = dfs(row + 1, col, cache);
-        int diagonal = dfs(row + 1, col + 1, cache);
-
-        int sideLen = matrixRef[row][col] == '1' ? 1 + Math.min(right, Math.min(down, diagonal)) : 0;
-        cache[row][col] = sideLen;
-        return sideLen;
-    }
+    /*
+     * Time Complexity: O(N * M)
+     * - Each cell in the matrix is processed once, resulting in O(N * M) time complexity.
+     *
+     * Space Complexity: O(N * M)
+     * - A DP array of size (N + 1) x (M + 1) is used, resulting in O(N * M) space complexity.
+     */
 }
