@@ -6,29 +6,28 @@ import static java.lang.Math.*;
 class Solution {
     public int[][] insert(int[][] intervals, int[] newInterval) {
         List<int[]> result = new ArrayList<>();
-        int index = 0;
-
-        // Add all intervals that end before the new interval starts
-        while (index < intervals.length && intervals[index][1] < newInterval[0]) {
-            result.add(intervals[index]);
-            index++;
-        }
-
-        // Merge overlapping intervals with the new interval
-        while (index < intervals.length && intervals[index][0] <= newInterval[1]) {
-            newInterval[0] = min(newInterval[0], intervals[index][0]);
-            newInterval[1] = max(newInterval[1], intervals[index][1]);
-            index++;
+        int counter = 0;
+        for (var interval : intervals) {
+            if (max(interval[0], newInterval[0]) <= min(interval[1], newInterval[1])) // any overlapping
+            {
+                newInterval[0] = min(interval[0], newInterval[0]);
+                newInterval[1] = max(interval[1], newInterval[1]);
+            } else if (interval[1] < newInterval[0]) {
+                result.add(interval);
+            } else {
+                break;
+            }
+            counter++;
         }
         result.add(newInterval);
 
-        // Add remaining intervals that start after the new interval ends
-        while (index < intervals.length) {
-            result.add(intervals[index]);
-            index++;
+        for (int i = counter; i < intervals.length; i++) {
+            result.add(intervals[i]);
         }
 
-        // Convert the result list back to a 2D array
+
         return result.toArray(new int[result.size()][]);
     }
+
+
 }
