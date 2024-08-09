@@ -1,35 +1,26 @@
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.PriorityQueue;
-import java.util.Queue;
-
 class Solution {
     public int leastInterval(char[] tasks, int n) {
-        int time = 0;
-        PriorityQueue<Integer> priorityQueue = new PriorityQueue<Integer>(Collections.reverseOrder());
         int[] freq = new int[26];
-        for (char character : tasks) {
+
+        int mostFreqCharactersCount = 0;
+        int maxFreq = 0;
+        for (var character : tasks) {
             freq[character - 'A']++;
+            if (maxFreq == freq[character - 'A']) {
+                mostFreqCharactersCount++;
+            } else if (maxFreq < freq[character - 'A']) {
+                maxFreq = freq[character - 'A'];
+                mostFreqCharactersCount = 1;
+            }
         }
-        for (var count : freq) {
-            if (count != 0)
-                priorityQueue.offer(count);
-        }
-        Queue<Integer[]> queue = new LinkedList<>();
 
-        while (!priorityQueue.isEmpty() || !queue.isEmpty()) {
-            time++;
-            int currentTask = 0;
-            if (!priorityQueue.isEmpty())
-                currentTask = priorityQueue.poll();
-            currentTask--;
+        int partCount = maxFreq - 1; // A -- A -- A  --> 3-1 --> have 2 parts
+        int partLen = (n - (mostFreqCharactersCount - 1));  // having 3A and 3B n = 2  ---> AB - AB - AB  -- >  (n=2) -[(mostFreq=2) -1]
+        int emptySlots = partCount * partLen;
+        int availableTasksToBeUsedWithMostFreq = tasks.length - maxFreq * mostFreqCharactersCount;
+        int idlesNum = Math.max(0, emptySlots - availableTasksToBeUsedWithMostFreq);
 
-            if (currentTask > 0)
-                queue.add(new Integer[]{currentTask, time + n});
+        return tasks.length + idlesNum;
 
-            if (!queue.isEmpty() && queue.peek()[1] == time)
-                priorityQueue.offer(queue.poll()[0]);
-        }
-        return time;
     }
 }
