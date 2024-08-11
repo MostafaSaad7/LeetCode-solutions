@@ -18,7 +18,6 @@ class Solution {
 
     private boolean dfs(Integer node) {
 
-        visited.add(node);
         currentElements.add(node);
 
         if (node==graph.length-1)
@@ -27,7 +26,6 @@ class Solution {
             dfs(neighbours);
         }
 
-        visited.remove(node);
         currentElements.remove(node);
 
 
