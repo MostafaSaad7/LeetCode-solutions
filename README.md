@@ -254,4 +254,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [2058-concatenation-of-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2058-concatenation-of-array) |
+## Math
+|  |
+| ------- |
+| [2556-convert-the-temperature](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2556-convert-the-temperature) |
 <!---LeetCode Topics End-->
