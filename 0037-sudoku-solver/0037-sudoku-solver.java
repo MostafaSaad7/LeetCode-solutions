@@ -1,58 +1,62 @@
+import java.util.ArrayList;
+import java.util.List;
+
 class Solution {
-    int[][] rows = new int[9][9];
-    int[][] cols = new int[9][9];
-    int[][][] boxes = new int[3][3][9];
+    int[][] row = new int[9][9];
+    int[][] col = new int[9][9];
+    int[][][] box = new int[3][3][9];
+    List<Integer> empty_r = new ArrayList<>();
+    List<Integer> empty_c = new ArrayList<>();
 
     public void solveSudoku(char[][] board) {
-        // Initialize rows, cols, and boxes based on the input board
-        for (int i = 0; i < 9; i++) {
-            for (int j = 0; j < 9; j++) {
-                if (board[i][j] != '.') {
-                    int num = board[i][j] - '1';
-                    rows[i][num] = 1;
-                    cols[j][num] = 1;
-                    boxes[i / 3][j / 3][num] = 1;
+        // Mark initial reserved values
+        for (int r = 0; r < 9; r++) {
+            for (int c = 0; c < 9; c++) {
+                if (board[r][c] != '.') {
+                    set(board[r][c] - '1', r, c, 1);
+                } else {
+                    empty_r.add(r);
+                    empty_c.add(c);
                 }
             }
         }
-        // Start the backtracking process
-        backtrack(board, 0);
+
+        // Start backtracking
+        assert backtrack(board, 0);
     }
 
-    private boolean backtrack(char[][] board, int i) {
-        if (i >= 81) // If we have filled all cells
+    private boolean backtrack(char[][] board, int idx) {
+        if (idx >= empty_r.size()) {
             return true;
+        }
 
-        int row = i / 9;
-        int col = i % 9;
+        int r = empty_r.get(idx);
+        int c = empty_c.get(idx);
 
-        if (board[row][col] != '.')
-            return backtrack(board, i + 1);
+        for (int d = 0; d < 9; d++) {
+            if (canPlace(d, r, c)) {
+                set(d, r, c, 1);
+                board[r][c] = (char) (d + '1');
 
-        int boxRow = row / 3;
-        int boxCol = col / 3;
-
-        for (int num = 0; num < 9; num++) {
-            if (couldPlace(row, col, boxRow, boxCol, num)) {
-                board[row][col] = (char) (num + '1');
-                rows[row][num] = 1;
-                cols[col][num] = 1;
-                boxes[boxRow][boxCol][num] = 1;
-
-                if (backtrack(board, i + 1))
+                if (backtrack(board, idx + 1)) {
                     return true;
+                }
 
-                // Undo the move (backtrack)
-                board[row][col] = '.';
-                rows[row][num] = 0;
-                cols[col][num] = 0;
-                boxes[boxRow][boxCol][num] = 0;
+                // Backtrack
+                set(d, r, c, 0);
+                board[r][c] = '.';
             }
         }
         return false;
     }
 
-    private boolean couldPlace(int row, int col, int boxRow, int boxCol, int num) {
-        return rows[row][num] != 1 && cols[col][num] != 1 && boxes[boxRow][boxCol][num] != 1;
+    private boolean canPlace(int d, int r, int c) {
+        return row[r][d] == 0 && col[c][d] == 0 && box[r / 3][c / 3][d] == 0;
+    }
+
+    private void set(int d, int r, int c, int value) {
+        row[r][d] = value;
+        col[c][d] = value;
+        box[r / 3][c / 3][d] = value;
     }
 }
