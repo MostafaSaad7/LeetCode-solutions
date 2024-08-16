@@ -112,6 +112,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Hash Table
 |  |
 | ------- |
+| [0037-sudoku-solver](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0037-sudoku-solver) |
 | [0133-clone-graph](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0133-clone-graph) |
 | [0621-task-scheduler](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0621-task-scheduler) |
 | [0843-binary-trees-with-factors](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0843-binary-trees-with-factors) |
@@ -138,6 +139,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 |  |
 | ------- |
+| [0037-sudoku-solver](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0037-sudoku-solver) |
 | [0039-combination-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0039-combination-sum) |
 | [0051-n-queens](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0051-n-queens) |
 | [0057-insert-interval](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0057-insert-interval) |
@@ -211,6 +213,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Matrix
 |  |
 | ------- |
+| [0037-sudoku-solver](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0037-sudoku-solver) |
 | [0063-unique-paths-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0063-unique-paths-ii) |
 | [0174-dungeon-game](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0174-dungeon-game) |
 | [0221-maximal-square](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0221-maximal-square) |
@@ -232,6 +235,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Backtracking
 |  |
 | ------- |
+| [0037-sudoku-solver](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0037-sudoku-solver) |
 | [0039-combination-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0039-combination-sum) |
 | [0051-n-queens](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0051-n-queens) |
 | [0078-subsets](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0078-subsets) |
