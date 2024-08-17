@@ -1,34 +1,38 @@
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 class Solution {
+
+    List<List<Integer>> result = new ArrayList<>();
+    Set<Integer> indicies = new HashSet<>();
+
     public List<List<Integer>> permute(int[] nums) {
-        List<List<Integer>> res = new ArrayList<>();
-        dfs(res, nums, 0);
-        return res;
+        List<Integer> currentElements = new ArrayList<>();
+
+        return backtrack(currentElements, nums);
     }
 
-    private void dfs(List<List<Integer>> res, int[] nums, int position) {
-        if (position == nums.length) {
-            List<Integer> list = new ArrayList();
-            for (int i = 0; i < nums.length; i++) list.add(nums[i]);
-            res.add(list);
-            return;
+    private List<List<Integer>> backtrack( List<Integer> currentElements, int[] nums) {
+        if (currentElements.size() == nums.length) {
+            result.add(new ArrayList<>(currentElements));
+            return result;
         }
 
-
-        for (int i = position; i < nums.length; i++) {
-            swap(nums, position, i);
-            dfs(res, nums, position + 1);
-            swap(nums, position, i);
+        for (int j = 0; j < nums.length; j++) {
+            if (!indicies.contains(j)) {
+                currentElements.add(nums[j]);
+                indicies.add(j);
+                backtrack(currentElements, nums);
+                indicies.remove(j);
+                currentElements.remove(currentElements.size() - 1);
+            }
         }
+
+        return result;
+
     }
 
 
-    public void swap(int[] arr, int a, int b) {
-        int temp = arr[a];
-        arr[a] = arr[b];
-        arr[b] = temp;
-    }
 }
