@@ -194,6 +194,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0072-edit-distance](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0072-edit-distance) |
 | [0091-decode-ways](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0091-decode-ways) |
 | [0516-longest-palindromic-subsequence](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0516-longest-palindromic-subsequence) |
+| [1205-defanging-an-ip-address](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1205-defanging-an-ip-address) |
 | [1437-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1437-minimum-insertion-steps-to-make-a-string-palindrome) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2163-kth-distinct-string-in-an-array) |
 ## Sorting
