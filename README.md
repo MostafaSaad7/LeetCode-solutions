@@ -163,6 +163,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1669-minimum-cost-to-cut-a-stick](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1669-minimum-cost-to-cut-a-stick) |
 | [2058-concatenation-of-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2058-concatenation-of-array) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2163-kth-distinct-string-in-an-array) |
+| [3194-find-words-containing-character](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3194-find-words-containing-character) |
 | [3476-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3476-find-minimum-operations-to-make-all-elements-divisible-by-three) |
 ## Dynamic Programming
 |  |
@@ -197,6 +198,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1205-defanging-an-ip-address](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1205-defanging-an-ip-address) |
 | [1437-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1437-minimum-insertion-steps-to-make-a-string-palindrome) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2163-kth-distinct-string-in-an-array) |
+| [3194-find-words-containing-character](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3194-find-words-containing-character) |
 ## Sorting
 |  |
 | ------- |
