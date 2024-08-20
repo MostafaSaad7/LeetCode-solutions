@@ -1,35 +1,28 @@
+import java.util.HashMap;
+import java.util.Map;
+
 class Solution {
     public int romanToInt(String s) {
-        // Store the mapping of Roman numerals to their corresponding values in an array
-        int[] values = new int[26];
-        values['I' - 'A'] = 1;
-        values['V' - 'A'] = 5;
-        values['X' - 'A'] = 10;
-        values['L' - 'A'] = 50;
-        values['C' - 'A'] = 100;
-        values['D' - 'A'] = 500;
-        values['M' - 'A'] = 1000;
+        Map<Character, Integer> romantoIntegersMap = new HashMap<>();
+
+        romantoIntegersMap.put('I', 1);
+        romantoIntegersMap.put('V', 5);
+        romantoIntegersMap.put('X', 10);
+        romantoIntegersMap.put('L', 50);
+        romantoIntegersMap.put('C', 100);
+        romantoIntegersMap.put('D', 500);
+        romantoIntegersMap.put('M', 1000);
 
         int result = 0;
-        int prevValue = values[s.charAt(0) - 'A']; // Initialize prevValue with the value of the first character
-        
-        for (int i = 1; i < s.length(); i++) {
-            int currentValue = values[s.charAt(i) - 'A'];
-            
-            // If the current numeral is part of a subtractive pair, subtract its value
-            if (prevValue < currentValue) {
-                result -= prevValue;
-            } else {
-                result += prevValue;
-            }
-            
-            // Update prevValue for the next iteration
-            prevValue = currentValue;
+
+        for (int i = 0; i < s.length(); i++) {
+            if (i + 1 < s.length() && romantoIntegersMap.get(s.charAt(i)) < romantoIntegersMap.get(s.charAt(i + 1)))
+                result -= romantoIntegersMap.get(s.charAt(i));
+            else
+                result += romantoIntegersMap.get(s.charAt(i));
         }
-        
-        // Add the value of the last numeral
-        result += prevValue;
-        
+
         return result;
+
     }
 }
