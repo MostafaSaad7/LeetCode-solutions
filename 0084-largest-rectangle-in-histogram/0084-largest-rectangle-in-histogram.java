@@ -1,53 +1,31 @@
-import java.util.Stack;
+
+
 
 class Solution {
     public int largestRectangleArea(int[] heights) {
-        Stack<Rec> stack = new Stack<>();
-        int largestArea = -1;
-        for (int i = 0; i < heights.length; i++) {
-            Rec rec = new Rec(heights[i], i);
-            while (!stack.empty() && stack.peek().height > rec.height) {
-                largestArea = Math.max(largestArea, stack.peek().height * (i - stack.peek().index));
-                rec.index = stack.peek().index;
-                stack.pop();
+        int area = 0, n = heights.length;
+        int start;
+        Stack<Pair<Integer,Integer>> stack = new Stack<>();
+        for(int i=0;i<heights.length;i++){
+            int curHt =heights[i];
+            start = i;
+            while(!stack.isEmpty() && stack.peek().getValue() > curHt){
+                Pair<Integer,Integer> pair = stack.pop();
+                int index = pair.getKey();
+                int h = pair.getValue();
+                area = Math.max(area, h * (i - index));
+                start = index;
             }
-
-            stack.push(rec);
-
+            stack.push(new Pair(start,curHt));
         }
 
-        while (!stack.empty()) {
-            largestArea= Math.max(largestArea, stack.peek().height * (heights.length - stack.peek().index));
-            stack.pop();
+        while(!stack.isEmpty()){
+            Pair<Integer,Integer> pair = stack.pop();
+            int index = pair.getKey();
+            int h = pair.getValue();
+            area = Math.max(area, h * (n - index));
         }
-
-        return largestArea;
-    }
-}
-
-class Rec {
-
-    public Rec(int height, int index) {
-        this.height = height;
-        this.index = index;
+        return area;
     }
 
-    int height;
-    int index;
-
-    public int getHeight() {
-        return height;
-    }
-
-    public void setHeight(int height) {
-        this.height = height;
-    }
-
-    public int getIndex() {
-        return index;
-    }
-
-    public void setIndex(int index) {
-        this.index = index;
-    }
 }
