@@ -1,17 +1,23 @@
+import java.util.*;
+
 class Solution {
-    public int carFleet(int target, int[] pos, int[] speed) {
-        int N = pos.length, res = 0;
-        double[][] cars = new double[N][2];
-        for (int i = 0; i < N; ++i)
-            cars[i] = new double[] {pos[i], (double)(target - pos[i]) / speed[i]};
-        Arrays.sort(cars, (a, b) -> Double.compare(a[0], b[0]));
-        double cur = 0;
-        for (int i = N - 1; i >= 0 ; --i) {
-            if (cars[i][1] > cur) {
-                cur = cars[i][1];
-                res++;
-            }
+    public int carFleet(int target, int[] position, int[] speed) {
+        Map<Integer, Integer> posSpeedMat = new TreeMap<>((o1, o2) -> Integer.compare(o2,o1));
+        Stack<Double> stack = new Stack<>();
+        for (int i = 0; i < position.length; i++) {
+            posSpeedMat.put(position[i], speed[i]);
         }
-        return res;
+
+        for (var entry : posSpeedMat.entrySet()) {
+            double time = (double)(target -  entry.getKey()) / entry.getValue();
+            if (!stack.isEmpty() && time <= stack.peek())
+                continue;
+            stack.push(time);
+
+        }
+
+        return stack.size();
+
     }
 }
+
