@@ -140,6 +140,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0133-clone-graph](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0133-clone-graph) |
 | [0813-all-paths-from-source-to-target](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0813-all-paths-from-source-to-target) |
+| [1325-path-with-maximum-probability](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1325-path-with-maximum-probability) |
 ## Array
 |  |
 | ------- |
@@ -166,6 +167,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0967-minimum-falling-path-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0967-minimum-falling-path-sum) |
 | [1121-partition-array-for-maximum-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1121-partition-array-for-maximum-sum) |
 | [1196-filling-bookcase-shelves](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1196-filling-bookcase-shelves) |
+| [1325-path-with-maximum-probability](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1325-path-with-maximum-probability) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1669-minimum-cost-to-cut-a-stick](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1669-minimum-cost-to-cut-a-stick) |
 | [2058-concatenation-of-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2058-concatenation-of-array) |
@@ -268,6 +270,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0621-task-scheduler](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0621-task-scheduler) |
+| [1325-path-with-maximum-probability](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1325-path-with-maximum-probability) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -304,4 +307,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0084-largest-rectangle-in-histogram](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0084-largest-rectangle-in-histogram) |
 | [0883-car-fleet](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0883-car-fleet) |
+## Shortest Path
+|  |
+| ------- |
+| [1325-path-with-maximum-probability](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1325-path-with-maximum-probability) |
 <!---LeetCode Topics End-->
