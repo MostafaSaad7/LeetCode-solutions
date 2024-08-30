@@ -155,6 +155,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0063-unique-paths-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0063-unique-paths-ii) |
 | [0078-subsets](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0078-subsets) |
 | [0084-largest-rectangle-in-histogram](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0084-largest-rectangle-in-histogram) |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0174-dungeon-game](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0174-dungeon-game) |
 | [0213-house-robber-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0213-house-robber-ii) |
 | [0221-maximal-square](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0221-maximal-square) |
@@ -259,6 +260,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0005-longest-palindromic-substring) |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 ## Backtracking
 |  |
 | ------- |
@@ -319,4 +321,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [2035-count-sub-islands](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2035-count-sub-islands) |
+## Binary Search
+|  |
+| ------- |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 <!---LeetCode Topics End-->
