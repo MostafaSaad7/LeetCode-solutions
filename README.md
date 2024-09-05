@@ -182,6 +182,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2035-count-sub-islands](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2035-count-sub-islands) |
 | [2058-concatenation-of-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2058-concatenation-of-array) |
 | [2132-convert-1d-array-into-2d-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2132-convert-1d-array-into-2d-array) |
+| [2155-find-missing-observations](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2155-find-missing-observations) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2163-kth-distinct-string-in-an-array) |
 | [3194-find-words-containing-character](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3194-find-words-containing-character) |
 | [3476-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3476-find-minimum-operations-to-make-all-elements-divisible-by-three) |
@@ -300,6 +301,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2058-concatenation-of-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2058-concatenation-of-array) |
 | [2076-sum-of-digits-of-string-after-convert](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2076-sum-of-digits-of-string-after-convert) |
 | [2132-convert-1d-array-into-2d-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2132-convert-1d-array-into-2d-array) |
+| [2155-find-missing-observations](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2155-find-missing-observations) |
 ## Math
 |  |
 | ------- |
@@ -308,6 +310,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0050-powx-n](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0050-powx-n) |
 | [0592-fraction-addition-and-subtraction](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0592-fraction-addition-and-subtraction) |
 | [0790-global-and-local-inversions](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0790-global-and-local-inversions) |
+| [2155-find-missing-observations](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2155-find-missing-observations) |
 | [2556-convert-the-temperature](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2556-convert-the-temperature) |
 | [3172-divisible-and-non-divisible-sums-difference](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3172-divisible-and-non-divisible-sums-difference) |
 | [3476-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3476-find-minimum-operations-to-make-all-elements-divisible-by-three) |
