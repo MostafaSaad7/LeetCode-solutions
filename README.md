@@ -128,6 +128,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0145-binary-tree-postorder-traversal](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0145-binary-tree-postorder-traversal) |
 | [0199-binary-tree-right-side-view](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0199-binary-tree-right-side-view) |
 | [0695-max-area-of-island](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0695-max-area-of-island) |
+| [0744-network-delay-time](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0744-network-delay-time) |
 | [0776-n-ary-tree-postorder-traversal](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0776-n-ary-tree-postorder-traversal) |
 | [0813-all-paths-from-source-to-target](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0813-all-paths-from-source-to-target) |
 | [2035-count-sub-islands](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2035-count-sub-islands) |
@@ -138,12 +139,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0133-clone-graph](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0133-clone-graph) |
 | [0199-binary-tree-right-side-view](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0199-binary-tree-right-side-view) |
 | [0695-max-area-of-island](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0695-max-area-of-island) |
+| [0744-network-delay-time](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0744-network-delay-time) |
 | [0813-all-paths-from-source-to-target](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0813-all-paths-from-source-to-target) |
 | [2035-count-sub-islands](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2035-count-sub-islands) |
 ## Graph
 |  |
 | ------- |
 | [0133-clone-graph](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0133-clone-graph) |
+| [0744-network-delay-time](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0744-network-delay-time) |
 | [0813-all-paths-from-source-to-target](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0813-all-paths-from-source-to-target) |
 | [1325-path-with-maximum-probability](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1325-path-with-maximum-probability) |
 ## Array
@@ -287,6 +290,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0621-task-scheduler](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0621-task-scheduler) |
+| [0744-network-delay-time](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0744-network-delay-time) |
 | [1325-path-with-maximum-probability](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1325-path-with-maximum-probability) |
 ## Bit Manipulation
 |  |
@@ -333,6 +337,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Shortest Path
 |  |
 | ------- |
+| [0744-network-delay-time](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0744-network-delay-time) |
 | [1325-path-with-maximum-probability](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1325-path-with-maximum-probability) |
 ## Union Find
 |  |
