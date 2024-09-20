@@ -158,6 +158,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0046-permutations](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0046-permutations) |
 | [0047-permutations-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0047-permutations-ii) |
 | [0051-n-queens](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0051-n-queens) |
+| [0056-merge-intervals](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0056-merge-intervals) |
 | [0057-insert-interval](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0057-insert-interval) |
 | [0063-unique-paths-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0063-unique-paths-ii) |
 | [0078-subsets](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0078-subsets) |
@@ -232,6 +233,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Sorting
 |  |
 | ------- |
+| [0056-merge-intervals](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0056-merge-intervals) |
 | [0435-non-overlapping-intervals](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0435-non-overlapping-intervals) |
 | [0621-task-scheduler](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0621-task-scheduler) |
 | [0843-binary-trees-with-factors](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0843-binary-trees-with-factors) |
