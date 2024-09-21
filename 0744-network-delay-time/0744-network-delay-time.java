@@ -1,63 +1,69 @@
-import java.util.Arrays;
+import java.util.*;
 
 class Solution {
     private static final int OO = (int) 1e6;  // Infinite value
 
     public int networkDelayTime(int[][] times, int n, int k) {
-        int[][] adjMax = new int[n][n];
-
-        for (int[] row : adjMax)
-            Arrays.fill(row, OO);
-
-        for (int[] edge : times) {
-            int from = edge[0] - 1;
-            int to = edge[1] - 1;
-            int cost = edge[2];
-            adjMax[from][to] = cost;
+        List<List<Edge>> adjList = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            adjList.add(new ArrayList<>());
         }
 
-        int[] shortestPaths = dijkstra(adjMax, k - 1);
+        for (int[] time : times) {
+            int from = time[0] - 1;
+            int to = time[1] - 1;
+            int cost = time[2];
+            adjList.get(from).add(new Edge(to, cost));
+        }
+
+        int[] shortestPaths = dijkstra(adjList, n, k - 1);
 
         int maxTime = Arrays.stream(shortestPaths).max().orElse(OO);
         return (maxTime >= OO) ? -1 : maxTime;
     }
 
-    private int[] dijkstra(int[][] adjMax, int src) {
-        int n = adjMax.length;
+    private int[] dijkstra(List<List<Edge>> adjList, int n, int src) {
         boolean[] visited = new boolean[n];
         int[] dist = new int[n];
         Arrays.fill(dist, OO);
         dist[src] = 0;
+        PriorityQueue<Edge> pq = new PriorityQueue<>();
+        pq.add(new Edge(src, 0));
 
-        while (true) {
-            int minIndx = -1;
-            int minValue = Integer.MAX_VALUE;
+        while (!pq.isEmpty()) {
+            Edge minEdge = pq.poll();
+            int minIdx = minEdge.to;
 
-            for (int i = 0; i < n; i++) {
-                if (!visited[i] && dist[i] < minValue) {
-                    minValue = dist[i];
-                    minIndx = i;
+            if (visited[minIdx]) {
+                continue;
+            }
+
+            for (Edge edge : adjList.get(minIdx)) {
+                int to = edge.to;
+                int weight = edge.weight;
+
+                if (dist[to] > dist[minIdx] + weight) {
+                    dist[to] = dist[minIdx] + weight;
+                    pq.add(new Edge(to, dist[to]));
                 }
             }
 
+            visited[minIdx] = true;  // Mark as visited (delete)
+        }
+        return dist;
+    }
 
-            if (minIndx == -1)
-                break;
+    class Edge implements Comparable<Edge> {
+        int to, weight;
 
-            for (int i = 0; i < n; ++i) {
-
-                if (dist[i] > dist[minIndx] + adjMax[minIndx][i]) {
-                    dist[i] = dist[minIndx] + adjMax[minIndx][i];
-                }
-
-            }
-
-            visited[minIndx] = true;  // Mark as visited (delete)
-
+        public Edge(int to, int weight) {
+            this.to = to;
+            this.weight = weight;
         }
 
-
-        return dist;
-
+        @Override
+        public int compareTo(Edge other) {
+            return this.weight - other.weight; // Min-heap by weight
+        }
     }
 }
