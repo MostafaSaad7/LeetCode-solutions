@@ -1,28 +1,63 @@
 import java.util.Arrays;
 
 class Solution {
-    public int networkDelayTime(int[][] times, int n, int k) {
-        // Step 1: Initialize the distance array with a large value (1000000)
-        int[] dist = new int[n + 1];
-        Arrays.fill(dist, 1000000);
-        
-        // Step 2: Set the distance to the source node (k) as 0
-        dist[k] = 0;
+    private static final int OO = (int) 1e6;  // Infinite value
 
-        // Step 3: Perform Bellman-Ford relaxation for (n-1) iterations
-        for (int i = 0; i < n - 1; i++) {
-            for (int[] edge : times) {
-                int u = edge[0], v = edge[1], w = edge[2];
-                if ( dist[v] > dist[u] + w) {
-                    dist[v] = dist[u] + w;
-                }
-            }
+    public int networkDelayTime(int[][] times, int n, int k) {
+        int[][] adjMax = new int[n][n];
+
+        for (int[] row : adjMax)
+            Arrays.fill(row, OO);
+
+        for (int[] edge : times) {
+            int from = edge[0] - 1;
+            int to = edge[1] - 1;
+            int cost = edge[2];
+            adjMax[from][to] = cost;
         }
 
-        // Step 4: Find the maximum delay time (ignore index 0)
-        int maxTime = Arrays.stream(dist, 1, n + 1).max().getAsInt();
-        
-        // Step 5: If any node is unreachable, return -1
-        return maxTime >= 1000000 ? -1 : maxTime;
+        int[] shortestPaths = dijkstra(adjMax, k - 1);
+
+        int maxTime = Arrays.stream(shortestPaths).max().orElse(OO);
+        return (maxTime >= OO) ? -1 : maxTime;
+    }
+
+    private int[] dijkstra(int[][] adjMax, int src) {
+        int n = adjMax.length;
+        boolean[] visited = new boolean[n];
+        int[] dist = new int[n];
+        Arrays.fill(dist, OO);
+        dist[src] = 0;
+
+        while (true) {
+            int minIndx = -1;
+            int minValue = Integer.MAX_VALUE;
+
+            for (int i = 0; i < n; i++) {
+                if (!visited[i] && dist[i] < minValue) {
+                    minValue = dist[i];
+                    minIndx = i;
+                }
+            }
+
+
+            if (minIndx == -1)
+                break;
+
+            for (int i = 0; i < n; ++i) {
+
+                if (dist[i] > dist[minIndx] + adjMax[minIndx][i]) {
+                    dist[i] = dist[minIndx] + adjMax[minIndx][i];
+                }
+
+            }
+
+            visited[minIndx] = true;  // Mark as visited (delete)
+
+        }
+
+
+        return dist;
+
     }
 }
