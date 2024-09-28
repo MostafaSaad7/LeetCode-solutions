@@ -180,6 +180,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0695-max-area-of-island](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0695-max-area-of-island) |
 | [0790-global-and-local-inversions](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0790-global-and-local-inversions) |
 | [0843-binary-trees-with-factors](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0843-binary-trees-with-factors) |
+| [0859-design-circular-deque](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0859-design-circular-deque) |
 | [0883-car-fleet](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0883-car-fleet) |
 | [0906-walking-robot-simulation](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0906-walking-robot-simulation) |
 | [0967-minimum-falling-path-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0967-minimum-falling-path-sum) |
@@ -374,6 +375,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0023-merge-k-sorted-lists](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0023-merge-k-sorted-lists) |
 | [0138-copy-list-with-random-pointer](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0138-copy-list-with-random-pointer) |
 | [0146-lru-cache](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0146-lru-cache) |
+| [0859-design-circular-deque](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0859-design-circular-deque) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -390,8 +392,13 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0146-lru-cache](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0146-lru-cache) |
+| [0859-design-circular-deque](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0859-design-circular-deque) |
 ## Doubly-Linked List
 |  |
 | ------- |
 | [0146-lru-cache](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0146-lru-cache) |
+## Queue
+|  |
+| ------- |
+| [0859-design-circular-deque](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0859-design-circular-deque) |
 <!---LeetCode Topics End-->
