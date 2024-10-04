@@ -30,8 +30,8 @@ class Solution {
         n.right =
             builder(
                 preorder,
-                preorderIndex + (mid - inorderLow) + 1,
-                mid + 1,
+  preorderIndex + (mid - inorderLow) + 1,  // Adjusted preorder index for right subtree
+    mid + 1,  // Starting position for the right subtree in the inorder array
                 inorderHigh
             );
 
