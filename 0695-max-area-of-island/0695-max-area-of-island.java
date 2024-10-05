@@ -1,31 +1,34 @@
 class Solution {
+    int[][] dirs = { { 0, 1 }, { 0, -1 }, { 1, 0 }, { -1, 0 } };
+
     public int maxAreaOfIsland(int[][] grid) {
+        int rows = grid.length;
+        int columns = grid[0].length;
         int maxArea = 0;
 
-        for (int i = 0; i < grid.length; i++) {
-            for (int j = 0; j < grid[0].length; j++) {
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
                 if (grid[i][j] == 1) {
-                    maxArea = Math.max(maxArea, dfs(grid, i, j));
+                    int componentLen = dfs(grid, i, j);
+                    maxArea = Math.max(componentLen, maxArea);
                 }
             }
         }
-
         return maxArea;
     }
 
-    private int dfs(int[][] grid, int i, int j) {
-        if (i < 0 || i >= grid.length || j < 0 || j >= grid[0].length || grid[i][j] == 0) {
+    public int dfs(int[][] grid, int row, int col) {
+        if (!isValid(grid, row, col))
             return 0;
+        grid[row][col] = 0;
+        int componentLen = 1;
+        for (int[] dir : dirs) {
+            componentLen += dfs(grid, row + dir[0], col + dir[1]);
         }
+        return componentLen;
+    }
 
-        grid[i][j] = 0; // Mark as visited to avoid infinite loop
-
-        int area = 1;
-        area += dfs(grid, i + 1, j);
-        area += dfs(grid, i - 1, j);
-        area += dfs(grid, i, j + 1);
-        area += dfs(grid, i, j - 1);
-
-        return area;
+    public boolean isValid(int[][] grid, int row, int col) {
+        return row >= 0 && row < grid.length && col >= 0 && col < grid[row].length && grid[row][col] != 0;
     }
 }
