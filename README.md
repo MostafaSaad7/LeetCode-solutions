@@ -158,6 +158,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0744-network-delay-time](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0744-network-delay-time) |
 | [0813-all-paths-from-source-to-target](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0813-all-paths-from-source-to-target) |
 | [1325-path-with-maximum-probability](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1325-path-with-maximum-probability) |
+| [2090-number-of-ways-to-arrive-at-destination](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 ## Array
 |  |
 | ------- |
@@ -225,6 +226,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1263-number-of-dice-rolls-with-target-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1263-number-of-dice-rolls-with-target-sum) |
 | [1437-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1437-minimum-insertion-steps-to-make-a-string-palindrome) |
 | [1669-minimum-cost-to-cut-a-stick](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1669-minimum-cost-to-cut-a-stick) |
+| [2090-number-of-ways-to-arrive-at-destination](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 ## String
 |  |
 | ------- |
@@ -365,6 +367,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0744-network-delay-time](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0744-network-delay-time) |
 | [1325-path-with-maximum-probability](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1325-path-with-maximum-probability) |
+| [2090-number-of-ways-to-arrive-at-destination](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 ## Union Find
 |  |
 | ------- |
@@ -414,4 +417,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0859-design-circular-deque](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0859-design-circular-deque) |
+## Topological Sort
+|  |
+| ------- |
+| [2090-number-of-ways-to-arrive-at-destination](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 <!---LeetCode Topics End-->
