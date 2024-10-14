@@ -1,42 +1,27 @@
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
 class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
-        // Create a dummy node to simplify the process of constructing the result list
-        ListNode dummy = new ListNode();
-        ListNode current = dummy;
 
-        // Initialize a priority queue that sorts ListNode by their value
-        PriorityQueue<ListNode> queue = new PriorityQueue<>(Comparator.comparingInt(node -> node.val));
+        PriorityQueue<ListNode> priorityQueue = new PriorityQueue<>((r1, r2) -> Integer.compare(r1.val, r2.val));
 
-        // Add the head of each list to the priority queue
-        for (ListNode list : lists) {
-            if (list != null) {
-                queue.add(list);
+        for (ListNode root : lists) {
+
+            while (root != null) {
+                priorityQueue.add(root);
+                root = root.next;
             }
         }
 
-        // Process the nodes in the priority queue
-        while (!queue.isEmpty()) {
-            ListNode smallestNode = queue.poll();
-            current.next = smallestNode;
-            current = current.next;
 
-            // If the extracted node has a next node, add it to the queue
-            if (smallestNode.next != null) {
-                queue.add(smallestNode.next);
-            }
+        ListNode newRoot = new ListNode();
+        ListNode curr = newRoot;
+        while (!priorityQueue.isEmpty()) {
+            curr.next = priorityQueue.poll();
+            curr = curr.next;
+            curr.next = null;
         }
 
-        // Return the merged list starting from the next node of the dummy
-        return dummy.next;
+
+        return newRoot.next;
+
     }
 }
