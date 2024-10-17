@@ -1,106 +1,47 @@
-import javax.swing.plaf.basic.BasicProgressBarUI;
-import java.util.*;
+// This one from solutions 
 
 class Solution {
-
-    private static final long MOD = 1_000_000_007;
-    private static final long OO = 2_000_000_010L;
-    private long[] memory;
-
-
-    static class Edge implements Comparable<Edge> {
-        int to;
-        long weight;
-
-        Edge(int to, long weight) {
-            this.to = to;
-            this.weight = weight;
+    public int countRestrictedPaths(int n, int[][] edges) {
+        if (n == 1) return 0;
+        List<int[]>[] graph = new List[n+1];
+        for (int i = 1; i <= n; i++) graph[i] = new ArrayList<>();
+        for (int[] e : edges) {
+            graph[e[0]].add(new int[]{e[2], e[1]});
+            graph[e[1]].add(new int[]{e[2], e[0]});
         }
-
-        // PriorityQueue will sort edges based on weight
-        @Override
-        public int compareTo(Edge other) {
-            return Long.compare(this.weight, other.weight);
-        }
-
+        int[] dist = dijkstra(n, graph);
+        return dfs(1, n, graph, dist, new Integer[n+1]);
     }
-
-    public int countRestrictedPaths(int n, int[][] roads) {
-        List<List<Edge>> adjList = new ArrayList<>();
-
-        for (int i = 0; i < n; i++) {
-            adjList.add(new ArrayList<>());
-        }
-
-        // Build the graph with undirected edges
-        for (int[] road : roads) {
-            int from = road[0] - 1;
-            int to = road[1] - 1;
-            int cost = road[2];
-
-            adjList.get(from).add(new Edge(to, cost));
-            adjList.get(to).add(new Edge(from, cost));
-        }
-
-        // Find shortest paths from the last node (n-1) to all other nodes
-        List<Long> dist = dijkstra(adjList, n, n - 1);
-
-        memory = new long[n];
-        Arrays.fill(memory, -1);
-
-        return (int) countPaths(0, n - 1, adjList, dist);
-
-    }
-
-    private long countPaths(int src, int target, List<List<Edge>> adjList, List<Long> dist) {
-        if (src == target) {
-            return 1;
-        }
-
-        if (memory[src] != -1) {
-            return memory[src];
-        }
-
-        long PathsCount = 0;
-        for (Edge edge : adjList.get(src)) {
-            if (dist.get(src) > dist.get(edge.to)) {
-                PathsCount += countPaths(edge.to, target, adjList, dist);
-                PathsCount %= MOD;
-            }
-
-        }
-        memory[src] = PathsCount;
-        return PathsCount;
-    }
-
-    private List<Long> dijkstra(List<List<Edge>> adjList, int n, int src) {
-
-        List<Long> dist = new ArrayList<>(Collections.nCopies(n, OO));
-        boolean[] visited = new boolean[n];
-        dist.set(src, 0L);
-
-        PriorityQueue<Edge> priorityQueue = new PriorityQueue<>();
-        priorityQueue.add(new Edge(src, 0));
-
-        while (!priorityQueue.isEmpty()) {
-            Edge minEdge = priorityQueue.poll();
-
-            int currentNode = minEdge.to;
-            if (visited[currentNode]) {
-                continue;
-            }
-            visited[currentNode] = true;
-
-            for (Edge edge : adjList.get(currentNode)) {
-                int nextNode = edge.to;
-                long newDist = dist.get(currentNode) + edge.weight;
-
-                if (newDist < dist.get(nextNode)) {
-                    dist.set(nextNode, newDist);
-                    priorityQueue.add(new Edge(nextNode, newDist));
+    // Dijkstra to find shortest distance of paths from node `n` to any other nodes
+    int[] dijkstra(int n, List<int[]>[] graph) {
+        int[] dist = new int[n+1];
+        Arrays.fill(dist, Integer.MAX_VALUE);
+        dist[n] = 0;
+        PriorityQueue<int[]> minHeap = new PriorityQueue<>(Comparator.comparingInt(a -> a[0])); // dist, node
+        minHeap.offer(new int[]{0, n});
+        while (!minHeap.isEmpty()) {
+            int[] top = minHeap.poll();
+            int d = top[0], u = top[1];
+            if (d != dist[u]) continue;
+            for (int[] nei : graph[u]) {
+                int w = nei[0], v = nei[1];
+                if (dist[v] > dist[u] + w) {
+                    dist[v] = dist[u] + w;
+                    minHeap.offer(new int[]{dist[v], v});
                 }
             }
         }
         return dist;
+    }
+    int dfs(int src, int n, List<int[]>[] graph, int[] dist, Integer[] memo) {
+        if (memo[src] != null) return memo[src];
+        if (src == n) return 1; // Found a path to reach to destination
+        int ans = 0;
+        for (int[] nei : graph[src]) {
+            int w = nei[0], v = nei[1];
+            if (dist[src] > dist[v])
+                ans = (ans + dfs(v, n, graph, dist, memo)) % 1000000007;
+        }
+        return memo[src] = ans;
     }
 }
