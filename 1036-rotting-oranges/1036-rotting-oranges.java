@@ -24,9 +24,9 @@ class Solution {
 
         int time = 0;
         // Step 2: BFS to rot the fresh oranges
-        while (!queue.isEmpty()) {
+        while (!queue.isEmpty() && freshCount != 0) {
             int size = queue.size();
-            boolean anyFreshTurnedRotten = false;
+
 
             // Process all the rotten oranges at the current level
             for (int i = 0; i < size; i++) {
@@ -47,14 +47,12 @@ class Solution {
                     grid[nr][nc] = 2;
                     queue.offer(new int[]{nr, nc});
                     freshCount--;
-                    anyFreshTurnedRotten = true; // Mark that a fresh orange turned rotten
                 }
             }
 
-            // Increment time only if any fresh oranges turned rotten during this level
-            if (anyFreshTurnedRotten) {
+
                 time++;
-            }
+        
         }
 
         // If there are still fresh oranges left, return -1
