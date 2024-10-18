@@ -1,34 +1,33 @@
 import java.util.Arrays;
 
 class Solution {
-    private int count = 0; // to count the number of valid subsets
-    private int maxOrRes = 0; // maximum OR result
-
     public int countMaxOrSubsets(int[] nums) {
-        // Step 1: Calculate the maximum OR result
+
+        int maxOrRes = 0;
         for (int num : nums) {
-            maxOrRes |= num; // maxOrRes now contains the OR of all elements
+            maxOrRes |= num;
         }
 
-        // Step 2: Use backtracking to count the subsets whose OR equals maxOrRes
-        backtrack(nums, 0, 0);
-        return count;
-    }
+        int count = 0;
+        int n = nums.length;
+        int totalSubsets = 1 << n; // 2^n subsets
 
-    private void backtrack(int[] nums, int currentIdx, int currentOrRes) {
+        for (int mask = 0; mask < totalSubsets; mask++) {
 
-        if (currentIdx == nums.length) {
-            // Check if the current OR equals the maximum OR
-            if (currentOrRes == maxOrRes) {
+            int currentOr = 0;
+            for (int i = 0; i < n; i++) {
+                if ((mask & (1 << i)) != 0) {
+                    currentOr |= nums[i];
+                }
+            }
+
+            if (currentOr == maxOrRes) {
                 count++;
             }
-            return;
+
+
         }
 
-        // Include the current number in the subset
-        backtrack(nums, currentIdx + 1, currentOrRes | nums[currentIdx]);
-
-        // Exclude the current number from the subset
-        backtrack(nums, currentIdx + 1, currentOrRes);
+        return count;
     }
 }
