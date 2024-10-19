@@ -1,31 +1,20 @@
 class Solution {
     public char findKthBit(int n, int k) {
-        StringBuilder currentNumber = new StringBuilder("0");
+        int inversionCount = 0;
+        int len = (1 << n) - 1;
 
-        for (int i = 1; i <= n; i++) {
+        while (k > 1) {
+            if (k == (len / 2) + 1) 
+                return (inversionCount & 1) == 1 ? '0' : '1';
 
-            String numberBeforeConversion = currentNumber.toString();
-            String invertedNumber = invert(numberBeforeConversion);
-            StringBuilder reversedNumber = new StringBuilder(invertedNumber).reverse();
-            currentNumber = new StringBuilder(numberBeforeConversion).
-                    append("1").
-                    append(reversedNumber);
+            if (k > len / 2) {
+                k = len - k + 1;
+                inversionCount++;
+
+            }
+            len = len / 2;
         }
 
-
-        return currentNumber.charAt(k - 1);
+        return (inversionCount & 1) == 1 ? '1' : '0';
     }
-
-    private String invert(String numberBeforeConversion) {
-        StringBuilder result = new StringBuilder();
-
-        for (char c : numberBeforeConversion.toCharArray()) {
-            result.append(c ^ '1');
-
-        }
-
-        return result.toString();
-    }
-
-
 }
