@@ -1,50 +1,49 @@
+// from editorial 
+public class Solution {
 
-
-class Solution {
     public boolean parseBoolExpr(String expression) {
-        Stack<Character> stack = new Stack<>();
-        for (Character character : expression.toCharArray()) {
-            if (character == ')') {
+        Stack<Character> st = new Stack<>();
 
-                List<Boolean> values = new LinkedList<>();
-                while (stack.peek() != '(') {
-                    values.add(stack.peek() == 't');
-                    stack.pop();
+        // Traverse through the expression
+        for (char currChar : expression.toCharArray()) {
+            if (currChar == ',' || currChar == '(') continue; // Skip commas and open parentheses
+
+            // Push operators and boolean values to the stack
+            if (
+                currChar == 't' ||
+                currChar == 'f' ||
+                currChar == '!' ||
+                currChar == '&' ||
+                currChar == '|'
+            ) {
+                st.push(currChar);
+            }
+            // Handle closing parentheses and evaluate the subexpression
+            else if (currChar == ')') {
+                boolean hasTrue = false, hasFalse = false;
+
+                // Process the values inside the parentheses
+                while (
+                    st.peek() != '!' && st.peek() != '&' && st.peek() != '|'
+                ) {
+                    char topValue = st.pop();
+                    if (topValue == 't') hasTrue = true;
+                    if (topValue == 'f') hasFalse = true;
                 }
-                stack.pop();// pop (
 
-                Character operation = stack.pop();
-
-                Boolean result = evaluate(operation, values);
-
-                stack.push(result == true ? 't' : 'f');
-            } else if (character != ',') {
-                stack.push(character);
+                // Pop the operator and evaluate the subexpression
+                char op = st.pop();
+                if (op == '!') {
+                    st.push(hasTrue ? 'f' : 't');
+                } else if (op == '&') {
+                    st.push(hasFalse ? 'f' : 't');
+                } else {
+                    st.push(hasTrue ? 't' : 'f');
+                }
             }
-
         }
 
-
-        return stack.peek() == 't';
-    }
-
-    private Boolean evaluate(Character operation, List<Boolean> values) {
-
-        if (operation == '!')
-            return !values.get(0);
-
-        else if (operation == '|') {
-            for (Boolean val : values) {
-                if (val)
-                    return val;
-            }
-            return false;
-        } else {
-            for (Boolean val : values) {
-                if (!val)
-                    return val;
-            }
-            return true;
-        }
+        // The final result is at the top of the stack
+        return st.peek() == 't';
     }
 }
