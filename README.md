@@ -125,6 +125,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0906-walking-robot-simulation](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0906-walking-robot-simulation) |
 | [1256-rank-transform-of-an-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1256-rank-transform-of-an-array) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
+| [1715-split-a-string-into-the-max-number-of-unique-substrings](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1715-split-a-string-into-the-max-number-of-unique-substrings) |
 | [1741-sort-array-by-increasing-frequency](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1741-sort-array-by-increasing-frequency) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2163-kth-distinct-string-in-an-array) |
 ## Depth-First Search
@@ -253,6 +254,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1205-defanging-an-ip-address](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1205-defanging-an-ip-address) |
 | [1437-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1437-minimum-insertion-steps-to-make-a-string-palindrome) |
 | [1667-find-kth-bit-in-nth-binary-string](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1667-find-kth-bit-in-nth-binary-string) |
+| [1715-split-a-string-into-the-max-number-of-unique-substrings](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1715-split-a-string-into-the-max-number-of-unique-substrings) |
 | [2076-sum-of-digits-of-string-after-convert](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2076-sum-of-digits-of-string-after-convert) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2163-kth-distinct-string-in-an-array) |
 | [3194-find-words-containing-character](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3194-find-words-containing-character) |
@@ -331,6 +333,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0078-subsets](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0078-subsets) |
 | [0494-target-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0494-target-sum) |
 | [0813-all-paths-from-source-to-target](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0813-all-paths-from-source-to-target) |
+| [1715-split-a-string-into-the-max-number-of-unique-substrings](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1715-split-a-string-into-the-max-number-of-unique-substrings) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 ## Heap (Priority Queue)
 |  |
