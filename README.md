@@ -128,6 +128,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1715-split-a-string-into-the-max-number-of-unique-substrings](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1715-split-a-string-into-the-max-number-of-unique-substrings) |
 | [1741-sort-array-by-increasing-frequency](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1741-sort-array-by-increasing-frequency) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2163-kth-distinct-string-in-an-array) |
+| [2677-cousins-in-binary-tree-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2677-cousins-in-binary-tree-ii) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -143,6 +144,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0813-all-paths-from-source-to-target](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0813-all-paths-from-source-to-target) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1544-count-good-nodes-in-binary-tree) |
 | [2035-count-sub-islands](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2035-count-sub-islands) |
+| [2677-cousins-in-binary-tree-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2677-cousins-in-binary-tree-ii) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -157,6 +159,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1544-count-good-nodes-in-binary-tree](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1544-count-good-nodes-in-binary-tree) |
 | [2035-count-sub-islands](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2035-count-sub-islands) |
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
+| [2677-cousins-in-binary-tree-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2677-cousins-in-binary-tree-ii) |
 ## Graph
 |  |
 | ------- |
@@ -285,6 +288,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0776-n-ary-tree-postorder-traversal](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0776-n-ary-tree-postorder-traversal) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1544-count-good-nodes-in-binary-tree) |
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
+| [2677-cousins-in-binary-tree-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2677-cousins-in-binary-tree-ii) |
 ## Binary Tree
 |  |
 | ------- |
@@ -297,6 +301,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1544-count-good-nodes-in-binary-tree) |
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
+| [2677-cousins-in-binary-tree-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2677-cousins-in-binary-tree-ii) |
 ## Matrix
 |  |
 | ------- |
