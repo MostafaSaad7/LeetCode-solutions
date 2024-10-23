@@ -1,6 +1,4 @@
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Queue;
 
 class TreeNode {
@@ -24,53 +22,37 @@ class TreeNode {
 
 class Solution {
     public TreeNode replaceValueInTree(TreeNode root) {
+
         if (root == null) return null;
-
-        Queue<TreeNode> queue = new LinkedList<>();
-        List<Integer> levelSums = new ArrayList<>();
-        queue.offer(root);
-
-        while (!queue.isEmpty()) {
-            int sz = queue.size();
-            int levelSum = 0;
+        Queue<TreeNode> q = new LinkedList<>();
+        q.offer(root);
+        int prevLevelSum = root.val;
+        while (!q.isEmpty()) {
+            int currentLevelSum = 0;
+            int sz = q.size();
             while (sz-- > 0) {
-                TreeNode currentNode = queue.poll();
-                levelSum += currentNode.val;
-                if (currentNode.left != null) queue.offer(currentNode.left);
-                if (currentNode.right != null) queue.offer(currentNode.right);
-            }
-            levelSums.add(levelSum);
-        }
-
-        queue.offer(root);
-        root.val = 0;
-        int level = 1;
-        while (!queue.isEmpty()) {
-            int sz = queue.size();
-            while (sz-- > 0) {
-                TreeNode currentNode = queue.poll();
+                TreeNode treeNode = q.poll();
+                treeNode.val = prevLevelSum - treeNode.val;
                 int siblingSum =
-                        (currentNode.left != null ? currentNode.left.val : 0) +
-                                (currentNode.right != null ? currentNode.right.val : 0);
+                        (treeNode.left != null ? treeNode.left.val : 0) +
+                                (treeNode.right != null ? treeNode.right.val : 0);
+                if (treeNode.left != null) {
+                    currentLevelSum += treeNode.left.val;
+                    treeNode.left.val = siblingSum;
 
-                if (currentNode.left != null) {
-                    currentNode.left.val = levelSums.get(level) - siblingSum;
-                    queue.offer(currentNode.left);
+                    q.offer(treeNode.left);
                 }
-
-                if (currentNode.right != null) {
-                    currentNode.right.val = levelSums.get(level) - siblingSum;
-                    queue.offer(currentNode.right);
+                if (treeNode.right != null) {
+                    currentLevelSum += treeNode.right.val;
+                    treeNode.right.val = siblingSum;
+                    q.offer(treeNode.right);
                 }
-
-
             }
 
-            level++;
-        }
+            prevLevelSum = currentLevelSum;
 
+        }
 
         return root;
-
     }
 }
