@@ -1,24 +1,64 @@
 import java.util.*;
 
+class Trie {
+    Trie root; // The root of the Trie
+    Map<String, Trie> children;
+    boolean endOfFolder;
+
+    public Trie() {
+        this.children = new HashMap<>();
+        this.endOfFolder = false;
+        this.root = this; // Initialize the root to point to itself
+    }
+
+    // Method to add a path to the Trie
+    public void add(String path) {
+        Trie cur = root; // Start from the root of the Trie
+        String[] folders = path.split("/");
+
+        for (String folder : folders) {
+            if (folder.isEmpty()) continue; // Skip empty parts from split
+            cur.children.putIfAbsent(folder, new Trie());
+            cur = cur.children.get(folder);
+        }
+        cur.endOfFolder = true;
+    }
+
+    // Method to check if the path is a subfolder of any existing folder
+    public boolean prefixSearch(String path) {
+        Trie cur = root; // Start from the root of the Trie
+        String[] folders = path.split("/");
+
+        for (int i = 0; i < folders.length - 1; i++) {
+            String folder = folders[i];
+            if (folder.isEmpty()) continue; // Skip empty parts from split
+
+            if (!cur.children.containsKey(folder)) {
+                return false;
+            }
+            cur = cur.children.get(folder);
+            if (cur.endOfFolder) {
+                return true; // A parent folder is found
+            }
+        }
+        return false;
+    }
+}
+
 class Solution {
     public List<String> removeSubfolders(String[] folder) {
-        // Sort the folders lexicographically
-        Arrays.sort(folder);
-        List<String> result = new LinkedList<>();
+        Trie trie = new Trie();
 
-        // Add the first folder to the result as the base case
-        result.add(folder[0]);
+        // Add all folders to the Trie
+        for (String f : folder) {
+            trie.add(f);
+        }
 
-        // Iterate over the sorted folders starting from the second one
-        for (int i = 1; i < folder.length; i++) {
-            // Get the last folder added to the result
-            String lastAdded = result.get(result.size() - 1);
-
-            // Check if the current folder is a subfolder of the last added folder
-            // A folder is considered a subfolder if it starts with the last added folder plus a '/'
-            if (!(folder[i].startsWith(lastAdded) && folder[i].charAt(lastAdded.length()) == '/')) {
-                // If it's not a subfolder, add it to the result
-                result.add(folder[i]);
+        List<String> result = new ArrayList<>();
+        // Check if each folder is not a subfolder
+        for (String f : folder) {
+            if (!trie.prefixSearch(f)) {
+                result.add(f);
             }
         }
 
