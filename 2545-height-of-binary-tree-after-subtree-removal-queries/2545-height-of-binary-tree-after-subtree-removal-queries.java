@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 
 class TreeNode {
     int val;
@@ -22,38 +21,36 @@ class TreeNode {
 class Solution {
     public int[] treeQueries(TreeNode root, int[] queries) {
         int n = 1_000_02;
-        List<Integer> nodeLevel = new ArrayList<>(n);
-        List<Integer> nodeHeight = new ArrayList<>(n);
-        List<List<Integer>> maxTwoHeightsPerLevel = new ArrayList<>(n);
+        int[] nodeLevel = new int[n];
+        int[] nodeHeight = new int[n];
+        int[][] maxTwoHeightsPerLevel = new int[n][2];
 
-        // Initialize lists with default values
+        // Initialize maxTwoHeightsPerLevel with default values of zero
         for (int i = 0; i < n; i++) {
-            nodeLevel.add(0);
-            nodeHeight.add(0);
-            maxTwoHeightsPerLevel.add(new ArrayList<>(List.of(0, 0)));
+            Arrays.fill(maxTwoHeightsPerLevel[i], 0);
         }
 
         treePreprocessing(root, 0, nodeLevel, nodeHeight, maxTwoHeightsPerLevel);
 
-        List<Integer> result = new ArrayList<>();
-        for (int queryNode : queries) {
-            int level = nodeLevel.get(queryNode);
-            int height = nodeHeight.get(queryNode);
+        int[] result = new int[queries.length];
+        for (int i = 0; i < queries.length; i++) {
+            int queryNode = queries[i];
+            int level = nodeLevel[queryNode];
+            int height = nodeHeight[queryNode];
             int maxHeight = 0;
-            List<Integer> maxHeightsAtLevel = maxTwoHeightsPerLevel.get(level);
-            if (height == maxHeightsAtLevel.get(0)) {
-                maxHeight = maxHeightsAtLevel.get(1);
+            int[] maxHeightsAtLevel = maxTwoHeightsPerLevel[level];
+            if (height == maxHeightsAtLevel[0]) {
+                maxHeight = maxHeightsAtLevel[1];
             } else {
-                maxHeight = maxHeightsAtLevel.get(0);
+                maxHeight = maxHeightsAtLevel[0];
             }
-            result.add(level + maxHeight - 1);
+            result[i] = level + maxHeight - 1;
         }
 
-        // Convert List<Integer> to int[]
-        return result.stream().mapToInt(Integer::intValue).toArray();
+        return result;
     }
 
-    private int treePreprocessing(TreeNode root, int level, List<Integer> nodeLevel, List<Integer> nodeHeight, List<List<Integer>> maxHeightPerLevel) {
+    private int treePreprocessing(TreeNode root, int level, int[] nodeLevel, int[] nodeHeight, int[][] maxHeightPerLevel) {
         if (root == null) {
             return 0;
         }
@@ -65,16 +62,16 @@ class Solution {
         );
 
         // Update node level and height
-        nodeLevel.set(root.val, level);
-        nodeHeight.set(root.val, height);
+        nodeLevel[root.val] = level;
+        nodeHeight[root.val] = height;
 
         // Update the two maximum heights for the current level
-        List<Integer> currentMaxHeights = maxHeightPerLevel.get(level);
-        if (height > currentMaxHeights.get(0)) {
-            currentMaxHeights.set(1, currentMaxHeights.get(0));
-            currentMaxHeights.set(0, height);
-        } else if (height > currentMaxHeights.get(1)) {
-            currentMaxHeights.set(1, height);
+        int[] currentMaxHeights = maxHeightPerLevel[level];
+        if (height > currentMaxHeights[0]) {
+            currentMaxHeights[1] = currentMaxHeights[0];
+            currentMaxHeights[0] = height;
+        } else if (height > currentMaxHeights[1]) {
+            currentMaxHeights[1] = height;
         }
 
         return height;
