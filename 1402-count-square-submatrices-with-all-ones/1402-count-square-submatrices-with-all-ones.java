@@ -1,22 +1,39 @@
 class Solution {
-    public int countSquares(int[][] matrix) {
-        int rows = matrix.length;
-        int cols = matrix[0].length;
-        int count = 0;
+    int maxCount = 0;
 
-        // Iterate through the matrix
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                // If the cell contains a 1 and is not in the first row or column
-                if (matrix[i][j] == 1 && i > 0 && j > 0) {
-                    // Update the cell value to the minimum of the three neighboring cells plus one
-                    matrix[i][j] = Math.min(Math.min(matrix[i - 1][j], matrix[i][j - 1]), matrix[i - 1][j - 1]) + 1;
-                }
-                // Add the value of the cell to the count of squares
-                count += matrix[i][j];
+    public int countSquares(int[][] matrix) {
+        Integer[][] dp = new Integer[matrix.length][matrix[0].length];
+        
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                dfs(matrix, i, j, dp);
             }
         }
+        return maxCount;
+    }
 
-        return count;
+    private int dfs(int[][] matrix, int row, int col, Integer[][] dp) {
+        if (!valid(row, col, matrix) || matrix[row][col] == 0)
+            return 0;
+
+        if (dp[row][col] != null)
+            return dp[row][col];
+
+        int sideLen = 1 + Math.min(
+                dfs(matrix, row + 1, col + 1, dp),
+                Math.min(
+                        dfs(matrix, row + 1, col, dp),
+                        dfs(matrix, row, col + 1, dp)
+                )
+        );
+
+        dp[row][col] = sideLen;
+        maxCount += sideLen; 
+
+        return sideLen;
+    }
+
+    private boolean valid(int row, int col, int[][] matrix) {
+        return row >= 0 && row < matrix.length && col >= 0 && col < matrix[0].length;
     }
 }
