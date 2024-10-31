@@ -225,6 +225,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2163-kth-distinct-string-in-an-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2163-kth-distinct-string-in-an-array) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 | [2545-height-of-binary-tree-after-subtree-removal-queries](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2545-height-of-binary-tree-after-subtree-removal-queries) |
+| [2554-minimum-total-distance-traveled](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2554-minimum-total-distance-traveled) |
 | [2586-longest-square-streak-in-an-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2586-longest-square-streak-in-an-array) |
 | [2794-maximum-number-of-moves-in-a-grid](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2794-maximum-number-of-moves-in-a-grid) |
 | [3194-find-words-containing-character](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3194-find-words-containing-character) |
@@ -256,6 +257,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1669-minimum-cost-to-cut-a-stick](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1669-minimum-cost-to-cut-a-stick) |
 | [1912-number-of-restricted-paths-from-first-to-last-node](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1912-number-of-restricted-paths-from-first-to-last-node) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2090-number-of-ways-to-arrive-at-destination) |
+| [2554-minimum-total-distance-traveled](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2554-minimum-total-distance-traveled) |
 | [2586-longest-square-streak-in-an-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2586-longest-square-streak-in-an-array) |
 | [2794-maximum-number-of-moves-in-a-grid](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2794-maximum-number-of-moves-in-a-grid) |
 ## String
@@ -290,6 +292,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1669-minimum-cost-to-cut-a-stick](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1669-minimum-cost-to-cut-a-stick) |
 | [1741-sort-array-by-increasing-frequency](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1741-sort-array-by-increasing-frequency) |
+| [2554-minimum-total-distance-traveled](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2554-minimum-total-distance-traveled) |
 | [2586-longest-square-streak-in-an-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2586-longest-square-streak-in-an-array) |
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
 ## Tree
