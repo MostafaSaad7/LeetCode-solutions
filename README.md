@@ -288,6 +288,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2163-kth-distinct-string-in-an-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2163-kth-distinct-string-in-an-array) |
 | [2580-circular-sentence](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2580-circular-sentence) |
 | [3194-find-words-containing-character](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3194-find-words-containing-character) |
+| [3451-string-compression-iii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3451-string-compression-iii) |
 ## Sorting
 |  |
 | ------- |
