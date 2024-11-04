@@ -1,28 +1,38 @@
 class Solution {
     public String compressedString(String word) {
-        if (word == null || word.length() == 0) return "";
-
-        char currentChar = word.charAt(0);
+        char currentchar = word.charAt(0);
         int counter = 1;
+        int index = 1;
         StringBuilder res = new StringBuilder();
-
-        for (int index = 1; index < word.length(); index++) {
-            if (word.charAt(index) == currentChar) {
+        while (index < word.length()) {
+            if (word.charAt(index) == currentchar) {
                 counter++;
-                if (counter == 10) {  // Append groups of 9
-                    res.append(9).append(currentChar);
-                    counter = 1;  // Start counting new batch
+                if (counter == 9) {
+                    res.append(counter).append(currentchar);
+                    counter = 0;
                 }
             } else {
-                res.append(counter).append(currentChar);
-                currentChar = word.charAt(index);
+                if (counter != 0)
+                    res.append(counter).append(currentchar);
+                currentchar = word.charAt(index);
                 counter = 1;
             }
+            index++;
         }
-
-        // Append remaining character count
-        res.append(counter).append(currentChar);
-
+        if (counter != 0)
+        res.append(counter).append(currentchar);
         return res.toString();
+
+    }
+
+    public static void main(String[] args) {
+        new Solution().compressedString("aaaaaaaaay");
     }
 }
+
+/*
+}
+*
+* aaaaaaaaaaaaaabb
+*
+* */
