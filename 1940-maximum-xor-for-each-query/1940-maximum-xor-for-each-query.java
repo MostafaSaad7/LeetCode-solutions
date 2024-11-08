@@ -26,7 +26,7 @@ class Solution {
 
         for(int i = 0; i < nums.length; i++){
             result[i] = xOrRes ^ mask;
-            xOrRes = xOrRes ^ nums[nums.length - i - 1];
+            xOrRes = xOrRes ^ nums[nums.length - i - 1]; // to remove the last element 
         }
         return result;   // result represents the k values to make xor result maximum for each number
 
