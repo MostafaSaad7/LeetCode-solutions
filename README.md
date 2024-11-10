@@ -235,6 +235,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2794-maximum-number-of-moves-in-a-grid](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2794-maximum-number-of-moves-in-a-grid) |
 | [3194-find-words-containing-character](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3194-find-words-containing-character) |
 | [3291-find-if-array-can-be-sorted](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3291-find-if-array-can-be-sorted) |
+| [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
 | [3476-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3476-find-minimum-operations-to-make-all-elements-divisible-by-three) |
 ## Dynamic Programming
 |  |
@@ -401,6 +402,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1940-maximum-xor-for-each-query](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1940-maximum-xor-for-each-query) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 | [3291-find-if-array-can-be-sorted](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3291-find-if-array-can-be-sorted) |
+| [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
 | [3394-minimum-array-end](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3394-minimum-array-end) |
 ## Simulation
 |  |
@@ -523,4 +525,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0812-rotate-string](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0812-rotate-string) |
+## Sliding Window
+|  |
+| ------- |
+| [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
 <!---LeetCode Topics End-->
