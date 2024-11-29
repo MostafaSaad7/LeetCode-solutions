@@ -292,6 +292,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1667-find-kth-bit-in-nth-binary-string](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1667-find-kth-bit-in-nth-binary-string) |
 | [1715-split-a-string-into-the-max-number-of-unique-substrings](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1715-split-a-string-into-the-max-number-of-unique-substrings) |
 | [2076-sum-of-digits-of-string-after-convert](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2076-sum-of-digits-of-string-after-convert) |
+| [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2163-kth-distinct-string-in-an-array) |
 | [2580-circular-sentence](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2580-circular-sentence) |
 | [3174-minimum-number-of-changes-to-make-binary-string-beautiful](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3174-minimum-number-of-changes-to-make-binary-string-beautiful) |
@@ -369,6 +370,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0621-task-scheduler](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0621-task-scheduler) |
 | [0670-maximum-swap](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0670-maximum-swap) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
+| [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2716-prime-subtraction-operation](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2716-prime-subtraction-operation) |
 ## Counting
 |  |
@@ -380,6 +382,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0005-longest-palindromic-substring) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2699-count-the-number-of-fair-pairs](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2699-count-the-number-of-fair-pairs) |
 ## Backtracking
 |  |
@@ -451,6 +454,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0776-n-ary-tree-postorder-traversal](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0776-n-ary-tree-postorder-traversal) |
 | [0883-car-fleet](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0883-car-fleet) |
 | [1197-parsing-a-boolean-expression](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1197-parsing-a-boolean-expression) |
+| [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 ## Monotonic Stack
 |  |
 | ------- |
