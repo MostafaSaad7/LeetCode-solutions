@@ -1,20 +1,21 @@
 class Solution {
     public int maxProfit(int[] prices) {
-        int maxProf=0;
-        int minElem=prices[0];
-        for (int i =1 ; i < prices.length;i++)
+        int maxProfit = 0;
+        int buy = Integer.MAX_VALUE;
+
+        for(int stockPrice : prices)
         {
-            int diff = prices[i]-minElem;
-            if (diff>0)
+            int currentProfit = stockPrice - buy;
+            if(currentProfit >= 0)
             {
-                maxProf=Math.max(diff,maxProf);
+                maxProfit = Math.max(maxProfit,currentProfit);
             }
             else
             {
-                minElem=prices[i];
+                buy = stockPrice;
             }
-        }
 
-        return maxProf;
+        } 
+        return maxProfit;
     }
 }
