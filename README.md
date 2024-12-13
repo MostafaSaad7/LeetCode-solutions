@@ -191,6 +191,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0078-subsets](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0078-subsets) |
 | [0084-largest-rectangle-in-histogram](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0084-largest-rectangle-in-histogram) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0128-longest-consecutive-sequence](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0128-longest-consecutive-sequence) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0174-dungeon-game](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0174-dungeon-game) |
@@ -248,6 +249,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0063-unique-paths-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0063-unique-paths-ii) |
 | [0072-edit-distance](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0072-edit-distance) |
 | [0091-decode-ways](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0091-decode-ways) |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0174-dungeon-game](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0174-dungeon-game) |
 | [0213-house-robber-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0213-house-robber-ii) |
 | [0221-maximal-square](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0221-maximal-square) |
