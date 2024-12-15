@@ -120,6 +120,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0133-clone-graph](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0133-clone-graph) |
 | [0138-copy-list-with-random-pointer](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0138-copy-list-with-random-pointer) |
 | [0146-lru-cache](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0146-lru-cache) |
+| [0169-majority-element](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0169-majority-element) |
 | [0621-task-scheduler](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0621-task-scheduler) |
 | [0843-binary-trees-with-factors](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0843-binary-trees-with-factors) |
 | [0906-walking-robot-simulation](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0906-walking-robot-simulation) |
@@ -194,6 +195,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0128-longest-consecutive-sequence](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0128-longest-consecutive-sequence) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0169-majority-element](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0169-majority-element) |
 | [0174-dungeon-game](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0174-dungeon-game) |
 | [0213-house-robber-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0213-house-robber-ii) |
 | [0221-maximal-square](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0221-maximal-square) |
@@ -304,6 +306,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0056-merge-intervals](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0056-merge-intervals) |
+| [0169-majority-element](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0169-majority-element) |
 | [0435-non-overlapping-intervals](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0435-non-overlapping-intervals) |
 | [0621-task-scheduler](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0621-task-scheduler) |
 | [0843-binary-trees-with-factors](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0843-binary-trees-with-factors) |
@@ -377,6 +380,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Counting
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0169-majority-element) |
 | [0621-task-scheduler](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0621-task-scheduler) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2163-kth-distinct-string-in-an-array) |
 ## Two Pointers
@@ -503,6 +507,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0023-merge-k-sorted-lists) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
+| [0169-majority-element](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0169-majority-element) |
 ## Merge Sort
 |  |
 | ------- |
