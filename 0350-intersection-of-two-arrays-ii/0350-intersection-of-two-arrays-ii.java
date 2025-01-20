@@ -1,30 +1,25 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 class Solution {
     public int[] intersect(int[] nums1, int[] nums2) {
-//What if the given array is already sorted? How would you optimize your algorithm?
-        Arrays.sort(nums1);
-        Arrays.sort(nums2);
-        
-        int p1 = 0;
-        int p2 = 0;
+        Map<Integer, Integer> map = new HashMap<>();
         List<Integer> result = new ArrayList<>();
-        while (p1 < nums1.length && p2 < nums2.length) {
-            if (nums1[p1] == nums2[p2]) {
-                result.add(nums1[p1]);
-                p1++;
-                p2++;
-            } else if (nums1[p1] < nums2[p2]) {
-                p1++;
-            } else {
-                p2++;
+
+        for (int num : nums1) {
+            map.put(num, map.getOrDefault(num, 0) + 1);
+        }
+
+        for (int num : nums2) {
+            if (map.containsKey(num) && map.get(num) > 0) {
+                result.add(num);
+                map.put(num, map.get(num) - 1);
             }
         }
 
-        int[] resultArray = new int[result.size()];
-        for (int i = 0; i < result.size(); i++) {
-            resultArray[i] = result.get(i);
-        }
-        return resultArray;
+        return result.stream().mapToInt(i -> i).toArray();
+
     }
 }
