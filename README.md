@@ -277,6 +277,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0576-out-of-boundary-paths](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0576-out-of-boundary-paths) |
 | [0843-binary-trees-with-factors](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0843-binary-trees-with-factors) |
 | [0967-minimum-falling-path-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0967-minimum-falling-path-sum) |
+| [1013-fibonacci-number](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1013-fibonacci-number) |
 | [1121-partition-array-for-maximum-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1121-partition-array-for-maximum-sum) |
 | [1196-filling-bookcase-shelves](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1196-filling-bookcase-shelves) |
 | [1250-longest-common-subsequence](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1250-longest-common-subsequence) |
@@ -468,6 +469,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0592-fraction-addition-and-subtraction](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0592-fraction-addition-and-subtraction) |
 | [0670-maximum-swap](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0670-maximum-swap) |
 | [0790-global-and-local-inversions](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0790-global-and-local-inversions) |
+| [1013-fibonacci-number](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1013-fibonacci-number) |
 | [1635-number-of-good-pairs](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1635-number-of-good-pairs) |
 | [2155-find-missing-observations](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2155-find-missing-observations) |
 | [2556-convert-the-temperature](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2556-convert-the-temperature) |
@@ -478,6 +480,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0050-powx-n](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0050-powx-n) |
+| [1013-fibonacci-number](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1013-fibonacci-number) |
 | [1197-parsing-a-boolean-expression](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1197-parsing-a-boolean-expression) |
 | [1667-find-kth-bit-in-nth-binary-string](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1667-find-kth-bit-in-nth-binary-string) |
 ## Stack
@@ -587,4 +590,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [2716-prime-subtraction-operation](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2716-prime-subtraction-operation) |
+## Memoization
+|  |
+| ------- |
+| [1013-fibonacci-number](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1013-fibonacci-number) |
 <!---LeetCode Topics End-->
