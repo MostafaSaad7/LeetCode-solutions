@@ -1,19 +1,20 @@
 class Solution {
     public double myPow(double x, int n) {
+        long N = n;
+        if (N < 0) {
+            x = 1 / x;
+            N = -N;
+        }
 
-        double result = superPower(x, n);
-        return n < 0 && result != 0 ? 1 / result : result;
-    }
+        double result = 1.0;
+        while (N > 0) {
+            if ((N % 2) == 1) { 
+                result *= x;
+            }
+            x *= x;  
+            N /= 2;  
+        }
 
-    private double superPower(double x, int n) {
-        if (n == 0)
-            return 1;
-        if (x == 0)
-            return 0;
-
-        double result = superPower(x, n / 2);
-        result = result * result;
-        result = n % 2 == 0 ? result : result * x;
         return result;
     }
 }
