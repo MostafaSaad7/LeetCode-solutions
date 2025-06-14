@@ -5,18 +5,19 @@ import java.util.List;
 class Solution {
     public List<List<Integer>> minimumAbsDifference(int[] arr) {
         List<List<Integer>> result = new ArrayList<>();
-        int minSoFar= Integer.MAX_VALUE;
         Arrays.sort(arr);
+        int minSoFar = Integer.MAX_VALUE;
 
         for (int i = 1; i < arr.length; i++) {
-            minSoFar=Math.min(minSoFar,arr[i]-arr[i-1]);
+            int diff = arr[i] - arr[i - 1];
+            if (diff < minSoFar) {
+                result.clear();
+                result.add(Arrays.asList(arr[i - 1], arr[i]));
+                minSoFar = diff;
+            } else if (diff == minSoFar) {
+                result.add(Arrays.asList(arr[i - 1], arr[i]));
+            }
         }
-
-        for (int i = 1; i < arr.length; i++) {
-           if ((arr[i]-arr[i-1])==minSoFar)
-               result.add(Arrays.asList(arr[i-1],arr[i]));
-        }
-
         return result;
     }
 }
