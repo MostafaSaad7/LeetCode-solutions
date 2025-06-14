@@ -229,6 +229,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1121-partition-array-for-maximum-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1121-partition-array-for-maximum-sum) |
 | [1196-filling-bookcase-shelves](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1196-filling-bookcase-shelves) |
 | [1256-rank-transform-of-an-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1256-rank-transform-of-an-array) |
+| [1306-minimum-absolute-difference](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1306-minimum-absolute-difference) |
 | [1325-path-with-maximum-probability](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1325-path-with-maximum-probability) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1402-count-square-submatrices-with-all-ones) |
@@ -333,6 +334,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0883-car-fleet](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0883-car-fleet) |
 | [1019-squares-of-a-sorted-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1019-squares-of-a-sorted-array) |
 | [1256-rank-transform-of-an-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1256-rank-transform-of-an-array) |
+| [1306-minimum-absolute-difference](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1306-minimum-absolute-difference) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1669-minimum-cost-to-cut-a-stick](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1669-minimum-cost-to-cut-a-stick) |
 | [1741-sort-array-by-increasing-frequency](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1741-sort-array-by-increasing-frequency) |
