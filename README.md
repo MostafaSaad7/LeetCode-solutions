@@ -234,6 +234,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
+| [1528-kids-with-the-greatest-number-of-candies](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1528-kids-with-the-greatest-number-of-candies) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1635-number-of-good-pairs](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1635-number-of-good-pairs) |
 | [1669-minimum-cost-to-cut-a-stick](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1669-minimum-cost-to-cut-a-stick) |
