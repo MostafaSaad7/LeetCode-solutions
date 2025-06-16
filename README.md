@@ -245,6 +245,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2035-count-sub-islands](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2035-count-sub-islands) |
 | [2058-concatenation-of-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2058-concatenation-of-array) |
 | [2132-convert-1d-array-into-2d-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2132-convert-1d-array-into-2d-array) |
+| [2144-maximum-difference-between-increasing-elements](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2144-maximum-difference-between-increasing-elements) |
 | [2155-find-missing-observations](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2155-find-missing-observations) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2163-kth-distinct-string-in-an-array) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
