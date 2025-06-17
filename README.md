@@ -186,6 +186,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0026-remove-duplicates-from-sorted-array) |
+| [0027-remove-element](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0027-remove-element) |
 | [0037-sudoku-solver](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0037-sudoku-solver) |
 | [0039-combination-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0039-combination-sum) |
 | [0046-permutations](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0046-permutations) |
@@ -414,6 +415,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0005-longest-palindromic-substring) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0026-remove-duplicates-from-sorted-array) |
+| [0027-remove-element](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0027-remove-element) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0088-merge-sorted-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0088-merge-sorted-array) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
