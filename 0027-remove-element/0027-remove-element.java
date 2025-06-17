@@ -1,23 +1,14 @@
 class Solution {
     public int removeElement(int[] nums, int val) {
-
-        int nonEqVal = 0;
+        int slow = 0; // points to where the next non-val element should go
 
         for (int i = 0; i < nums.length; i++) {
-
-            if (nums[i] != val)
-                swap(nums, nonEqVal++, i);
+            if (nums[i] != val) {
+                nums[slow] = nums[i]; // overwrite the value at 'slow'
+                slow++;
+            }
         }
 
-
-        return nonEqVal;
-
-    }
-
-
-    void swap(int[] nums, int i, int j) {
-        int temp = nums[i];
-        nums[i] = nums[j];
-        nums[j] = temp;
+        return slow; // new length of array after removing val
     }
 }
