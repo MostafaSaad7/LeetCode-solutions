@@ -1,27 +1,25 @@
-import java.util.PriorityQueue;
+import java.util.Arrays;
 
 class Solution {
     public int eliminateMaximum(int[] dist, int[] speed) {
-        PriorityQueue<Double> arrivalTimes = new PriorityQueue<>();
+        int n = dist.length;
+        double[] time = new double[n];
 
-        // Calculate arrival time for each monster and add to priority queue
-        for (int i = 0; i < dist.length; i++) {
-            arrivalTimes.add(dist[i] / (double) speed[i]);
+        // Calculate time to reach for each monster
+        for (int i = 0; i < n; i++) {
+            time[i] = (double) dist[i] / speed[i];
         }
 
-        int time = 0;
+        // Sort times in ascending order
+        Arrays.sort(time);
 
-        while (!arrivalTimes.isEmpty()) {
-            double monsterTime = arrivalTimes.poll();
-
-            // If this monster reaches before or at current time, we lose
-            if (monsterTime <= time) {
-                return time;
+        // Eliminate monsters one per minute
+        for (int t = 0; t < n; t++) {
+            if (time[t] <= t) {
+                return t;
             }
-
-            time++; // Shoot one monster per minute
         }
 
-        return time;
+        return n; // All monsters eliminated
     }
 }
