@@ -5,16 +5,15 @@ class Solution {
         int[] sorted = Arrays.copyOf(nums, nums.length);
         Arrays.sort(sorted);
 
-        int left = 0, right = nums.length - 1;
+        int left = -1, right = -1;
 
-        while (left < nums.length && nums[left] == sorted[left]) {
-            left++;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != sorted[i]) {
+                if (left == -1) left = i;
+                right = i;
+            }
         }
 
-        while (right > left && nums[right] == sorted[right]) {
-            right--;
-        }
-
-        return right - left + 1;
+        return (left == -1) ? 0 : right - left + 1;
     }
 }
