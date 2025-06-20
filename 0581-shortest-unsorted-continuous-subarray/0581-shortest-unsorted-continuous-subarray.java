@@ -2,18 +2,26 @@ import java.util.Arrays;
 
 class Solution {
     public int findUnsortedSubarray(int[] nums) {
-        int[] sorted = Arrays.copyOf(nums, nums.length);
-        Arrays.sort(sorted);
-
-        int left = -1, right = -1;
-
+        int maxSoFar = Integer.MIN_VALUE;
+        int minSoFar = Integer.MAX_VALUE;
+        int left = -1 ;
+        int right = -1 ;
         for (int i = 0; i < nums.length; i++) {
-            if (nums[i] != sorted[i]) {
-                if (left == -1) left = i;
-                right = i;
-            }
+            maxSoFar=Math.max(maxSoFar,nums[i]);
+            if (maxSoFar> nums[i])
+                right = i ;
         }
 
-        return (left == -1) ? 0 : right - left + 1;
+        if (right == -1 ) // Already sorted
+             return 0;
+
+        for (int i = nums.length-1; i >-1; i--) {
+            minSoFar=Math.min(minSoFar,nums[i]);
+            if (minSoFar <  nums[i])
+                left = i ;
+        }
+
+
+        return right-left+1;
     }
 }
