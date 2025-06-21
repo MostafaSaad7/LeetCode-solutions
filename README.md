@@ -222,6 +222,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0695-max-area-of-island](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0695-max-area-of-island) |
 | [0790-global-and-local-inversions](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0790-global-and-local-inversions) |
 | [0843-binary-trees-with-factors](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0843-binary-trees-with-factors) |
+| [0853-most-profit-assigning-work](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0853-most-profit-assigning-work) |
 | [0859-design-circular-deque](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0859-design-circular-deque) |
 | [0883-car-fleet](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0883-car-fleet) |
 | [0906-walking-robot-simulation](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0906-walking-robot-simulation) |
@@ -338,6 +339,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0581-shortest-unsorted-continuous-subarray) |
 | [0621-task-scheduler](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0621-task-scheduler) |
 | [0843-binary-trees-with-factors](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0843-binary-trees-with-factors) |
+| [0853-most-profit-assigning-work](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0853-most-profit-assigning-work) |
 | [0883-car-fleet](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0883-car-fleet) |
 | [1019-squares-of-a-sorted-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1019-squares-of-a-sorted-array) |
 | [1047-maximize-sum-of-array-after-k-negations](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1047-maximize-sum-of-array-after-k-negations) |
@@ -407,6 +409,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0581-shortest-unsorted-continuous-subarray) |
 | [0621-task-scheduler](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0621-task-scheduler) |
 | [0670-maximum-swap](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0670-maximum-swap) |
+| [0853-most-profit-assigning-work](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0853-most-profit-assigning-work) |
 | [1047-maximize-sum-of-array-after-k-negations](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1047-maximize-sum-of-array-after-k-negations) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [2049-eliminate-maximum-number-of-monsters](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2049-eliminate-maximum-number-of-monsters) |
@@ -432,6 +435,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0349-intersection-of-two-arrays](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0581-shortest-unsorted-continuous-subarray) |
+| [0853-most-profit-assigning-work](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0853-most-profit-assigning-work) |
 | [1019-squares-of-a-sorted-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1019-squares-of-a-sorted-array) |
 | [1894-merge-strings-alternately](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1894-merge-strings-alternately) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
@@ -540,6 +544,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0349-intersection-of-two-arrays](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0853-most-profit-assigning-work](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0853-most-profit-assigning-work) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2179-most-beautiful-item-for-each-query) |
