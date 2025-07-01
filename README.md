@@ -219,6 +219,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0494-target-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0494-target-sum) |
 | [0518-coin-change-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0518-coin-change-ii) |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0581-shortest-unsorted-continuous-subarray) |
+| [0611-valid-triangle-number](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0611-valid-triangle-number) |
 | [0621-task-scheduler](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0621-task-scheduler) |
 | [0695-max-area-of-island](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0695-max-area-of-island) |
 | [0790-global-and-local-inversions](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0790-global-and-local-inversions) |
@@ -341,6 +342,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0350-intersection-of-two-arrays-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0435-non-overlapping-intervals](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0435-non-overlapping-intervals) |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0581-shortest-unsorted-continuous-subarray) |
+| [0611-valid-triangle-number](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0611-valid-triangle-number) |
 | [0621-task-scheduler](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0621-task-scheduler) |
 | [0843-binary-trees-with-factors](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0843-binary-trees-with-factors) |
 | [0853-most-profit-assigning-work](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0853-most-profit-assigning-work) |
@@ -412,6 +414,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0435-non-overlapping-intervals](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0435-non-overlapping-intervals) |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0581-shortest-unsorted-continuous-subarray) |
+| [0611-valid-triangle-number](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0611-valid-triangle-number) |
 | [0621-task-scheduler](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0621-task-scheduler) |
 | [0670-maximum-swap](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0670-maximum-swap) |
 | [0853-most-profit-assigning-work](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0853-most-profit-assigning-work) |
@@ -440,6 +443,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0349-intersection-of-two-arrays](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0581-shortest-unsorted-continuous-subarray) |
+| [0611-valid-triangle-number](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0611-valid-triangle-number) |
 | [0853-most-profit-assigning-work](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0853-most-profit-assigning-work) |
 | [1019-squares-of-a-sorted-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1019-squares-of-a-sorted-array) |
 | [1894-merge-strings-alternately](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1894-merge-strings-alternately) |
@@ -551,6 +555,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0349-intersection-of-two-arrays](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0611-valid-triangle-number](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0611-valid-triangle-number) |
 | [0792-binary-search](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0792-binary-search) |
 | [0853-most-profit-assigning-work](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0853-most-profit-assigning-work) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
