@@ -215,6 +215,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0377-combination-sum-iv](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0377-combination-sum-iv) |
 | [0417-pacific-atlantic-water-flow](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0417-pacific-atlantic-water-flow) |
 | [0435-non-overlapping-intervals](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0435-non-overlapping-intervals) |
+| [0436-find-right-interval](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0436-find-right-interval) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
 | [0494-target-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0494-target-sum) |
 | [0518-coin-change-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0518-coin-change-ii) |
@@ -341,6 +342,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0349-intersection-of-two-arrays](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0435-non-overlapping-intervals](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0435-non-overlapping-intervals) |
+| [0436-find-right-interval](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0436-find-right-interval) |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0581-shortest-unsorted-continuous-subarray) |
 | [0611-valid-triangle-number](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0611-valid-triangle-number) |
 | [0621-task-scheduler](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0621-task-scheduler) |
@@ -555,6 +557,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0349-intersection-of-two-arrays](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0436-find-right-interval](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0436-find-right-interval) |
 | [0611-valid-triangle-number](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0611-valid-triangle-number) |
 | [0792-binary-search](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0792-binary-search) |
 | [0853-most-profit-assigning-work](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0853-most-profit-assigning-work) |
