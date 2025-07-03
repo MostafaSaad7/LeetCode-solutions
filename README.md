@@ -459,6 +459,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0046-permutations](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0046-permutations) |
 | [0047-permutations-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0047-permutations-ii) |
 | [0051-n-queens](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0051-n-queens) |
+| [0077-combinations](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0077-combinations) |
 | [0078-subsets](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0078-subsets) |
 | [0494-target-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0494-target-sum) |
 | [0813-all-paths-from-source-to-target](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0813-all-paths-from-source-to-target) |
