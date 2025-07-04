@@ -502,6 +502,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0012-integer-to-roman](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0012-integer-to-roman) |
 | [0013-roman-to-integer](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0013-roman-to-integer) |
 | [0050-powx-n](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0050-powx-n) |
+| [0441-arranging-coins](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0441-arranging-coins) |
 | [0592-fraction-addition-and-subtraction](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0592-fraction-addition-and-subtraction) |
 | [0670-maximum-swap](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0670-maximum-swap) |
 | [0790-global-and-local-inversions](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0790-global-and-local-inversions) |
@@ -559,6 +560,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0349-intersection-of-two-arrays](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0436-find-right-interval](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0436-find-right-interval) |
+| [0441-arranging-coins](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0441-arranging-coins) |
 | [0611-valid-triangle-number](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0611-valid-triangle-number) |
 | [0792-binary-search](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0792-binary-search) |
 | [0853-most-profit-assigning-work](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0853-most-profit-assigning-work) |
