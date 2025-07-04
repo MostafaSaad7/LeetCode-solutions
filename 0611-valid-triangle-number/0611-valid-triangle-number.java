@@ -6,21 +6,25 @@ import java.util.Arrays;
  * Given an integer array nums, return the number of triplets chosen from the array 
  * that can make triangles if we take them as side lengths of a triangle.
  * 
- * Approach: Sort + Binary Search with Optimization
+ * Approach: Sort + Two Pointer Technique
  * 
- * Key Insight: For a sorted array, if we fix two sides a and b (where a <= b),
- * we only need to find how many elements c satisfy: b < c < a + b
- * This is because the triangle inequality a + b > c is the only constraint we need
- * to check (the other two inequalities a + c > b and b + c > a are automatically satisfied).
+ * Key Insight: For three sides to form a valid triangle, they must satisfy:
+ * a + b > c, a + c > b, b + c > a (triangle inequality)
  * 
- * Time Complexity: O(n² log n)
+ * After sorting (a ≤ b ≤ c), we only need to check: a + b > c
+ * The other two inequalities are automatically satisfied since:
+ * - a + c > b (because c ≥ b and a > 0)
+ * - b + c > a (because b ≥ a and c > 0)
+ * 
+ * Strategy: Fix the largest side c, then use two pointers to find all valid pairs (a,b)
+ * 
+ * Time Complexity: O(n²)
  * - O(n log n) for sorting
- * - O(n²) for the nested loops
- * - O(log n) for each binary search
- * - Overall: O(n² log n)
+ * - O(n²) for the main algorithm (each element is visited at most once by each pointer)
+ * - Overall: O(n²) - optimal for this problem!
  * 
- * Space Complexity: O(1) 
- * - Only using constant extra space (excluding the input array)
+ * Space Complexity: O(1)
+ * - Only using constant extra space
  * - Sorting is done in-place
  */
 class Solution {
@@ -31,69 +35,44 @@ class Solution {
         // Edge case: need at least 3 elements to form a triangle
         if (n < 3) return 0;
         
-        // Sort the array to use triangle inequality optimization
+        // Sort array to enable two-pointer technique and triangle inequality optimization
         Arrays.sort(nums);
         
         int count = 0;
         
-        // Fix the first two sides of the triangle
-        // i represents the smallest side, j represents the middle side
-        for (int i = 0; i < n - 2; i++) {
-            // Skip zero values as they can't form valid triangles
-            if (nums[i] == 0) continue;
+        // Fix the largest side at index k (rightmost element)
+        // We iterate k from 2 to n-1, ensuring we have at least 2 elements before k
+        for (int k = 2; k < n; k++) {
+            // Use two pointers to find all valid pairs (i,j) where nums[i] + nums[j] > nums[k]
+            int i = 0;      // Left pointer (smallest element)
+            int j = k - 1;  // Right pointer (second largest element, just before k)
             
-            // Optimization: start binary search from k = i + 2
-            // This avoids redundant searches as k advances
-            int k = i + 2;
-            
-            for (int j = i + 1; j < n - 1; j++) {
-                // Find the first index where nums[index] >= nums[i] + nums[j]
-                // All elements before this index can form valid triangles
-                int firstInvalid = binarySearchLowerBound(nums, k, nums[i] + nums[j]);
-                
-                // Count valid triangles: elements from index (j+1) to (firstInvalid-1)
-                // Formula: (firstInvalid - 1) - (j + 1) + 1 = firstInvalid - j - 1
-                count += firstInvalid - j - 1;
-                
-                // Key optimization: update k to avoid redundant binary searches
-                // If firstInvalid was found at index x for current (i,j), then for
-                // next iteration (i,j+1), we know elements before x are still valid
-                // since nums[j+1] >= nums[j], so nums[i] + nums[j+1] >= nums[i] + nums[j]
-                k = Math.max(k, firstInvalid);
+            // Two-pointer technique to count valid triangles
+            while (i < j) {
+                // Check if current pair (i,j) with fixed k forms a valid triangle
+                if (nums[i] + nums[j] > nums[k]) {
+                    // If nums[i] + nums[j] > nums[k], then triangle inequality is satisfied
+                    // 
+                    // Key insight: ALL pairs (i, i+1), (i, i+2), ..., (i, j) are valid!
+                    // This is because:
+                    // - Array is sorted, so nums[i+1] ≥ nums[i], nums[i+2] ≥ nums[i], etc.
+                    // - If nums[i] + nums[j] > nums[k], then nums[i+x] + nums[j] > nums[k] for x ≥ 0
+                    // - Therefore, we can count (j - i) triangles at once
+                    count += j - i;
+                    
+                    // Move j leftward to try next set of pairs
+                    // We decrease j because we've already counted all valid pairs with current j
+                    j--;
+                } else {
+                    // nums[i] + nums[j] ≤ nums[k], triangle inequality not satisfied
+                    // We need a larger sum, so increase the smaller element
+                    // Since j is already at maximum possible (k-1), we increase i
+                    i++;
+                }
             }
         }
         
         return count;
-    }
-    
-    /**
-     * Binary search to find the first index where nums[index] >= target
-     * This is equivalent to finding the lower bound of target in the sorted array
-     * 
-     * @param nums   sorted array to search in
-     * @param start  starting index for search (optimization)
-     * @param target value to find lower bound for
-     * @return       first index where nums[index] >= target, or nums.length if not found
-     */
-    private int binarySearchLowerBound(int[] nums, int start, int target) {
-        int end = nums.length - 1;
-        int result = nums.length;  // default to "not found" (beyond array)
-        
-        while (start <= end) {
-            int mid = start + (end - start) / 2;  // avoid overflow
-            
-            if (nums[mid] < target) {
-                // Current element is too small, search in right half
-                start = mid + 1;
-            } else {
-                // Current element is >= target, this could be our answer
-                // But search in left half to find the first such element
-                result = mid;
-                end = mid - 1;
-            }
-        }
-        
-        return result;
     }
 }
 
@@ -101,35 +80,41 @@ class Solution {
 Example Walkthrough:
 Input: nums = [2,2,3,4]
 
-After sorting: [2,2,3,4]
-Indices:        0 1 2 3
+Step 1: Sort array
+nums = [2,2,3,4]
+indices: 0 1 2 3
 
-i=0, j=1: nums[0] + nums[1] = 2 + 2 = 4
-  Binary search from k=2 for first >= 4
-  Found at index 3 (nums[3] = 4)
-  Valid triangles: elements from index 2 to 2 (just nums[2]=3)
-  Count: 3 - 1 - 1 = 1 triangle: (2,2,3)
+Step 2: Fix largest side and use two pointers
 
-i=0, j=2: nums[0] + nums[2] = 2 + 3 = 5  
-  Binary search from k=3 for first >= 5
-  Not found (return 4)
-  Valid triangles: elements from index 3 to 3 (just nums[3]=4)
-  Count: 4 - 2 - 1 = 1 triangle: (2,3,4)
+k=2 (nums[k]=3): Find pairs where nums[i] + nums[j] > 3
+├─ i=0, j=1: nums[0] + nums[1] = 2 + 2 = 4 > 3 ✓
+│  All pairs (0,1) work → count += 1-0 = 1
+│  Move j to 0 (j--)
+├─ i=0, j=0: i >= j, exit loop
+│  Subtotal: 1
 
-i=1, j=2: nums[1] + nums[2] = 2 + 3 = 5
-  Binary search from k=3 for first >= 5
-  Not found (return 4)  
-  Valid triangles: elements from index 3 to 3 (just nums[3]=4)
-  Count: 4 - 2 - 1 = 1 triangle: (2,3,4)
+k=3 (nums[k]=4): Find pairs where nums[i] + nums[j] > 4
+├─ i=0, j=2: nums[0] + nums[2] = 2 + 3 = 5 > 4 ✓
+│  All pairs (0,1), (0,2) work → count += 2-0 = 2
+│  Move j to 1 (j--)
+├─ i=0, j=1: nums[0] + nums[1] = 2 + 2 = 4 ≤ 4 ✗
+│  Move i to 1 (i++)
+├─ i=1, j=1: i >= j, exit loop
+│  Subtotal: 2
 
-Total: 1 + 1 + 1 = 3 triangles
+Total: 1 + 2 = 3 triangles: (2,2,3), (2,3,4), (2,3,4)
 
 Time Complexity Analysis:
 - Sorting: O(n log n)
-- Outer loop: O(n)
-- Inner loop: O(n) 
-- Binary search: O(log n)
-- Total: O(n² log n)
+- Main loop: O(n) iterations for k
+- Two-pointer inner loop: O(n) total across all iterations of k
+  (Each element is visited at most once by pointer i and once by pointer j)
+- Overall: O(n log n + n²) = O(n²)
 
-Space Complexity: O(1) extra space
+Space Complexity: O(1) - only using constant extra variables
+
+Why O(n²) is optimal:
+- We need to examine all possible triangles, which is O(n³) combinations
+- Two-pointer technique reduces this to O(n²) by efficiently counting multiple triangles at once
+- This is the best possible time complexity for this problem
 */
