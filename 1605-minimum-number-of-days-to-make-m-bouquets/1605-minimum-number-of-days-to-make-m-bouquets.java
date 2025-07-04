@@ -16,7 +16,7 @@ class Solution {
         // Critical Edge Case: Impossible Scenario
         // If we need more flowers than available, no amount of waiting helps
         // Example: need 3 bouquets of 5 flowers = 15 flowers, but only have 10
-        if (m * k > bloomDay.length) return -1;
+        if ((long)m * k > bloomDay.length) return -1;
         
         // Smart Search Bounds: Find actual min and max bloom days
         // Why not use [1, Integer.MAX_VALUE]? Because we never need to wait
@@ -31,7 +31,7 @@ class Solution {
         // Binary Search Setup
         int left = min;     // Earliest meaningful day to check
         int right = max;    // Latest meaningful day to check
-        int result = -1;   // Worst case: wait until all flowers bloom
+        int result = max;   // Worst case: wait until all flowers bloom
         
         // Binary Search: Find minimum day that allows m bouquets
         while (left <= right) {
