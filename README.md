@@ -217,6 +217,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0435-non-overlapping-intervals](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0435-non-overlapping-intervals) |
 | [0436-find-right-interval](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0436-find-right-interval) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
+| [0475-heaters](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0475-heaters) |
 | [0494-target-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0494-target-sum) |
 | [0518-coin-change-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0518-coin-change-ii) |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0581-shortest-unsorted-continuous-subarray) |
@@ -345,6 +346,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0350-intersection-of-two-arrays-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0435-non-overlapping-intervals](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0435-non-overlapping-intervals) |
 | [0436-find-right-interval](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0436-find-right-interval) |
+| [0475-heaters](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0475-heaters) |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0581-shortest-unsorted-continuous-subarray) |
 | [0611-valid-triangle-number](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0611-valid-triangle-number) |
 | [0621-task-scheduler](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0621-task-scheduler) |
@@ -446,6 +448,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0283-move-zeroes](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0283-move-zeroes) |
 | [0349-intersection-of-two-arrays](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0475-heaters](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0475-heaters) |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0581-shortest-unsorted-continuous-subarray) |
 | [0611-valid-triangle-number](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0611-valid-triangle-number) |
 | [0853-most-profit-assigning-work](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0853-most-profit-assigning-work) |
@@ -563,6 +566,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0350-intersection-of-two-arrays-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0436-find-right-interval](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0436-find-right-interval) |
 | [0441-arranging-coins](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0441-arranging-coins) |
+| [0475-heaters](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0475-heaters) |
 | [0611-valid-triangle-number](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0611-valid-triangle-number) |
 | [0792-binary-search](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0792-binary-search) |
 | [0853-most-profit-assigning-work](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0853-most-profit-assigning-work) |
