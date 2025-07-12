@@ -1,6 +1,4 @@
-/*
-    The purpose is to find the greatest number where it's multiplication by itself id lesser than or equal x
- */
+
 class Solution {
     public int mySqrt(int x) {
         long left = 0;
