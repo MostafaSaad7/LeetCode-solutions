@@ -1,21 +1,20 @@
 import java.util.HashMap;
-import java.util.HashSet;
+import java.util.Map;
 
 class Solution {
     public boolean containsNearbyDuplicate(int[] nums, int k) {
-        /*
-         * nums[i] == nums[j] and abs(i - j) <= k.
-         *
-         * */
-        HashSet<Integer> windowElement= new HashSet<>(); // this set will be used to put window elements
+        Map<Integer, Integer> map = new HashMap<>(); // value -> last index
 
         for (int i = 0; i < nums.length; i++) {
-            if (i>k) windowElement.remove(nums[i-k-1]); // i - (k-1) ==> window start 
-            //(k-1) ==> is zero based
-            if (windowElement.contains(nums[i]))
-                return true;
-            windowElement.add(nums[i]);
+            if (map.containsKey(nums[i])) {
+                int prevIndex = map.get(nums[i]);
+                if (i - prevIndex <= k) {
+                    return true;
+                }
+            }
+            map.put(nums[i], i);
         }
+
         return false;
     }
 }
