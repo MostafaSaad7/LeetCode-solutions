@@ -200,6 +200,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0046-permutations](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0046-permutations) |
 | [0047-permutations-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0047-permutations-ii) |
 | [0051-n-queens](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0051-n-queens) |
+| [0053-maximum-subarray](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0053-maximum-subarray) |
 | [0056-merge-intervals](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0056-merge-intervals) |
 | [0057-insert-interval](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0057-insert-interval) |
 | [0063-unique-paths-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0063-unique-paths-ii) |
@@ -292,6 +293,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0005-longest-palindromic-substring) |
+| [0053-maximum-subarray](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0053-maximum-subarray) |
 | [0063-unique-paths-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0063-unique-paths-ii) |
 | [0072-edit-distance](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0072-edit-distance) |
 | [0091-decode-ways](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0091-decode-ways) |
@@ -628,6 +630,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0023-merge-k-sorted-lists) |
+| [0053-maximum-subarray](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0053-maximum-subarray) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0169-majority-element](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0169-majority-element) |
 ## Merge Sort
