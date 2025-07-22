@@ -264,6 +264,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1669-minimum-cost-to-cut-a-stick](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1669-minimum-cost-to-cut-a-stick) |
 | [1741-sort-array-by-increasing-frequency](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1741-sort-array-by-increasing-frequency) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
+| [1849-maximum-absolute-sum-of-any-subarray](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1849-maximum-absolute-sum-of-any-subarray) |
 | [1940-maximum-xor-for-each-query](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1940-maximum-xor-for-each-query) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 | [2016-reduction-operations-to-make-the-array-elements-equal](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2016-reduction-operations-to-make-the-array-elements-equal) |
@@ -318,6 +319,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1437-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1437-minimum-insertion-steps-to-make-a-string-palindrome) |
 | [1669-minimum-cost-to-cut-a-stick](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1669-minimum-cost-to-cut-a-stick) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
+| [1849-maximum-absolute-sum-of-any-subarray](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1849-maximum-absolute-sum-of-any-subarray) |
 | [1912-number-of-restricted-paths-from-first-to-last-node](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1912-number-of-restricted-paths-from-first-to-last-node) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [2267-minimum-difference-in-sums-after-removal-of-elements](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2267-minimum-difference-in-sums-after-removal-of-elements) |
