@@ -243,6 +243,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0859-design-circular-deque](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0859-design-circular-deque) |
 | [0883-car-fleet](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0883-car-fleet) |
 | [0906-walking-robot-simulation](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0906-walking-robot-simulation) |
+| [0954-maximum-sum-circular-subarray](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0954-maximum-sum-circular-subarray) |
 | [0967-minimum-falling-path-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0967-minimum-falling-path-sum) |
 | [1019-squares-of-a-sorted-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1019-squares-of-a-sorted-array) |
 | [1036-rotting-oranges](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1036-rotting-oranges) |
@@ -309,6 +310,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0518-coin-change-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0518-coin-change-ii) |
 | [0576-out-of-boundary-paths](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0576-out-of-boundary-paths) |
 | [0843-binary-trees-with-factors](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0843-binary-trees-with-factors) |
+| [0954-maximum-sum-circular-subarray](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0954-maximum-sum-circular-subarray) |
 | [0967-minimum-falling-path-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0967-minimum-falling-path-sum) |
 | [1013-fibonacci-number](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1013-fibonacci-number) |
 | [1121-partition-array-for-maximum-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1121-partition-array-for-maximum-sum) |
@@ -635,6 +637,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0053-maximum-subarray](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0053-maximum-subarray) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0169-majority-element](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0169-majority-element) |
+| [0954-maximum-sum-circular-subarray](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0954-maximum-sum-circular-subarray) |
 ## Merge Sort
 |  |
 | ------- |
@@ -659,6 +662,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0859-design-circular-deque](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0859-design-circular-deque) |
+| [0954-maximum-sum-circular-subarray](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0954-maximum-sum-circular-subarray) |
 ## Topological Sort
 |  |
 | ------- |
@@ -692,4 +696,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1013-fibonacci-number](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1013-fibonacci-number) |
+## Monotonic Queue
+|  |
+| ------- |
+| [0954-maximum-sum-circular-subarray](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0954-maximum-sum-circular-subarray) |
 <!---LeetCode Topics End-->
