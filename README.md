@@ -141,6 +141,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2163-kth-distinct-string-in-an-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2163-kth-distinct-string-in-an-array) |
 | [2586-longest-square-streak-in-an-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2586-longest-square-streak-in-an-array) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2677-cousins-in-binary-tree-ii) |
+| [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -291,6 +292,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3476-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3476-find-minimum-operations-to-make-all-elements-divisible-by-three) |
 | [3491-find-the-maximum-length-of-valid-subsequence-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3491-find-the-maximum-length-of-valid-subsequence-ii) |
 | [3522-find-the-power-of-k-size-subarrays-i](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3522-find-the-power-of-k-size-subarrays-i) |
+| [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -454,6 +456,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2049-eliminate-maximum-number-of-monsters](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2049-eliminate-maximum-number-of-monsters) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2716-prime-subtraction-operation](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2716-prime-subtraction-operation) |
+| [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
 ## Counting
 |  |
 | ------- |
