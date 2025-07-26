@@ -1,19 +1,18 @@
 class Solution {
-    public static boolean isPalindrome(int x) {
-        if (x < 0)
+    public boolean isPalindrome(int x) {
+        if (x < 0) {
             return false;
-        long dividend = 1; // long here to avoid overflow 
-        //x > dividend*10 the mean of this condition is do we need any other zero to be added to dividend
-        while (x >= dividend * 10) {
-            dividend *= 10;
         }
-        while (x != 0) {
 
-            if (x % 10 != x / dividend)
-                return false;
-            x = (int) (x % dividend); // to remove left digit eg: 1221 % 1000 ---> 221
-            x = (x / 10); // to remove right digit
-            dividend /= 100; // because we removed 2 numbers 1 from the left and one from the rigt
+        long reversed = 0;
+        long temp = x;
+
+        while (temp != 0) {
+            int digit = (int) (temp % 10);
+            reversed = reversed * 10 + digit;
+            temp /= 10;
         }
-        return true;
-    }}
+
+        return (reversed == x);
+    }
+}
