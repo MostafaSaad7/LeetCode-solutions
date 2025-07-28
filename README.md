@@ -196,6 +196,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0026-remove-duplicates-from-sorted-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0027-remove-element) |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
+| [0035-search-insert-position](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0035-search-insert-position) |
 | [0037-sudoku-solver](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0037-sudoku-solver) |
 | [0039-combination-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0039-combination-sum) |
 | [0046-permutations](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0046-permutations) |
@@ -596,6 +597,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
+| [0035-search-insert-position](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0035-search-insert-position) |
 | [0069-sqrtx](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0069-sqrtx) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0349-intersection-of-two-arrays](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0349-intersection-of-two-arrays) |
