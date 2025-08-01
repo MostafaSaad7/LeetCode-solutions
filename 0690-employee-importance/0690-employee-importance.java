@@ -1,18 +1,26 @@
+import java.util.*;
+
+
+
+
 class Solution {
-    Map<Integer, Employee> emap;
-    public int getImportance(List<Employee> employees, int queryid) {
-        emap = new HashMap();
-        for (Employee e: employees) {
-            emap.put(e.id, e);
+    Map<Integer, Employee> map = new HashMap<>();
+    Set<Integer> visited = new HashSet<>();
+    int result = 0;
+    public int getImportance(List<Employee> employees, int id) {
+        for (var emp : employees) {
+            map.put(emp.id, emp);
         }
-        return dfs(queryid);
+        return dfs(id);
     }
-    public int dfs(int eid) {
-        Employee employee = emap.get(eid);
-        int ans = employee.importance;
-        for (Integer subid: employee.subordinates) {
-            ans += dfs(subid);
+
+    int dfs(int id) {
+        visited.add(id);
+        result += map.get(id).importance;
+        for (int subC : map.get(id).subordinates) {
+            if (visited.contains(subC)) continue;
+            dfs(subC);
         }
-        return ans;
+        return result;
     }
 }
