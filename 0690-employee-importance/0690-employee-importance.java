@@ -1,26 +1,19 @@
-import java.util.*;
-
-
-
-
 class Solution {
-    Map<Integer, Employee> map = new HashMap<>();
-    Set<Integer> visited = new HashSet<>();
-    int result = 0;
     public int getImportance(List<Employee> employees, int id) {
-        for (var emp : employees) {
+        Map<Integer, Employee> map = new HashMap<>();
+        for (Employee emp : employees) {
             map.put(emp.id, emp);
         }
-        return dfs(id);
+        return dfs(map, id);
     }
-
-    int dfs(int id) {
-        visited.add(id);
-        result += map.get(id).importance;
-        for (int subC : map.get(id).subordinates) {
-            if (visited.contains(subC)) continue;
-            dfs(subC);
+    
+    private int dfs(Map<Integer, Employee> map, int id) {
+        Employee emp = map.get(id);
+        int total = emp.importance;
+        
+        for (int subId : emp.subordinates) {
+            total += dfs(map, subId);
         }
-        return result;
+        return total;
     }
 }
