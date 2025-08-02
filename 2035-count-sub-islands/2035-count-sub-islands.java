@@ -1,41 +1,43 @@
 class Solution {
-
-    int count;
-
+    int[][] dir = {{0, 1}, {1, 0}, {-1, 0}, {0, -1}};
 
     public int countSubIslands(int[][] grid1, int[][] grid2) {
 
-        for (int i = 0; i < grid2.length; i++) {
-            for (int j = 0; j < grid2[i].length; j++) {
-                if (grid2[i][j] == 1 && grid1[i][j] == 1) {
-                    if (dfs(grid1, grid2, i, j))
-                        count++;
-                }
+        int subIslandsCount = 0;
+        for (int row = 0; row < grid2.length; row++) {
+            for (int col = 0; col < grid2[0].length; col++) {
+                if (isVisited(row, col, grid2))
+                    continue;
+                subIslandsCount += dfs(row, col, grid1, grid2) ? 1 : 0;
             }
         }
-        return count;
+        return subIslandsCount;
     }
 
-    boolean dfs(int[][] grid1, int[][] grid2, int sr, int sc) {
-        if (!isValidIndex(grid2, sr, sc) || grid2[sr][sc] == 0) return true;
-        if (grid2[sr][sc] == 1 && grid1[sr][sc] == 0) return false;
+    boolean dfs(int row, int col, int[][] grid1, int[][] grid2) {
+        if (!isValid(row, col, grid2.length, grid2[0].length) || isVisited(row, col, grid2))
+            return true;
 
+        boolean result = grid2[row][col] == grid1[row][col];
 
-        grid2[sr][sc] = 0;
-        int[] dx = {0, 1, 0, -1}; // Change here
-        int[] dy = {1, 0, -1, 0}; // Change here
-        boolean res = true;
-        for (int k = 0; k < 4; k++) { // Change here
-            int x = sr + dx[k];
-            int y = sc + dy[k];
-            res &= dfs(grid1, grid2, x, y);
+        grid2[row][col] = -1;
+
+        for (int d = 0; d < 4; d++) {
+            int newRow = row + dir[d][0];
+            int newCol = col + dir[d][1];
+            result &= dfs(newRow, newCol, grid1, grid2);
         }
-
-
-        return res;
+        return result;
     }
 
-    boolean isValidIndex(int[][] grid, int sr, int sc) {
-        return sr >= 0 && sr < grid.length && sc >= 0 && sc < grid[0].length;
+    boolean isValid(int row, int col, int rowsNum, int colsNum) {
+        if (row < 0 || row >= rowsNum)
+            return false;
+        return col >= 0 && col < colsNum;
     }
+
+    boolean isVisited(int row, int col, int[][] grid) {
+        return grid[row][col] != 1;
+    }
+
 }
