@@ -1,50 +1,50 @@
 class Solution {
-    private int[] dr = {-1, 0, 1, 0};
-    private int[] dc = {0, 1, 0, -1};
-    
-    // Return true if this position INSIDE the 2D grid
-    public boolean isValid(int r, int c, int[][] grid) {
-        if (r < 0 || r >= grid.length)
-            return false;
-        if (c < 0 || c >= grid[0].length)
-            return false;
-        return true;
+    public int[][] colorBorder(int[][] grid, int r0, int c0, int color) {
+        if(grid == null || grid.length == 0) return null;
+        
+        int oldColor = grid[r0][c0];
+        dfs(grid, r0, c0, oldColor, color);
+        return grid;
     }
     
-    public void dfs(int r, int c, int[][] grid, boolean[][] visited, int oldColor) {
-        if (!isValid(r, c, grid) || visited[r][c] || grid[r][c] != oldColor)
+    public void dfs(int[][] grid, int i, int j, int oldColor, int newColor) {
+        if (i > grid.length - 1 || i < 0 || j > grid[0].length - 1 || j < 0 || 
+            grid[i][j] != oldColor) 
             return;
         
-        visited[r][c] = true;
-        for (int d = 0; d < 4; d++)
-            dfs(r + dr[d], c + dc[d], grid, visited, oldColor);
-    }
-    
-    public void createBoundaries(int[][] grid, boolean[][] visited, int newColor) {
-        int rows = grid.length;
-        int cols = grid[0].length;
+        // Mark as visited by making it negative
+        grid[i][j] = -oldColor;
         
-        for (int r = 0; r < rows; r++) {
-            for (int c = 0; c < cols; c++) {
-                if (!visited[r][c])
-                    continue; // NOT part of the CC
-                    
-                for (int d = 0; d < 4; d++) {
-                    int nr = r + dr[d];
-                    int nc = c + dc[d];
-                    if (!isValid(nr, nc, grid) || !visited[nr][nc]) {
-                        grid[r][c] = newColor; // Boundary
-                        break; // Once we know it's a boundary, no need to check other directions
-                    }
+        boolean border = false;
+        
+        // Check if on grid boundary
+        if(i == 0 || j == 0 || j == grid[0].length - 1 || i == grid.length - 1) {
+            border = true;
+        } else {
+            // Check neighbors for border condition
+            int[][] dirs = {{1,0}, {-1,0}, {0,1}, {0,-1}};
+            for(int[] dir : dirs) {
+                int ni = i + dir[0];
+                int nj = j + dir[1];
+                // Border if neighbor has different original color
+                if(Math.abs(grid[ni][nj]) != oldColor) {
+                    border = true;
+                    break;
                 }
             }
         }
-    }
-    
-    public int[][] colorBorder(int[][] grid, int row, int col, int color) {
-        boolean[][] visited = new boolean[grid.length][grid[0].length];
-        dfs(row, col, grid, visited, grid[row][col]);
-        createBoundaries(grid, visited, color);
-        return grid;
+        
+        // Recurse to neighbors
+        dfs(grid, i+1, j, oldColor, newColor);
+        dfs(grid, i-1, j, oldColor, newColor);
+        dfs(grid, i, j+1, oldColor, newColor);
+        dfs(grid, i, j-1, oldColor, newColor);
+        
+        // Set final color based on border status
+        if(border) {
+            grid[i][j] = newColor;
+        } else {
+            grid[i][j] = oldColor; // Restore original color for non-border
+        }
     }
 }
