@@ -1,25 +1,24 @@
 class Solution {
     public int islandPerimeter(int[][] grid) {
         int count = 0;
+        int[][] directions = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}}; // up, down, left, right
+        
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[0].length; j++) {
                 if (grid[i][j] == 1) {
-                    if (i == 0 || grid[i - 1][j] == 0) {
-                        count++;
-                    }
-                    if (j == 0 || grid[i][j - 1] == 0) {
-                        count++;
-                    }
-                    if (i == grid.length - 1 || grid[i + 1][j] == 0) {
-                        count++;
-                    }
-                    if (j == grid[0].length - 1 || grid[i][j + 1] == 0) {
-                        count++;
+                    for (int[] dir : directions) {
+                        int ni = i + dir[0];
+                        int nj = j + dir[1];
+                        
+                        // Count if out of bounds OR neighbor is water
+                        if (ni < 0 || ni >= grid.length || nj < 0 || nj >= grid[0].length || 
+                            grid[ni][nj] == 0) {
+                            count++;
+                        }
                     }
                 }
             }
         }
         return count;
-
     }
 }
