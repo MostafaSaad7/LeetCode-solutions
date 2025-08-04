@@ -153,6 +153,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0230-kth-smallest-element-in-a-bst](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0417-pacific-atlantic-water-flow](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0417-pacific-atlantic-water-flow) |
+| [0463-island-perimeter](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0463-island-perimeter) |
 | [0690-employee-importance](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0690-employee-importance) |
 | [0695-max-area-of-island](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0695-max-area-of-island) |
 | [0744-network-delay-time](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0744-network-delay-time) |
@@ -172,6 +173,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0133-clone-graph](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0133-clone-graph) |
 | [0199-binary-tree-right-side-view](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0199-binary-tree-right-side-view) |
 | [0417-pacific-atlantic-water-flow](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0417-pacific-atlantic-water-flow) |
+| [0463-island-perimeter](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0463-island-perimeter) |
 | [0690-employee-importance](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0690-employee-importance) |
 | [0695-max-area-of-island](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0695-max-area-of-island) |
 | [0744-network-delay-time](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0744-network-delay-time) |
@@ -235,6 +237,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0435-non-overlapping-intervals](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0435-non-overlapping-intervals) |
 | [0436-find-right-interval](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0436-find-right-interval) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
+| [0463-island-perimeter](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0463-island-perimeter) |
 | [0475-heaters](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0475-heaters) |
 | [0494-target-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0494-target-sum) |
 | [0518-coin-change-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0518-coin-change-ii) |
@@ -445,6 +448,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0174-dungeon-game](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0174-dungeon-game) |
 | [0221-maximal-square](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0221-maximal-square) |
 | [0417-pacific-atlantic-water-flow](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0417-pacific-atlantic-water-flow) |
+| [0463-island-perimeter](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0463-island-perimeter) |
 | [0695-max-area-of-island](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0695-max-area-of-island) |
 | [0967-minimum-falling-path-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0967-minimum-falling-path-sum) |
 | [1036-rotting-oranges](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1036-rotting-oranges) |
