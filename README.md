@@ -305,6 +305,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3491-find-the-maximum-length-of-valid-subsequence-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3491-find-the-maximum-length-of-valid-subsequence-ii) |
 | [3522-find-the-power-of-k-size-subarrays-i](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3522-find-the-power-of-k-size-subarrays-i) |
 | [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
+| [3790-fruits-into-baskets-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3790-fruits-into-baskets-ii) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -546,6 +547,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2132-convert-1d-array-into-2d-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2132-convert-1d-array-into-2d-array) |
 | [2155-find-missing-observations](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2155-find-missing-observations) |
 | [2260-divide-a-string-into-groups-of-size-k](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2260-divide-a-string-into-groups-of-size-k) |
+| [3790-fruits-into-baskets-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3790-fruits-into-baskets-ii) |
 ## Math
 |  |
 | ------- |
@@ -633,6 +635,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2586-longest-square-streak-in-an-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2586-longest-square-streak-in-an-array) |
 | [2699-count-the-number-of-fair-pairs](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2699-count-the-number-of-fair-pairs) |
 | [2716-prime-subtraction-operation](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2716-prime-subtraction-operation) |
+| [3790-fruits-into-baskets-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3790-fruits-into-baskets-ii) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -723,4 +726,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0954-maximum-sum-circular-subarray](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0954-maximum-sum-circular-subarray) |
+## Segment Tree
+|  |
+| ------- |
+| [3790-fruits-into-baskets-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3790-fruits-into-baskets-ii) |
+## Ordered Set
+|  |
+| ------- |
+| [3790-fruits-into-baskets-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3790-fruits-into-baskets-ii) |
 <!---LeetCode Topics End-->
