@@ -163,6 +163,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1104-coloring-a-border](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1104-coloring-a-border) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1544-count-good-nodes-in-binary-tree) |
+| [1663-detect-cycles-in-2d-grid](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1663-detect-cycles-in-2d-grid) |
 | [2035-count-sub-islands](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2035-count-sub-islands) |
 | [2545-height-of-binary-tree-after-subtree-removal-queries](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2545-height-of-binary-tree-after-subtree-removal-queries) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2677-cousins-in-binary-tree-ii) |
@@ -182,6 +183,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1104-coloring-a-border](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1104-coloring-a-border) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1544-count-good-nodes-in-binary-tree) |
+| [1663-detect-cycles-in-2d-grid](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1663-detect-cycles-in-2d-grid) |
 | [2035-count-sub-islands](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2035-count-sub-islands) |
 | [2545-height-of-binary-tree-after-subtree-removal-queries](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2545-height-of-binary-tree-after-subtree-removal-queries) |
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
@@ -275,6 +277,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1635-number-of-good-pairs](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1635-number-of-good-pairs) |
+| [1663-detect-cycles-in-2d-grid](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1663-detect-cycles-in-2d-grid) |
 | [1669-minimum-cost-to-cut-a-stick](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1669-minimum-cost-to-cut-a-stick) |
 | [1741-sort-array-by-increasing-frequency](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1741-sort-array-by-increasing-frequency) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
@@ -456,6 +459,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1104-coloring-a-border](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1104-coloring-a-border) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
+| [1663-detect-cycles-in-2d-grid](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1663-detect-cycles-in-2d-grid) |
 | [2035-count-sub-islands](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2035-count-sub-islands) |
 | [2132-convert-1d-array-into-2d-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2132-convert-1d-array-into-2d-array) |
 | [2794-maximum-number-of-moves-in-a-grid](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2794-maximum-number-of-moves-in-a-grid) |
@@ -609,6 +613,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0128-longest-consecutive-sequence) |
 | [0695-max-area-of-island](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0695-max-area-of-island) |
+| [1663-detect-cycles-in-2d-grid](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1663-detect-cycles-in-2d-grid) |
 | [2035-count-sub-islands](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2035-count-sub-islands) |
 ## Binary Search
 |  |
