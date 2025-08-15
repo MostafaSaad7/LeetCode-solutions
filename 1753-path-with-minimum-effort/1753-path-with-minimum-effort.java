@@ -8,16 +8,16 @@ class Solution {
 
     int binarySearch(int[][] heights) {
         int left = 0;
-        int right = 1_000_000; // max possible height difference
+        int right = 1_000_000;
         int result = right;
 
         while (left <= right) {
             int mid = left + (right - left) / 2;
             if (possible(heights, mid)) {
                 result = mid;
-                right = mid - 1; // try smaller effort
+                right = mid - 1;
             } else {
-                left = mid + 1; // need bigger effort
+                left = mid + 1;
             }
         }
         return result;
@@ -25,32 +25,30 @@ class Solution {
 
     boolean possible(int[][] heights, int limit) {
         boolean[][] visited = new boolean[heights.length][heights[0].length];
-        return dfs(heights, 0, 0, limit, visited);
+        return dfs(heights, 0, 0, limit, visited, heights[0][0]);
     }
 
-    boolean dfs(int[][] heights, int row, int col, int limit, boolean[][] visited) {
+    boolean dfs(int[][] heights, int row, int col, int limit, boolean[][] visited, int prevHeight) {
+        if (!isValid(heights, row, col) || visited[row][col] ||
+            Math.abs(heights[row][col] - prevHeight) > limit) {
+            return false;
+        }
+
         visited[row][col] = true;
+
         if (row == heights.length - 1 && col == heights[0].length - 1) {
             return true;
         }
 
         for (int[] dir : directions) {
-            int newRow = row + dir[0];
-            int newCol = col + dir[1];
-            if (isValid(heights, row, col, newRow, newCol, limit, visited)) {
-                if (dfs(heights, newRow, newCol, limit, visited)) {
-                    return true;
-                }
+            if (dfs(heights, row + dir[0], col + dir[1], limit, visited, heights[row][col])) {
+                return true;
             }
         }
         return false;
     }
 
-    boolean isValid(int[][] heights, int row, int col, int newRow, int newCol,
-                    int limit, boolean[][] visited) {
-        return newRow >= 0 && newRow < heights.length &&
-               newCol >= 0 && newCol < heights[0].length &&
-               !visited[newRow][newCol] &&
-               Math.abs(heights[newRow][newCol] - heights[row][col]) <= limit;
+    boolean isValid(int[][] heights, int r, int c) {
+        return r >= 0 && c >= 0 && r < heights.length && c < heights[0].length;
     }
 }
