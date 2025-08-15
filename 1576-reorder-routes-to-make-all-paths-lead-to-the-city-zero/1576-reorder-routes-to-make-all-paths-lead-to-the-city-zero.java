@@ -4,30 +4,36 @@ class Solution {
     private int count = 0;
 
     public int minReorder(int n, int[][] connections) {
-        Map<Integer, List<int[]>> adj = new HashMap<>();
+        Map<Integer, Set<Integer>> adj = new HashMap<>();     // undirected adjacency
+        Set<String> directedEdges = new HashSet<>();          // store original directions
 
         for (int[] edge : connections) {
             int from = edge[0], to = edge[1];
-            adj.computeIfAbsent(from, k -> new ArrayList<>()).add(new int[]{to, 1}); // original direction
-            adj.computeIfAbsent(to, k -> new ArrayList<>()).add(new int[]{from, 0}); // reverse direction
+
+            // build undirected adjacency
+            adj.computeIfAbsent(from, k -> new HashSet<>()).add(to);
+            adj.computeIfAbsent(to, k -> new HashSet<>()).add(from);
+
+            // record the original direction
+            directedEdges.add(from + "," + to);
         }
 
         boolean[] visited = new boolean[n];
-        dfs(0, adj, visited);
+        dfs(0, adj, directedEdges, visited);
+
         return count;
     }
 
-    private void dfs(int node, Map<Integer, List<int[]>> adj, boolean[] visited) {
+    private void dfs(int node, Map<Integer, Set<Integer>> adj, Set<String> directedEdges, boolean[] visited) {
         visited[node] = true;
 
-        for (int[] edge : adj.getOrDefault(node, Collections.emptyList())) {
-            int neighbor = edge[0];
-            int direction = edge[1];
+        for (int neighbor : adj.getOrDefault(node, Collections.emptySet())) {
             if (!visited[neighbor]) {
-                if (direction == 1) {
-                    count++; // needs to be reversed
+                // if the original edge was node -> neighbor, it needs reversing
+                if (directedEdges.contains(node + "," + neighbor)) {
+                    count++;
                 }
-                dfs(neighbor, adj, visited);
+                dfs(neighbor, adj, directedEdges, visited);
             }
         }
     }
