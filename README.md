@@ -132,6 +132,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0560-subarray-sum-equals-k](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0560-subarray-sum-equals-k) |
 | [0621-task-scheduler](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0621-task-scheduler) |
 | [0690-employee-importance](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0690-employee-importance) |
+| [0753-open-the-lock](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0753-open-the-lock) |
 | [0843-binary-trees-with-factors](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0843-binary-trees-with-factors) |
 | [0906-walking-robot-simulation](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0906-walking-robot-simulation) |
 | [1256-rank-transform-of-an-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1256-rank-transform-of-an-array) |
@@ -185,6 +186,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0690-employee-importance](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0690-employee-importance) |
 | [0695-max-area-of-island](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0695-max-area-of-island) |
 | [0744-network-delay-time](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0744-network-delay-time) |
+| [0753-open-the-lock](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0753-open-the-lock) |
 | [0801-is-graph-bipartite](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0801-is-graph-bipartite) |
 | [0813-all-paths-from-source-to-target](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0813-all-paths-from-source-to-target) |
 | [1036-rotting-oranges](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1036-rotting-oranges) |
@@ -264,6 +266,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0621-task-scheduler](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0621-task-scheduler) |
 | [0690-employee-importance](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0690-employee-importance) |
 | [0695-max-area-of-island](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0695-max-area-of-island) |
+| [0753-open-the-lock](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0753-open-the-lock) |
 | [0790-global-and-local-inversions](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0790-global-and-local-inversions) |
 | [0792-binary-search](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0792-binary-search) |
 | [0843-binary-trees-with-factors](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0843-binary-trees-with-factors) |
@@ -378,6 +381,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0242-valid-anagram](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0242-valid-anagram) |
 | [0516-longest-palindromic-subsequence](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0516-longest-palindromic-subsequence) |
 | [0592-fraction-addition-and-subtraction](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0592-fraction-addition-and-subtraction) |
+| [0753-open-the-lock](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0753-open-the-lock) |
 | [0812-rotate-string](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0812-rotate-string) |
 | [1146-greatest-common-divisor-of-strings](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1146-greatest-common-divisor-of-strings) |
 | [1197-parsing-a-boolean-expression](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1197-parsing-a-boolean-expression) |
