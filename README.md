@@ -191,6 +191,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0813-all-paths-from-source-to-target](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0813-all-paths-from-source-to-target) |
 | [1036-rotting-oranges](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1036-rotting-oranges) |
 | [1104-coloring-a-border](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1104-coloring-a-border) |
+| [1229-shortest-path-with-alternating-colors](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1229-shortest-path-with-alternating-colors) |
 | [1308-smallest-string-with-swaps](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1308-smallest-string-with-swaps) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1544-count-good-nodes-in-binary-tree) |
@@ -209,6 +210,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0744-network-delay-time](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0744-network-delay-time) |
 | [0801-is-graph-bipartite](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0801-is-graph-bipartite) |
 | [0813-all-paths-from-source-to-target](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0813-all-paths-from-source-to-target) |
+| [1229-shortest-path-with-alternating-colors](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1229-shortest-path-with-alternating-colors) |
 | [1325-path-with-maximum-probability](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1325-path-with-maximum-probability) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
