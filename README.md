@@ -263,6 +263,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0463-island-perimeter](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0463-island-perimeter) |
 | [0475-heaters](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0475-heaters) |
 | [0494-target-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0494-target-sum) |
+| [0498-diagonal-traverse](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0498-diagonal-traverse) |
 | [0518-coin-change-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0518-coin-change-ii) |
 | [0525-contiguous-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0525-contiguous-array) |
 | [0560-subarray-sum-equals-k](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0560-subarray-sum-equals-k) |
@@ -485,6 +486,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0221-maximal-square](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0221-maximal-square) |
 | [0417-pacific-atlantic-water-flow](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0417-pacific-atlantic-water-flow) |
 | [0463-island-perimeter](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0463-island-perimeter) |
+| [0498-diagonal-traverse](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0498-diagonal-traverse) |
 | [0695-max-area-of-island](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0695-max-area-of-island) |
 | [0787-sliding-puzzle](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0787-sliding-puzzle) |
 | [0967-minimum-falling-path-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0967-minimum-falling-path-sum) |
@@ -579,6 +581,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Simulation
 |  |
 | ------- |
+| [0498-diagonal-traverse](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0498-diagonal-traverse) |
 | [0592-fraction-addition-and-subtraction](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0592-fraction-addition-and-subtraction) |
 | [0906-walking-robot-simulation](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0906-walking-robot-simulation) |
 | [1667-find-kth-bit-in-nth-binary-string](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1667-find-kth-bit-in-nth-binary-string) |
