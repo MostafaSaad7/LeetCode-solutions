@@ -83,7 +83,6 @@ class Solution {
     
     /**
      * Helper method to swap two characters in a string
-     * Java strings are immutable, so we need to convert to char array
      */
     private String swap(String str, int i, int j) {
         char[] chars = str.toCharArray();
