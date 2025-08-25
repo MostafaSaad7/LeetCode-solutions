@@ -163,6 +163,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0776-n-ary-tree-postorder-traversal](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0776-n-ary-tree-postorder-traversal) |
 | [0801-is-graph-bipartite](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0801-is-graph-bipartite) |
 | [0813-all-paths-from-source-to-target](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0813-all-paths-from-source-to-target) |
+| [0971-shortest-bridge](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0971-shortest-bridge) |
 | [0988-flip-equivalent-binary-trees](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0988-flip-equivalent-binary-trees) |
 | [1104-coloring-a-border](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1104-coloring-a-border) |
 | [1308-smallest-string-with-swaps](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1308-smallest-string-with-swaps) |
@@ -190,6 +191,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0787-sliding-puzzle](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0787-sliding-puzzle) |
 | [0801-is-graph-bipartite](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0801-is-graph-bipartite) |
 | [0813-all-paths-from-source-to-target](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0813-all-paths-from-source-to-target) |
+| [0971-shortest-bridge](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0971-shortest-bridge) |
 | [1036-rotting-oranges](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1036-rotting-oranges) |
 | [1104-coloring-a-border](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1104-coloring-a-border) |
 | [1229-shortest-path-with-alternating-colors](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1229-shortest-path-with-alternating-colors) |
@@ -280,6 +282,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0906-walking-robot-simulation](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0906-walking-robot-simulation) |
 | [0954-maximum-sum-circular-subarray](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0954-maximum-sum-circular-subarray) |
 | [0967-minimum-falling-path-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0967-minimum-falling-path-sum) |
+| [0971-shortest-bridge](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0971-shortest-bridge) |
 | [1019-squares-of-a-sorted-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1019-squares-of-a-sorted-array) |
 | [1036-rotting-oranges](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1036-rotting-oranges) |
 | [1046-max-consecutive-ones-iii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1046-max-consecutive-ones-iii) |
@@ -485,6 +488,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0695-max-area-of-island](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0695-max-area-of-island) |
 | [0787-sliding-puzzle](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0787-sliding-puzzle) |
 | [0967-minimum-falling-path-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0967-minimum-falling-path-sum) |
+| [0971-shortest-bridge](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0971-shortest-bridge) |
 | [1036-rotting-oranges](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1036-rotting-oranges) |
 | [1104-coloring-a-border](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1104-coloring-a-border) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1402-count-square-submatrices-with-all-ones) |
