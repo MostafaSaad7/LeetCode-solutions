@@ -1,34 +1,65 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
 class Solution {
-    private int[][] dirs = {{1,0},{-1,0},{0,1},{0,-1}};
-    private int m, n;
-    private int[][] memo;
+    int[][] dir = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
 
     public int longestIncreasingPath(int[][] matrix) {
-        if (matrix == null || matrix.length == 0) return 0;
-        m = matrix.length;
-        n = matrix[0].length;
-        memo = new int[m][n];
-
-        int maxPath = 0;
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                maxPath = Math.max(maxPath, dfs(matrix, i, j));
-            }
-        }
-        return maxPath;
+        int rows = matrix.length;
+        int cols = matrix[0].length;
+        int[][] inDegree = new int[rows][cols];
+        calculateInDegree(matrix, inDegree);
+        return bfs(matrix, inDegree);
     }
 
-    private int dfs(int[][] matrix, int i, int j) {
-        if (memo[i][j] != 0) return memo[i][j];
 
-        int best = 1; // path length at least 1 (the cell itself)
-        for (int[] d : dirs) {
-            int x = i + d[0], y = j + d[1];
-            if (x >= 0 && y >= 0 && x < m && y < n && matrix[x][y] > matrix[i][j]) {
-                best = Math.max(best, 1 + dfs(matrix, x, y));
+    void calculateInDegree(int[][] matrix, int[][] inDegree) {
+        int rows = matrix.length;
+        int cols = matrix[0].length;
+        for (int r = 0; r < rows; r++) {
+            for (int c = 0; c < cols; c++) {
+                for (int[] d : dir) {
+                    int nr = r + d[0];
+                    int nc = c + d[1];
+                    if (nr >= 0 && nr < rows && nc >= 0 && nc < cols && matrix[nr][nc] > matrix[r][c]) {
+                        inDegree[nr][nc]++;
+                    }
+                }
             }
         }
-        memo[i][j] = best;
-        return best;
+    }
+
+    int bfs(int[][] matrix, int[][] inDegree) {
+        int rows = matrix.length;
+        int cols = matrix[0].length;
+        Queue<int[]> queue = new LinkedList<>();
+        for (int r = 0; r < rows; r++) {
+            for (int c = 0; c < cols; c++) {
+                if (inDegree[r][c] == 0) {
+                    queue.offer(new int[]{r, c});
+                }
+            }
+        }
+        int levels = 0;
+        while (!queue.isEmpty()) {
+            int size = queue.size();
+            for (int i = 0; i < size; i++) {
+                int[] cell = queue.poll();
+                int r = cell[0], c = cell[1];
+                for (int[] d : dir) {
+                    int nr = r + d[0];
+                    int nc = c + d[1];
+                    if (nr >= 0 && nr < rows && nc >= 0 && nc < cols && matrix[nr][nc] > matrix[r][c]) {
+                        inDegree[nr][nc]--;
+                        if (inDegree[nr][nc] == 0) {
+                            queue.offer(new int[]{nr, nc});
+                        }
+                    }
+                }
+            }
+            levels++;
+
+        }
+        return levels;
     }
 }
