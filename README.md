@@ -225,6 +225,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
 | [1912-number-of-restricted-paths-from-first-to-last-node](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1912-number-of-restricted-paths-from-first-to-last-node) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2090-number-of-ways-to-arrive-at-destination) |
+| [2176-parallel-courses-iii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2176-parallel-courses-iii) |
 ## Array
 |  |
 | ------- |
@@ -328,6 +329,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2155-find-missing-observations](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2155-find-missing-observations) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2163-kth-distinct-string-in-an-array) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
+| [2176-parallel-courses-iii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2176-parallel-courses-iii) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2179-most-beautiful-item-for-each-query) |
 | [2183-minimum-operations-to-convert-number](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2183-minimum-operations-to-convert-number) |
 | [2267-minimum-difference-in-sums-after-removal-of-elements](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2267-minimum-difference-in-sums-after-removal-of-elements) |
@@ -381,6 +383,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1849-maximum-absolute-sum-of-any-subarray](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1849-maximum-absolute-sum-of-any-subarray) |
 | [1912-number-of-restricted-paths-from-first-to-last-node](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1912-number-of-restricted-paths-from-first-to-last-node) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2090-number-of-ways-to-arrive-at-destination) |
+| [2176-parallel-courses-iii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2176-parallel-courses-iii) |
 | [2267-minimum-difference-in-sums-after-removal-of-elements](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2267-minimum-difference-in-sums-after-removal-of-elements) |
 | [2554-minimum-total-distance-traveled](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2554-minimum-total-distance-traveled) |
 | [2586-longest-square-streak-in-an-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2586-longest-square-streak-in-an-array) |
@@ -755,6 +758,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [1912-number-of-restricted-paths-from-first-to-last-node](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1912-number-of-restricted-paths-from-first-to-last-node) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2090-number-of-ways-to-arrive-at-destination) |
+| [2176-parallel-courses-iii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2176-parallel-courses-iii) |
 ## Enumeration
 |  |
 | ------- |
