@@ -2,34 +2,34 @@ import java.util.*;
 
 class Solution {
     public int minimumTime(int n, int[][] relations, int[] time) {
-        // Build graph: course -> list of dependents
-        Map<Integer, List<Integer>> graph = new HashMap<>();
+        // Build graph: course -> list of prerequisites
+        Map<Integer, List<Integer>> prereqGraph = new HashMap<>();
         for (int[] r : relations) {
             int u = r[0] - 1; // prerequisite
-            int v = r[1] - 1; // dependent
-            graph.computeIfAbsent(u, k -> new ArrayList<>()).add(v);
+            int v = r[1] - 1; // course
+            prereqGraph.computeIfAbsent(v, k -> new ArrayList<>()).add(u);
         }
 
-        int[] memo = new int[n]; // longest path from each course
+        int[] memo = new int[n]; // finish times
         int ans = 0;
 
         for (int i = 0; i < n; i++) {
-            ans = Math.max(ans, dfsForward(i, graph, time, memo));
+            ans = Math.max(ans, dfsPrereq(i, prereqGraph, time, memo));
         }
         return ans;
     }
 
-    private int dfsForward(int course, Map<Integer, List<Integer>> graph, int[] time, int[] memo) {
+    private int dfsPrereq(int course, Map<Integer, List<Integer>> graph, int[] time, int[] memo) {
         if (memo[course] > 0) return memo[course];
 
-        int res = time[course];
+        int maxPre = 0;
         if (graph.containsKey(course)) {
-            for (int nei : graph.get(course)) {
-                res = Math.max(res, time[course] + dfsForward(nei, graph, time, memo));
+            for (int pre : graph.get(course)) {
+                maxPre = Math.max(maxPre, dfsPrereq(pre, graph, time, memo));
             }
         }
 
-        memo[course] = res;
-        return res;
+        memo[course] = maxPre + time[course];
+        return memo[course];
     }
 }
