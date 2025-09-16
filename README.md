@@ -142,6 +142,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1715-split-a-string-into-the-max-number-of-unique-substrings](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1715-split-a-string-into-the-max-number-of-unique-substrings) |
 | [1741-sort-array-by-increasing-frequency](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1741-sort-array-by-increasing-frequency) |
 | [1866-restore-the-array-from-adjacent-pairs](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1866-restore-the-array-from-adjacent-pairs) |
+| [1986-largest-color-value-in-a-directed-graph](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2163-kth-distinct-string-in-an-array) |
 | [2586-longest-square-streak-in-an-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2586-longest-square-streak-in-an-array) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2677-cousins-in-binary-tree-ii) |
@@ -224,6 +225,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
 | [1912-number-of-restricted-paths-from-first-to-last-node](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1912-number-of-restricted-paths-from-first-to-last-node) |
+| [1986-largest-color-value-in-a-directed-graph](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [2176-parallel-courses-iii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2176-parallel-courses-iii) |
 ## Array
@@ -382,6 +384,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [1849-maximum-absolute-sum-of-any-subarray](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1849-maximum-absolute-sum-of-any-subarray) |
 | [1912-number-of-restricted-paths-from-first-to-last-node](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1912-number-of-restricted-paths-from-first-to-last-node) |
+| [1986-largest-color-value-in-a-directed-graph](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [2176-parallel-courses-iii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2176-parallel-courses-iii) |
 | [2267-minimum-difference-in-sums-after-removal-of-elements](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2267-minimum-difference-in-sums-after-removal-of-elements) |
@@ -534,6 +537,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0169-majority-element](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0169-majority-element) |
 | [0621-task-scheduler](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0621-task-scheduler) |
 | [1635-number-of-good-pairs](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1635-number-of-good-pairs) |
+| [1986-largest-color-value-in-a-directed-graph](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2163-kth-distinct-string-in-an-array) |
 ## Two Pointers
 |  |
@@ -757,6 +761,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0310-minimum-height-trees](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0310-minimum-height-trees) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [1912-number-of-restricted-paths-from-first-to-last-node](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1912-number-of-restricted-paths-from-first-to-last-node) |
+| [1986-largest-color-value-in-a-directed-graph](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [2176-parallel-courses-iii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/2176-parallel-courses-iii) |
 ## Enumeration
@@ -791,6 +796,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0787-sliding-puzzle](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0787-sliding-puzzle) |
 | [1013-fibonacci-number](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1013-fibonacci-number) |
+| [1986-largest-color-value-in-a-directed-graph](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1986-largest-color-value-in-a-directed-graph) |
 ## Monotonic Queue
 |  |
 | ------- |
