@@ -1,40 +1,34 @@
 class Solution {
-
-    Map<Integer, Integer> inorderPositions = new HashMap<>();
+    private int preIdx;
+    private Map<Integer, Integer> inorderIndexMap;
 
     public TreeNode buildTree(int[] preorder, int[] inorder) {
-        if (preorder.length < 1 || inorder.length < 1) return null;
+        preIdx = 0; // start from the first element in preorder
 
+        // Map inorder values -> indices for quick lookup
+        inorderIndexMap = new HashMap<>();
         for (int i = 0; i < inorder.length; i++) {
-            inorderPositions.put(inorder[i], i);
+            inorderIndexMap.put(inorder[i], i);
         }
 
-        return builder(preorder, 0, 0, inorder.length - 1);
+        return build(preorder, 0, inorder.length - 1);
     }
 
-    public TreeNode builder(
-        int[] preorder,
-        int preorderIndex,
-        int inorderLow,
-        int inorderHigh
-    ) {
-        if (
-            preorderIndex > preorder.length - 1 || inorderLow > inorderHigh
-        ) return null;
+    private TreeNode build(int[] preorder, int inLeft, int inRight) {
+        if (inLeft > inRight)
+            return null;
 
-        int currentVal = preorder[preorderIndex];
-        TreeNode n = new TreeNode(currentVal);
-        int mid = inorderPositions.get(currentVal);
+        // root from preorder
+        int rootVal = preorder[preIdx++];
+        TreeNode root = new TreeNode(rootVal);
 
-        n.left = builder(preorder, preorderIndex + 1, inorderLow, mid - 1);
-        n.right =
-            builder(
-                preorder,
-  preorderIndex + (mid - inorderLow) + 1,  // Adjusted preorder index for right subtree
-    mid + 1,  // Starting position for the right subtree in the inorder array
-                inorderHigh
-            );
+        // find root in inorder
+        int idx = inorderIndexMap.get(rootVal);
 
-        return n;
+        // left then right (because preorder is root-left-right)
+        root.left = build(preorder, inLeft, idx - 1);
+        root.right = build(preorder, idx + 1, inRight);
+
+        return root;
     }
 }
