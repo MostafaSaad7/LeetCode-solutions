@@ -260,6 +260,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0169-majority-element](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0169-majority-element) |
 | [0174-dungeon-game](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0174-dungeon-game) |
 | [0198-house-robber](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0198-house-robber) |
+| [0209-minimum-size-subarray-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0209-minimum-size-subarray-sum) |
 | [0213-house-robber-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0213-house-robber-ii) |
 | [0219-contains-duplicate-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0219-contains-duplicate-ii) |
 | [0221-maximal-square](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0221-maximal-square) |
@@ -698,6 +699,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0035-search-insert-position](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0035-search-insert-position) |
 | [0069-sqrtx](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0069-sqrtx) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0209-minimum-size-subarray-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0209-minimum-size-subarray-sum) |
 | [0300-longest-increasing-subsequence](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0300-longest-increasing-subsequence) |
 | [0349-intersection-of-two-arrays](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0350-intersection-of-two-arrays-ii) |
@@ -722,6 +724,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Prefix Sum
 |  |
 | ------- |
+| [0209-minimum-size-subarray-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0209-minimum-size-subarray-sum) |
 | [0303-range-sum-query-immutable](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0303-range-sum-query-immutable) |
 | [0525-contiguous-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0525-contiguous-array) |
 | [0560-subarray-sum-equals-k](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0560-subarray-sum-equals-k) |
@@ -799,6 +802,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0209-minimum-size-subarray-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0209-minimum-size-subarray-sum) |
 | [0219-contains-duplicate-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0219-contains-duplicate-ii) |
 | [1046-max-consecutive-ones-iii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1046-max-consecutive-ones-iii) |
 | [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
