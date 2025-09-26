@@ -1,36 +1,46 @@
-// Solved before, but it's neetcode solution
+import java.util.HashMap;
+import java.util.Map;
+
 class Solution {
+    Map<String, Integer> dp;
 
     public int maxProfit(int[] prices) {
-        Map<String, Integer> cache = new HashMap<>();
-        return dfs(prices, cache, 0, true);
+        dp = new HashMap<>();
+
+        return solve(prices, 0, "cooldown");
+
     }
 
-    public int dfs(
-        int[] prices,
-        Map<String, Integer> cache,
-        int index,
-        boolean buying
-    ) {
-        if (index >= prices.length) {
+    int solve(int[] prices, int idx, String prevAction) {
+        if (idx >= prices.length)
             return 0;
-        }
-        String key = index + "-" + buying;
 
-        if (cache.containsKey(key)) {
-            return cache.get(key);
-        }
+        String temp = idx + prevAction;
+        if (dp.containsKey(temp))
+            return dp.get(temp);
 
-        int cooldown = dfs(prices, cache, index + 1, buying);
-        int buyOsell = Integer.MIN_VALUE;
+        int buyAction = 0;
+        int sellAction = 0;
+        int coolDownAction = 0;
 
-        if (buying) {
-            buyOsell = dfs(prices, cache, index + 1, !buying) - prices[index];
-        } else {
-            buyOsell = dfs(prices, cache, index + 2, !buying) + prices[index];
-        }
+        if (prevAction.equals("cooldown"))
+            buyAction = -prices[idx] + solve(prices, idx + 1, "buy");
+        if (prevAction.equals("buy"))
+            sellAction = prices[idx] + solve(prices, idx + 1, "sell");
+        if (prevAction.equals("sell"))
+            coolDownAction = solve(prices, idx + 1, "cooldown");
 
-        cache.put(key, Math.max(buyOsell, cooldown));
-        return cache.get(key);
+        int result = Math.max(
+                buyAction,
+                Math.max(
+                        sellAction,
+                        coolDownAction
+                )
+        );
+
+
+        dp.put(temp, result);
+        return result;
+
     }
 }
