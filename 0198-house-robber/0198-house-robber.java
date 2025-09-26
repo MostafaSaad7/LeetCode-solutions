@@ -1,18 +1,26 @@
 import java.util.Arrays;
 
 class Solution {
+    int[] dp;
 
     public int rob(int[] nums) {
+        dp = new int[nums.length];
+        Arrays.fill(dp, -1);
+        return solve(0, nums);
 
-        int rob1 = 0, rob2 = 0;
+    }
 
-        for (int i = 0; i < nums.length; i++) {
-            int maxChoice = Math.max(nums[i] + rob1, rob2);
-            rob1 = rob2;
-            rob2 = maxChoice;
-        }
+    public int solve(int idx, int[] nums) {
 
+        if (idx >= nums.length)
+            return 0;
+        
+        if (dp[idx] != -1)
+            return dp[idx];
 
-        return rob2;
+        int skip = solve(idx + 1, nums);
+        int take = nums[idx] + solve(idx + 2, nums);
+
+        return dp[idx] = Math.max(skip, take);
     }
 }
