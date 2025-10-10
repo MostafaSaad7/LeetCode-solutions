@@ -1,13 +1,24 @@
-class Solution {
-    public int minCostClimbingStairs(int[] cost) {
+import java.util.Arrays;
 
-        int first = cost[0];
-        int second = cost[1];
-        for (int i=2; i<cost.length; i++) {
-            int curr = cost[i] + Math.min(first, second);
-            first = second;
-            second = curr;
-        }
-        return Math.min(first, second);
+class Solution {
+    int[] dp;
+
+    public int minCostClimbingStairs(int[] cost) {
+        dp = new int[cost.length];
+        Arrays.fill(dp, -1);
+        return Math.min(solve(0, cost), solve(1, cost));
+    }
+
+    public int solve(int idx, int[] cost) {
+        if (idx >= cost.length)
+            return 0;
+        if (dp[idx] != -1)
+            return dp[idx];
+
+        int choice1 = cost[idx] + solve(idx + 1, cost);
+        int choice2 = cost[idx] + solve(idx + 2, cost);
+
+        dp[idx] = Math.min(choice1, choice2);
+        return dp[idx];
     }
 }
