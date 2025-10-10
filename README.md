@@ -186,6 +186,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0102-binary-tree-level-order-traversal](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0102-binary-tree-level-order-traversal) |
 | [0133-clone-graph](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0133-clone-graph) |
 | [0199-binary-tree-right-side-view](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0199-binary-tree-right-side-view) |
+| [0279-perfect-squares](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0279-perfect-squares) |
 | [0310-minimum-height-trees](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0310-minimum-height-trees) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0417-pacific-atlantic-water-flow](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0417-pacific-atlantic-water-flow) |
@@ -372,6 +373,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0198-house-robber](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0198-house-robber) |
 | [0213-house-robber-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0213-house-robber-ii) |
 | [0221-maximal-square](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0221-maximal-square) |
+| [0279-perfect-squares](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0279-perfect-squares) |
 | [0300-longest-increasing-subsequence](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0300-longest-increasing-subsequence) |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0329-longest-increasing-path-in-a-matrix) |
@@ -637,6 +639,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0013-roman-to-integer](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0013-roman-to-integer) |
 | [0050-powx-n](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0050-powx-n) |
 | [0069-sqrtx](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0069-sqrtx) |
+| [0279-perfect-squares](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0279-perfect-squares) |
 | [0441-arranging-coins](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0441-arranging-coins) |
 | [0592-fraction-addition-and-subtraction](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0592-fraction-addition-and-subtraction) |
 | [0668-kth-smallest-number-in-multiplication-table](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0668-kth-smallest-number-in-multiplication-table) |
