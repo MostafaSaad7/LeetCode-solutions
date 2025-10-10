@@ -289,6 +289,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0621-task-scheduler](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0621-task-scheduler) |
 | [0690-employee-importance](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0690-employee-importance) |
 | [0695-max-area-of-island](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0695-max-area-of-island) |
+| [0747-min-cost-climbing-stairs](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0747-min-cost-climbing-stairs) |
 | [0753-open-the-lock](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0753-open-the-lock) |
 | [0787-sliding-puzzle](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0787-sliding-puzzle) |
 | [0790-global-and-local-inversions](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0790-global-and-local-inversions) |
@@ -381,6 +382,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0516-longest-palindromic-subsequence](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0516-longest-palindromic-subsequence) |
 | [0518-coin-change-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0518-coin-change-ii) |
 | [0576-out-of-boundary-paths](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0576-out-of-boundary-paths) |
+| [0747-min-cost-climbing-stairs](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0747-min-cost-climbing-stairs) |
 | [0787-sliding-puzzle](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0787-sliding-puzzle) |
 | [0843-binary-trees-with-factors](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0843-binary-trees-with-factors) |
 | [0954-maximum-sum-circular-subarray](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0954-maximum-sum-circular-subarray) |
