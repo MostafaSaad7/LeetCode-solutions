@@ -1,35 +1,22 @@
 class Solution {
-    String str;
-    Boolean[][] memo;
-
     public String longestPalindrome(String s) {
-        str = s;
-        int maxLen = 1;
-        int start = 0;
-        memo = new Boolean[s.length()][s.length()];
-        
+        String res = "";
         for (int i = 0; i < s.length(); i++) {
-            for (int j = i; j < s.length(); j++) {
-                if (isPalindrome(i, j) && j - i + 1 > maxLen) {
-                    maxLen = j - i + 1;
-                    start = i;
-                }
-            }
+            // odd length
+            String p1 = expand(s, i, i);
+            // even length
+            String p2 = expand(s, i, i + 1);
+            if (p1.length() > res.length()) res = p1;
+            if (p2.length() > res.length()) res = p2;
         }
-
-        return s.substring(start, start + maxLen);
+        return res;
     }
 
-    private boolean isPalindrome(int start, int end) {
-        if (start >= end)
-            return true;
-        if (memo[start][end] != null)
-            return memo[start][end];
-        if (str.charAt(start) == str.charAt(end)) {
-            memo[start][end] = isPalindrome(start + 1, end - 1);
-            return memo[start][end];
+    private String expand(String s, int l, int r) {
+        while (l >= 0 && r < s.length() && s.charAt(l) == s.charAt(r)) {
+            l--;
+            r++;
         }
-        memo[start][end] = false;
-        return false;
+        return s.substring(l + 1, r);
     }
 }
