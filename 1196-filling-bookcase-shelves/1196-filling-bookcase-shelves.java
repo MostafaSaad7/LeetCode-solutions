@@ -1,40 +1,50 @@
 class Solution {
-    int[][] booksRef;
-    Integer[] cache;
-    int shelfWidth;
-
+    private Map<String, Integer> memo;
+    
     public int minHeightShelves(int[][] books, int shelfWidth) {
-        this.shelfWidth = shelfWidth;
-        booksRef = books;
-        cache = new Integer[books.length];
-
-        return dfs(0);
-
+        memo = new HashMap<>();
+        // Start with a "fresh shelf" - full width available, height 0
+        return helper(0, shelfWidth, 0, books, shelfWidth);
     }
-
-    private int dfs(int i) {
-        if (i == booksRef.length)
-            return 0;
-        if (cache[i] != null)
-            return cache[i];
-
-
-        int max_Height = 0;
-        int currentWidth = shelfWidth;
-        cache[i] = Integer.MAX_VALUE;
-
-
-        for (int j = i; j < booksRef.length; j++) {
-            int width = booksRef[j][0];
-            int height = booksRef[j][1];
-            if (currentWidth < width)
-                break;
-            currentWidth -= width;
-            max_Height = Math.max(height, max_Height);
-            cache[i] = Math.min(cache[i], dfs(j + 1) + max_Height);
+    
+    private int helper(int index, int remainingWidth, int currentMaxHeight, 
+                       int[][] books, int shelfWidth) {
+        // Base case: placed all books
+        if (index >= books.length) {
+            return currentMaxHeight; // add the last shelf's height
         }
-
-
-        return cache[i];
+        
+        // Create memo key
+        String key = index + "," + remainingWidth + "," + currentMaxHeight;
+        if (memo.containsKey(key)) {
+            return memo.get(key);
+        }
+        
+        int bookWidth = books[index][0];
+        int bookHeight = books[index][1];
+        int minHeight = Integer.MAX_VALUE;
+        
+        // Option 1: Try to add book to current shelf
+        if (bookWidth <= remainingWidth) {
+            int newMaxHeight = Math.max(currentMaxHeight, bookHeight);
+            int result = helper(index + 1, 
+                               remainingWidth - bookWidth, 
+                               newMaxHeight, 
+                               books, 
+                               shelfWidth);
+            minHeight = Math.min(minHeight, result);
+        }
+        
+        // Option 2: Start a new shelf with this book
+        // First, "close" the current shelf by adding its height
+        int result = currentMaxHeight + helper(index + 1, 
+                                               shelfWidth - bookWidth, 
+                                               bookHeight, 
+                                               books, 
+                                               shelfWidth);
+        minHeight = Math.min(minHeight, result);
+        
+        memo.put(key, minHeight);
+        return minHeight;
     }
 }
