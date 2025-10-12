@@ -1,40 +1,49 @@
+import java.util.Arrays;
+
 class Solution {
-    int[][] booksRef;
-    Integer[] cache;
-    int shelfWidth;
-
+    int[] dp;
+    
     public int minHeightShelves(int[][] books, int shelfWidth) {
-        this.shelfWidth = shelfWidth;
-        booksRef = books;
-        cache = new Integer[books.length];
-
-        return dfs(0);
-
+        dp = new int[books.length];
+        Arrays.fill(dp, -1);
+        return solve(0, books, shelfWidth);
     }
-
-    private int dfs(int i) {
-        if (i == booksRef.length)
+    
+    int solve(int idx, int[][] books, int shelfWidth) {
+        // Base case: no more books
+        if (idx >= books.length) {
             return 0;
-        if (cache[i] != null)
-            return cache[i];
-
-
-        int max_Height = 0;
-        int currentWidth = shelfWidth;
-        cache[i] = Integer.MAX_VALUE;
-
-
-        for (int j = i; j < booksRef.length; j++) {
-            int width = booksRef[j][0];
-            int height = booksRef[j][1];
-            if (currentWidth < width)
-                break;
-            currentWidth -= width;
-            max_Height = Math.max(height, max_Height);
-            cache[i] = Math.min(cache[i], dfs(j + 1) + max_Height);
         }
-
-
-        return cache[i];
+        
+        // Check memo
+        if (dp[idx] != -1) {
+            return dp[idx];
+        }
+        
+        int currentWidth = 0;
+        int shelfHeight = 0;
+        int minTotalHeight = Integer.MAX_VALUE;
+        
+        // Try placing books[idx...i] on the same shelf
+        for (int i = idx; i < books.length; i++) {
+            currentWidth += books[i][0]; 
+            
+            // Check if books fit on shelf
+            if (currentWidth > shelfWidth) {
+                break; 
+            }
+            
+            // Update shelf height
+            shelfHeight = Math.max(shelfHeight, books[i][1]);
+            
+            // Calculate total height for this configuration
+            int totalHeight = shelfHeight + solve(i + 1, books, shelfWidth);  
+            
+            // Track minimum
+            minTotalHeight = Math.min(minTotalHeight, totalHeight);
+        }
+        
+        dp[idx] = minTotalHeight;
+        return dp[idx];
     }
 }
