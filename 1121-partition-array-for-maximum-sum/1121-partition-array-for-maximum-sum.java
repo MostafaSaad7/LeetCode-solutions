@@ -1,18 +1,27 @@
-import java.util.Arrays;
-
 class Solution {
+    int[] dp;
+    
     public int maxSumAfterPartitioning(int[] arr, int k) {
-        int len = arr.length;
-        int[] dp = new int[len + 1];
-        Arrays.fill(dp, 0);
-        for (int start = len - 1; start >= 0; start--) {
-            int currMax = 0;
-            int end = Math.min(start + k, len);
-            for (int endIndex = start; endIndex < end; endIndex++) {
-                currMax = Math.max(currMax, arr[endIndex]);
-                dp[start] = Math.max(dp[start], currMax * (endIndex - start + 1) + dp[endIndex + 1]);
-            }
+        dp = new int[arr.length];
+        Arrays.fill(dp, -1);
+        return solve(0, arr, k);
+    }
+    
+    int solve(int indx, int[] arr, int k) {
+        if (indx >= arr.length) return 0;
+        if (dp[indx] != -1) return dp[indx];
+        
+        int max = 0;
+        int result = 0;
+        
+        for (int endAt = indx; endAt < indx + k; endAt++) {
+            if (endAt >= arr.length) break;
+            max = Math.max(max, arr[endAt]);
+            int len = endAt - indx + 1;
+            result = Math.max(result, max * len + solve(endAt + 1, arr, k));
         }
-        return dp[0];
+        
+        dp[indx] = result;
+        return dp[indx];
     }
 }
