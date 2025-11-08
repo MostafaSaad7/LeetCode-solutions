@@ -1,26 +1,39 @@
 import java.util.Arrays;
 
 class Solution {
+    int[] dp;
+    String input;
+    
     public int numDecodings(String s) {
-
-        int dp[] = new int[s.length()];
+        dp = new int[s.length()];
         Arrays.fill(dp, -1);
-        return dfs(s, 0, dp);
+        input = s;
+        return solve(0);
     }
-
-    int dfs(String s, int currentIdx, int[] dp) {
-        if (currentIdx >= s.length())
+    
+    public int solve(int index) {
+        if (index >= input.length())
             return 1;
-        if (dp[currentIdx] != -1)
-            return dp[currentIdx];
-        if (s.charAt(currentIdx) == '0')
-            return 0;
-
-        int count = dfs(s, currentIdx + 1, dp);
-        if (currentIdx + 1 < s.length() && Integer.valueOf(s.substring(currentIdx, currentIdx + 2)) < 27)
-            count += dfs(s, currentIdx + 2, dp);
-
-        dp[currentIdx] = count;
-        return count;
+        
+        if (dp[index] != -1)
+            return dp[index];
+        
+        int count = 0;
+        
+        // Try taking 1 character
+        if (input.charAt(index) != '0') {
+            count += solve(index + 1);
+        }
+        
+        // Try taking 2 characters
+        if (index + 1 < input.length()) {
+            int twoDigit = Integer.parseInt(input.substring(index, index + 2));
+            if (twoDigit >= 10 && twoDigit <= 26) {
+                count += solve(index + 2);
+            }
+        }
+        
+        dp[index] = count;
+        return dp[index];
     }
 }
