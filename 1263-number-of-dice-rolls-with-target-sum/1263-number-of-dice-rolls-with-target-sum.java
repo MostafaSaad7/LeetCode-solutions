@@ -1,30 +1,27 @@
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
 class Solution {
-    private final int MOD = 1_000_000_007;
+    static final int MOD = 1_000_000_007;
+    int[][] dp;
 
     public int numRollsToTarget(int n, int k, int target) {
-
-        int[] dp = new int[target + 1]; // number of way to get the target value
-        dp[0] = 1; // if target is zero so we have only one way (base case )
-
-        for (int dice = 0; dice < n; dice++) {
-            int[] nextDPRow = new int[target + 1];
-            Arrays.fill(nextDPRow, 0);
-            for (int face = 1; face < k + 1; face++) {
-                for (int total = face; total < target + 1; total++) {
-                    nextDPRow[total] = (nextDPRow[total] + dp[total - face]) % MOD;
-
-                }
-
-            }
-
-            dp = nextDPRow;
-        }
-
-        return dp[target];
+        dp = new int[n + 1][target + 1];
+        for (var arr : dp) Arrays.fill(arr, -1);
+        return solve(n, k, target);
     }
 
+    int solve(int n, int faces, int target) {
+        if (target < 0) return 0;
+        if (n == 0) return target == 0 ? 1 : 0;
+
+        if (dp[n][target] != -1) return dp[n][target];
+
+        long ways = 0;
+        for (int face = 1; face <= faces; face++) {
+            ways += solve(n - 1, faces, target - face);
+            ways %= MOD;
+        }
+
+        return dp[n][target] = (int) ways;
+    }
 }
