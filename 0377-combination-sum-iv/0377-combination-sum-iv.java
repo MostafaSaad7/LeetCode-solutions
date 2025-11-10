@@ -1,30 +1,29 @@
+import java.util.Arrays;
+
 class Solution {
-
-    int[] numsG;
-
+    int[] dp;
+    
     public int combinationSum4(int[] nums, int target) {
-        numsG = nums;
-        Integer[] dp = new Integer[target + 1];
-
-        return dfs(target, dp);
+        dp = new int[target + 1]; 
+        Arrays.fill(dp, -1);
+        return solve(nums, target);
     }
-
-    private int dfs(int target, Integer[] dp) {
-
-        if (target == 0)
-            return 1;
-
+    
+    int solve(int[] nums, int target) {
         if (target < 0)
             return 0;
-        // memory
-        if (dp[target] != null)
+        if (target == 0)
+            return 1;
+        if (dp[target] != -1)
             return dp[target];
-        int total = 0;
-        for (int num : numsG) {
-            total += dfs(target - num,dp);
+        
+        int ways = 0; 
+        
+        for (int i = 0; i < nums.length; i++) {
+            ways += solve(nums, target - nums[i]); 
         }
-
-        dp[target]=total;
-        return total;
+        
+        dp[target] = ways;
+        return dp[target];
     }
 }
