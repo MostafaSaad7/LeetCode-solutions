@@ -1,29 +1,42 @@
 class Solution {
-
-    private final int MOD = 1_000_000_007;
-    private int rows, cols;
-    private Integer[][][] memo;
+    int[][] directions = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+    int[][][] dp;
+    final int MOD = 1_000_000_007;
 
     public int findPaths(int m, int n, int maxMove, int startRow, int startColumn) {
-        rows = m;
-        cols = n;
-        memo = new Integer[m][n][maxMove + 1];
-        return dfs(startRow, startColumn, maxMove);
+        dp = new int[m][n][maxMove + 1];
+        
+        // Initialize with -1 to mark uncomputed states
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                Arrays.fill(dp[i][j], -1);
+            }
+        }
+        
+        return dfs(m, n, maxMove, startRow, startColumn);
     }
 
-    private int dfs(int row, int column, int moves) {
-        if (moves < 0) return 0;
-        if (row < 0 || row >= rows || column < 0 || column >= cols) return 1;
+    private int dfs(int m, int n, int remainingMoves, int row, int col) {
+        if (row < 0 || row >= m || col < 0 || col >= n) {
+            return 1;
+        }
+        if (remainingMoves == 0) {
+            return 0;
+        }
         
-        if (memo[row][column][moves] != null) return memo[row][column][moves];
+        // Check if already computed
+        if (dp[row][col][remainingMoves] != -1) {
+            return dp[row][col][remainingMoves];
+        }
 
-        int paths = 0;
-        paths = (paths + dfs(row + 1, column, moves - 1)) % MOD;
-        paths = (paths + dfs(row - 1, column, moves - 1)) % MOD;
-        paths = (paths + dfs(row, column + 1, moves - 1)) % MOD;
-        paths = (paths + dfs(row, column - 1, moves - 1)) % MOD;
+        int totalPaths = 0;
+        for (int[] dir : directions) {
+            int newRow = row + dir[0];
+            int newCol = col + dir[1];
+            totalPaths = (totalPaths + dfs(m, n, remainingMoves - 1, newRow, newCol)) % MOD;
+        }
 
-        memo[row][column][moves] = paths;
-        return paths;
+        dp[row][col][remainingMoves] = totalPaths;
+        return totalPaths;
     }
 }
