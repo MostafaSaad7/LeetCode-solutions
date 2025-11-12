@@ -1,29 +1,36 @@
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 class Solution {
-    private final int MOD = 1_000_000_007;
-
     public int numFactoredBinaryTrees(int[] arr) {
-        Map<Integer, Long> numberComMap = new HashMap<>();
         Arrays.sort(arr);
+        long MOD = 1000000007;
+        
+        long[] dp = new long[arr.length];
 
-        for (int root : arr) {
-            long ways = 1; // Every element can be a single-node tree.
-            for (int node : arr) {
-                if (node >= root) break; // No need to check further as arr is sorted.
-                if (root % node == 0 && numberComMap.containsKey(root / node)) {
-                    ways = (ways + numberComMap.get(node) * numberComMap.get(root / node)) % MOD;
+        Map<Integer, Integer> index = new HashMap<>();
+        for (int i = 0; i < arr.length; i++) {
+            index.put(arr[i], i);
+        }
+        
+        long result = 0;
+        
+
+        for (int i = 0; i < arr.length; i++) {
+            dp[i] = 1;  
+            for (int j = 0; j < i; j++) {  
+                if (arr[i] % arr[j] == 0) {
+                    int other = arr[i] / arr[j];  
+                    if (index.containsKey(other)) {
+                        int k = index.get(other);
+
+                        dp[i] = (dp[i] + dp[j] * dp[k]) % MOD;
+                    }
                 }
             }
-            numberComMap.put(root, ways);
+            
+            result = (result + dp[i]) % MOD;
         }
-
-        long result = 0;
-        for (long count : numberComMap.values()) {
-            result = (result + count) % MOD;
-        }
+        
         return (int) result;
     }
 }
