@@ -1,37 +1,37 @@
 class Solution {
+    int[][] dp;
+
     public int maximalSquare(char[][] matrix) {
-        if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
-            return 0;
+        dp = new int[matrix.length][matrix[0].length];
+        for (int i = 0; i < dp.length; i++) {
+            for (int j = 0; j < dp[0].length; j++) {
+                dp[i][j] = -1;
+            }
         }
-
-        int rows = matrix.length;
-        int cols = matrix[0].length;
-        int maxSide = 0;
-
-        // DP array to store the side length of the largest square ending at (r, c)
-        int[][] dp = new int[rows + 1][cols + 1];
-
-        // Iterate through each cell in the matrix
-        for (int r = 1; r <= rows; ++r) {
-            for (int c = 1; c <= cols; ++c) {
-                if (matrix[r - 1][c - 1] == '1') {
-                    // DP transition: 1 + minimum of the three neighboring cells (up, left, and diagonal)
-                    dp[r][c] = Math.min(Math.min(dp[r - 1][c], dp[r][c - 1]), dp[r - 1][c - 1]) + 1;
-                    // Update the maximum side length found
-                    maxSide = Math.max(maxSide, dp[r][c]);
-                }
+        int max = 0;
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                max = Math.max(max, solve(i, j, matrix));
             }
         }
 
-        // Return the area of the largest square
-        return maxSide * maxSide;
+        return max * max;
     }
 
-    /*
-     * Time Complexity: O(N * M)
-     * - Each cell in the matrix is processed once, resulting in O(N * M) time complexity.
-     *
-     * Space Complexity: O(N * M)
-     * - A DP array of size (N + 1) x (M + 1) is used, resulting in O(N * M) space complexity.
-     */
+    private int solve(int i, int j, char[][] matrix) {
+        if (i < 0 || j < 0 || i >= matrix.length || j >= matrix[0].length) {
+            return 0;
+        }
+        if (matrix[i][j] == '0') {
+            return 0;
+        }
+        if (dp[i][j] != -1) {
+            return dp[i][j];
+        }
+        int right = solve(i, j + 1, matrix);
+        int down = solve(i + 1, j, matrix);
+        int diagonal = solve(i + 1, j + 1, matrix);
+        dp[i][j] = 1 + Math.min(right, Math.min(down, diagonal));
+        return dp[i][j];
+    }
 }
