@@ -1,45 +1,33 @@
+import java.util.Arrays;
+
 class Solution {
-    int rows;
-    int cols;
-    int[][] dungeonRef;
 
     public int calculateMinimumHP(int[][] dungeon) {
-        if (dungeon == null || dungeon.length == 0 || dungeon[0].length == 0) {
-            return 1; // If the dungeon is empty, the knight needs at least 1 health to be alive.
+        int m = dungeon.length;
+        int n = dungeon[0].length;
+        int[][] dp = new int[m][n];
+        for (int[] row : dp) {
+            Arrays.fill(row, -1);
         }
-        
-        rows = dungeon.length;
-        cols = dungeon[0].length;
-        Integer[][] dp = new Integer[rows][cols];
-        dungeonRef = dungeon;
-        return dfs(0, 0, dp);
+        return solve(dungeon, 0, 0, dp);
+
     }
 
-    private int dfs(int row, int col, Integer[][] dp) {
-        if (row >= rows || col >= cols) {
+    int solve(int[][] dungeon, int i, int j, int[][] dp) {
+        if (i == dungeon.length - 1 && j == dungeon[0].length - 1) {
+            return Math.max(1, 1 - dungeon[i][j]);
+        }
+        if (i >= dungeon.length || j >= dungeon[0].length) {
             return Integer.MAX_VALUE;
         }
-
-        // Base case: the last cell (bottom-right corner)
-        if (row == rows - 1 && col == cols - 1) {
-            if (dungeonRef[row][col] < 0) {
-                return 1 - dungeonRef[row][col]; // Minimum health required if the last cell is negative
-            }
-            return 1; // If the last cell is positive, minimum health required is 1
+        if (dp[i][j] != -1) {
+            return dp[i][j];
         }
+        int down = solve(dungeon, i + 1, j, dp);
+        int right = solve(dungeon, i, j + 1, dp);
+        int minHealthOnExit = Math.min(down, right);
+        dp[i][j] = Math.max(1, minHealthOnExit - dungeon[i][j]);
+        return dp[i][j];
 
-        // Use memoization to avoid recalculating
-        if (dp[row][col] != null) {
-            return dp[row][col];
-        }
-
-        int minRequiredHealthToCoverCells = Math.min(dfs(row + 1, col, dp), dfs(row, col + 1, dp));
-        if (minRequiredHealthToCoverCells <= dungeonRef[row][col]) {
-            dp[row][col] = 1;
-        } else {
-            dp[row][col] = minRequiredHealthToCoverCells - dungeonRef[row][col];
-        }
-
-        return dp[row][col];
     }
 }
