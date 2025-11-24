@@ -17,18 +17,24 @@ class Solution {
         }
         return max;
     }
+private int solve(int[] nums, int i) {
 
-    private int solve(int[] nums, int i) {
-        if (dp[i] != 0) return dp[i];
+    if (dp[i] != 0) return dp[i];
 
-        int maxSubseq = 0;
-        for (int j = i + 1; j < nums.length; j++) {
-            if (nums[j] > nums[i]) {
-                maxSubseq = Math.max(maxSubseq, solve(nums, j));
-            }
+    //Base Case / Initialization: The LIS starting at i is at least 1 (the element itself)
+    int maxSubseq = 1; 
+
+    //Recursive Step: Look ahead for possible next elements
+    for (int j = i + 1; j < nums.length; j++) {
+ 
+        if (nums[j] > nums[i]) {
+       
+            maxSubseq = Math.max(maxSubseq, 1 + solve(nums, j));
         }
-
-        dp[i] = maxSubseq + 1; // LIS starting at i
-        return dp[i];
     }
+
+
+    dp[i] = maxSubseq; 
+    return dp[i];
+}
 }
