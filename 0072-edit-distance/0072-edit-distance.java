@@ -1,31 +1,28 @@
+import java.util.Arrays;
+
 class Solution {
+    int[][] memo;
     public int minDistance(String word1, String word2) {
-        int m = word1.length();
-        int r = word2.length();
-        int[][] memory = new int[m + 1][r + 1];
-
-        // Initialize base cases
-        for (int i = 0; i <= m; i++) {
-            memory[i][r] = m - i; // If word2 is empty, remove all characters of word1
+        memo = new int[word1.length()][word2.length()];
+        for (int[] row : memo) {
+            Arrays.fill(row, -1);
         }
-        for (int j = 0; j <= r; j++) {
-            memory[m][j] = r - j; // If word1 is empty, insert all characters of word2
-        }
-
-        // Fill the DP table
-        for (int i = m - 1; i >= 0; i--) {
-            for (int j = r - 1; j >= 0; j--) {
-                if (word1.charAt(i) == word2.charAt(j)) {
-                    memory[i][j] = memory[i + 1][j + 1];
-                } else {
-                    int insert = 1 + memory[i][j + 1];
-                    int delete = 1 + memory[i + 1][j];
-                    int replace = 1 + memory[i + 1][j + 1];
-                    memory[i][j] = Math.min(insert, Math.min(delete, replace));
-                }
-            }
-        }
-
-        return memory[0][0];
+        return dp(word1, word2, 0, 0);
     }
+    private int dp(String word1, String word2, int i, int j) {
+        if (i == word1.length() || j == word2.length()) {
+            return word1.length() - i + word2.length() - j;
+        }
+        if (memo[i][j] != -1) {
+            return memo[i][j];
+        }
+        if (word1.charAt(i) == word2.charAt(j)) {
+            return dp(word1, word2, i + 1, j + 1);
+    }
+    int insert = dp(word1, word2, i, j + 1) + 1;
+    int delete = dp(word1, word2, i + 1, j) + 1;
+    int replace = dp(word1, word2, i + 1, j + 1) + 1;
+    return memo[i][j] = Math.min(insert, Math.min(delete, replace));
+    }
+
 }
