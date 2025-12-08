@@ -136,6 +136,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0753-open-the-lock](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0753-open-the-lock) |
 | [0843-binary-trees-with-factors](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0843-binary-trees-with-factors) |
 | [0906-walking-robot-simulation](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0906-walking-robot-simulation) |
+| [0929-unique-email-addresses](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0929-unique-email-addresses) |
 | [1256-rank-transform-of-an-array](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1256-rank-transform-of-an-array) |
 | [1308-smallest-string-with-swaps](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1308-smallest-string-with-swaps) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
@@ -301,6 +302,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0859-design-circular-deque](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0859-design-circular-deque) |
 | [0883-car-fleet](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0883-car-fleet) |
 | [0906-walking-robot-simulation](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0906-walking-robot-simulation) |
+| [0929-unique-email-addresses](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0929-unique-email-addresses) |
 | [0954-maximum-sum-circular-subarray](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0954-maximum-sum-circular-subarray) |
 | [0967-minimum-falling-path-sum](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0967-minimum-falling-path-sum) |
 | [0971-shortest-bridge](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0971-shortest-bridge) |
@@ -427,6 +429,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0592-fraction-addition-and-subtraction](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0592-fraction-addition-and-subtraction) |
 | [0753-open-the-lock](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0753-open-the-lock) |
 | [0812-rotate-string](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0812-rotate-string) |
+| [0929-unique-email-addresses](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0929-unique-email-addresses) |
 | [1146-greatest-common-divisor-of-strings](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1146-greatest-common-divisor-of-strings) |
 | [1197-parsing-a-boolean-expression](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1197-parsing-a-boolean-expression) |
 | [1205-defanging-an-ip-address](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/1205-defanging-an-ip-address) |
