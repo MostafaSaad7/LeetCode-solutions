@@ -424,6 +424,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0012-integer-to-roman](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0012-integer-to-roman) |
 | [0013-roman-to-integer](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0013-roman-to-integer) |
 | [0014-longest-common-prefix](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0014-longest-common-prefix) |
+| [0020-valid-parentheses](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0020-valid-parentheses) |
 | [0072-edit-distance](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0072-edit-distance) |
 | [0091-decode-ways](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0091-decode-ways) |
 | [0242-valid-anagram](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0242-valid-anagram) |
@@ -680,6 +681,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Stack
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0020-valid-parentheses) |
 | [0084-largest-rectangle-in-histogram](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0084-largest-rectangle-in-histogram) |
 | [0145-binary-tree-postorder-traversal](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0145-binary-tree-postorder-traversal) |
 | [0155-min-stack](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0155-min-stack) |
