@@ -1,25 +1,14 @@
 class Solution {
     public boolean isValid(String s) {
-        Map<Character, Character> openToClose = new HashMap<>();
-        openToClose.put('(', ')');
-        openToClose.put('[', ']');
-        openToClose.put('{', '}');
-
         Stack<Character> stack = new Stack<>();
 
         for (char c : s.toCharArray()) {
-
-            // If opening bracket → push
-            if (openToClose.containsKey(c)) {
-                stack.push(c);
-            } 
+            if (c == '(') stack.push(')');
+            else if (c == '{') stack.push('}');
+            else if (c == '[') stack.push(']');
             else {
-                if (stack.isEmpty()) return false;
-
-                char lastOpen = stack.pop();
-                if (openToClose.get(lastOpen) != c) {
+                if (stack.isEmpty() || stack.pop() != c)
                     return false;
-                }
             }
         }
 
