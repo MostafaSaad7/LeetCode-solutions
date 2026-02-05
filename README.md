@@ -250,6 +250,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0056-merge-intervals](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0056-merge-intervals) |
 | [0057-insert-interval](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0057-insert-interval) |
 | [0063-unique-paths-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0063-unique-paths-ii) |
+| [0066-plus-one](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0066-plus-one) |
 | [0078-subsets](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0078-subsets) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0084-largest-rectangle-in-histogram](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0084-largest-rectangle-in-histogram) |
@@ -653,6 +654,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0012-integer-to-roman](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0012-integer-to-roman) |
 | [0013-roman-to-integer](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0013-roman-to-integer) |
 | [0050-powx-n](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0050-powx-n) |
+| [0066-plus-one](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0066-plus-one) |
 | [0069-sqrtx](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0069-sqrtx) |
 | [0279-perfect-squares](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0279-perfect-squares) |
 | [0441-arranging-coins](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0441-arranging-coins) |
