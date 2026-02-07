@@ -1,33 +1,30 @@
-import java.util.Stack;
-
 class Solution {
+    private static final Character OPEN = '(';
+    private static final Character CLOSE = ')';
     public String minRemoveToMakeValid(String s) {
-        StringBuilder stringWithOpen = new StringBuilder();
-        int openParenthesis = 0;
+        Stack<Integer> stack = new Stack<>();
+        Set<Integer> excludedIndices = new HashSet<>();
+
         for (int i = 0; i < s.length(); i++) {
-
-            if (s.charAt(i) == '(') {
-                openParenthesis++;
-            } else if (s.charAt(i) == ')') {
-                if (openParenthesis == 0) continue; // to matching open Parenthesis
-                openParenthesis--;
+            char currentChar = s.charAt(i);
+            if (currentChar==OPEN)
+                stack.push(i);
+            else if (currentChar==CLOSE ) {
+                if (!stack.isEmpty())
+                    stack.pop();
+                else
+                    excludedIndices.add(i);
             }
-
-            stringWithOpen.append(s.charAt(i));
         }
-        
+
+        while (!stack.isEmpty()) excludedIndices.add(stack.pop());
+
         StringBuilder result = new StringBuilder();
-
-        for (int i = stringWithOpen.length() - 1; i >= 0; i--) {
-
-            if (stringWithOpen.charAt(i) == '(' && openParenthesis > 0) {
-                openParenthesis--;
-                continue;
-            }
-            result.append(stringWithOpen.charAt(i));
+        for (int i = 0; i < s.length(); i++) {
+            if (excludedIndices.contains(i)) continue;
+            result.append(s.charAt(i));
         }
 
-        return result.reverse().toString();
-
+        return result.toString();
     }
 }
