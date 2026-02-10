@@ -428,6 +428,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0013-roman-to-integer](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0013-roman-to-integer) |
 | [0014-longest-common-prefix](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0014-longest-common-prefix) |
 | [0020-valid-parentheses](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0020-valid-parentheses) |
+| [0067-add-binary](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0067-add-binary) |
 | [0072-edit-distance](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0072-edit-distance) |
 | [0091-decode-ways](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0091-decode-ways) |
 | [0242-valid-anagram](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0242-valid-anagram) |
@@ -627,6 +628,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Bit Manipulation
 |  |
 | ------- |
+| [0067-add-binary](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0067-add-binary) |
 | [0078-subsets](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0078-subsets) |
 | [0136-single-number](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0136-single-number) |
 | [0222-count-complete-tree-nodes](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0222-count-complete-tree-nodes) |
@@ -639,6 +641,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Simulation
 |  |
 | ------- |
+| [0067-add-binary](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0067-add-binary) |
 | [0498-diagonal-traverse](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0498-diagonal-traverse) |
 | [0592-fraction-addition-and-subtraction](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0592-fraction-addition-and-subtraction) |
 | [0906-walking-robot-simulation](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0906-walking-robot-simulation) |
@@ -661,6 +664,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0013-roman-to-integer](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0013-roman-to-integer) |
 | [0050-powx-n](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0050-powx-n) |
 | [0066-plus-one](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0066-plus-one) |
+| [0067-add-binary](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0067-add-binary) |
 | [0069-sqrtx](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0069-sqrtx) |
 | [0202-happy-number](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0202-happy-number) |
 | [0279-perfect-squares](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0279-perfect-squares) |
