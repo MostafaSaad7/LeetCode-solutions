@@ -432,6 +432,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0072-edit-distance](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0072-edit-distance) |
 | [0091-decode-ways](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0091-decode-ways) |
 | [0242-valid-anagram](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0242-valid-anagram) |
+| [0415-add-strings](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0415-add-strings) |
 | [0516-longest-palindromic-subsequence](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0516-longest-palindromic-subsequence) |
 | [0592-fraction-addition-and-subtraction](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0592-fraction-addition-and-subtraction) |
 | [0753-open-the-lock](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0753-open-the-lock) |
@@ -642,6 +643,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0067-add-binary](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0067-add-binary) |
+| [0415-add-strings](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0415-add-strings) |
 | [0498-diagonal-traverse](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0498-diagonal-traverse) |
 | [0592-fraction-addition-and-subtraction](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0592-fraction-addition-and-subtraction) |
 | [0906-walking-robot-simulation](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0906-walking-robot-simulation) |
@@ -668,6 +670,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0069-sqrtx](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0069-sqrtx) |
 | [0202-happy-number](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0202-happy-number) |
 | [0279-perfect-squares](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0279-perfect-squares) |
+| [0415-add-strings](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0415-add-strings) |
 | [0441-arranging-coins](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0441-arranging-coins) |
 | [0592-fraction-addition-and-subtraction](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0592-fraction-addition-and-subtraction) |
 | [0668-kth-smallest-number-in-multiplication-table](https://github.com/MostafaSaad7/LeetCode-solutions/tree/master/0668-kth-smallest-number-in-multiplication-table) |
